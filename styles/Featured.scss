@@ -1,0 +1,35 @@
+.featured-container {
+  margin: 250px 100px 0 100px;
+  grid-row: 8 / auto;
+  text-align: center;
+
+  .title {
+    font-size: 4rem;
+    line-height: 1.5;
+    font-weight: 300;
+    letter-spacing: 0.061em;
+  }
+
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+
+    .card {
+      flex: 1 0 auto;
+      display: grid;
+      place-items: center;
+
+      .img-container {
+        position: relative;
+        width: 300px;
+        height: 450px;
+        margin: 50px;
+      }
+
+      section {
+        margin-top: -40px;
+        font-size: 1.3rem;
+      }
+    }
+  }
+}

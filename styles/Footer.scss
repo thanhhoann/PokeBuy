@@ -1,0 +1,48 @@
+.footer-container {
+  grid-row: 10 / 10;
+  width: 100vw;
+  display: grid;
+  place-items: center;
+  grid-auto-flow: column;
+  text-align: center;
+  align-items: stretch;
+  margin-bottom: 20px;
+  margin-top: 50px;
+  font-size: 1.4rem;
+  background-color: #fff;
+
+  * {
+    width: 25vw;
+    flex: 1;
+  }
+
+  .title {
+    margin: 0 10px 10px 10px;
+    font-size: 1.6rem;
+    border-bottom: 1px solid black;
+  }
+
+  .newsletter {
+    .form {
+      display: flex;
+      input {
+        width: 90%;
+        padding: 25px;
+        border-radius: 10px;
+      }
+      button {
+        cursor: pointer;
+        z-index: 1000;
+        letter-spacing: 1px;
+        font-family: "Roboto";
+        padding: 16px;
+        font-size: 1.2rem;
+        background-color: black;
+        color: white;
+        width: 30%;
+        border-radius: 10px;
+        margin-left: -125px;
+      }
+    }
+  }
+}
