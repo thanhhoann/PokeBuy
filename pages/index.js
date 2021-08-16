@@ -24,13 +24,13 @@ export default function Home() {
 
   const easing = [1, 1.16, 1, -0.39];
 
-  const wrapperVariants = {
+  const text = {
     initial: {
       clipPath: "circle(3.7% at 50% 50%)",
     },
     animate: {
       clipPath: "circle(70.7% at 50% 50%)",
-      transition: { duration: 4.8, ease: easing },
+      transition: { duration: 5, ease: easing },
     },
   };
 
@@ -38,9 +38,17 @@ export default function Home() {
     <>
       {isLoading ? (
         <motion.div className="loading-screen">
+          <Head>
+            <title>Home | PókeBuy.</title>
+            <meta
+              name="description"
+              content="Get your favorite pókemon cards with ease."
+            />
+            <link rel="icon" href="./pokecoin.svg" />
+          </Head>
           <motion.section
             className="title-container"
-            variants={wrapperVariants}
+            variants={text}
             initial="initial"
             animate="animate"
             exit="exit"
@@ -59,38 +67,7 @@ export default function Home() {
         <Layout title="Home">
           <Header />
           <Hero />
-
-          <div className="featured-container">
-            <div className="title">
-              <p>Featured Cards</p>
-            </div>
-
-            <main className="cards">
-              {megaPokemons.data.slice(0, 40).map((e) => (
-                <div key={e.id} className="card">
-                  <section className="img-container">
-                    <Tilt
-                      options={{ max: 25, perspective: 900, scale: 1.1 }}
-                      className="img-container"
-                    >
-                      <div className="tilt-inner">
-                        <Image
-                          src={e.images.large}
-                          layout="fill"
-                          objectFit="fit"
-                        />
-                      </div>
-                    </Tilt>
-                  </section>
-                  <section>
-                    <h3>{e.name}</h3>
-                    <p> $ {e.cardmarket.prices.trendPrice} </p>
-                  </section>
-                </div>
-              ))}
-            </main>
-          </div>
-
+          <Featured />
           <Footer />
         </Layout>
       )}

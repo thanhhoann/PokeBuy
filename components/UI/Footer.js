@@ -72,7 +72,7 @@ export default function Footer() {
             <section className="title">
               <p>About</p>
             </section>
-            <h3>Pokémon. Buy. PokéBuy.</h3>
+            <h3>Pokémons. Buy. PokéBuy.</h3>
             <p>
               This is a project that I originally made for my CV and for my love
               with Pokémons. Although this is not entirely perfect (lack of many

@@ -19,6 +19,7 @@
     "pokemontcgsdk": "^2.0.0",
     "react": "17.0.2",
     "react-animated-cursor": "^2.2.0",
+    "react-content-loader": "^6.0.3",
     "react-dom": "17.0.2",
     "react-intersection-observer": "^8.32.0",
     "react-query": "^3.19.6",
