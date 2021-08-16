@@ -67,7 +67,7 @@ export default function Header() {
             <MenuButton isClicked={isClickedHandler} />
           ) : (
             <div className="header-right">
-              <Link href="/#">
+              <Link href="/explore">
                 <a>
                   <section>
                     <p>Explore</p>
@@ -96,7 +96,7 @@ export default function Header() {
 
         {showMenu && (
           <div className="modal">
-            <Link href="/#">
+            <Link href="/explore">
               <a>
                 <section>
                   <p>Explore</p>

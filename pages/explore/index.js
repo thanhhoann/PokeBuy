@@ -1,24 +1,21 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Image from "next/image";
+import Layout from "../../components/UI/Layout";
+import Header from "../../components/UI/Header";
+import Hero from "../../components/UI/Hero";
+import Footer from "../../components/UI/Footer";
 
-import Tilt from "react-tilt";
-import ContentLoader from "react-content-loader";
+import pokemons from "../../pokemonsDB/pokemons.json";
 
-import megaPokemons from "../../pokemonsDB/mega.json";
-
-export default function Featured() {
-  const [cards, setCards] = useState("");
-  const [notFound, setNotFound] = useState(false);
-
+export default function Explore() {
   return (
     <>
-      <div className="featured-container">
-        <div className="title">
-          <p>Featured Cards</p>
-        </div>
+      <Layout title="Explore">
+        <Header />
+        <Hero />
 
         <main className="cards">
-          {megaPokemons.data.slice(0, 40).map((e) => (
+          {pokemons.data.map((e) => (
             <div key={e.id} className="card">
               <section className="img-container">
                 <Image
@@ -38,7 +35,9 @@ export default function Featured() {
             </div>
           ))}
         </main>
-      </div>
+
+        <Footer />
+      </Layout>
     </>
   );
 }
