@@ -22,7 +22,7 @@ export default function Header() {
       <div className="header-container">
         <main
           className="header-sub"
-          style={{ width: mobileM ? (mobileS ? "135vw" : "107vw") : "" }}
+          style={{ width: mobileM ? (mobileS ? "110vw" : "107vw") : "" }}
         >
           <section>
             <Link href="/#">
@@ -49,12 +49,14 @@ export default function Header() {
           <Link href="/#">
             <a>
               <div className="header-left">
-                <section className="img-container">
-                  <Image src={pokecoinSVG} layout="fill" objectFit="fit" />
-                </section>
+                {!mobileM && (
+                  <section className="img-container">
+                    <Image src={pokecoinSVG} layout="fill" objectFit="fit" />
+                  </section>
+                )}
 
                 <section className="title-container">
-                  <h1>PókeBuy.</h1>
+                  <h1 style={{ fontSize: mobileS && "1.8rem" }}>PókeBuy.</h1>
                 </section>
               </div>
             </a>

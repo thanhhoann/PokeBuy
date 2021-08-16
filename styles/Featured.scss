@@ -1,12 +1,16 @@
 .featured-container {
+  grid-row: 8 / auto;
+
   margin: auto;
   width: 100vw;
-  margin: 200px 0px;
-  grid-row: 8 / auto;
+  margin: 249px 0px;
   text-align: center;
 
+  display: grid;
+  place-items: center;
+
   .title {
-    font-size: 3rem;
+    font-size: 4rem;
     line-height: 1.5;
     letter-spacing: 2px;
   }
@@ -17,16 +21,19 @@
 
     .card {
       flex: 1 0 auto;
+      display: grid;
+      place-items: center;
+
+      margin-top: 30px;
 
       .img-container {
         position: relative;
         width: 300px;
         height: 450px;
-        margin: 50px;
       }
 
       section {
-        margin-top: -20px;
+        margin-top: 2vw;
         font-size: 1.3rem;
       }
     }

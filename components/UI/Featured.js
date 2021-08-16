@@ -15,13 +15,8 @@ export default function Featured() {
         <div className="title">
           <p>Featured Cards</p>
         </div>
-      </div>
-    </>
-  );
-}
 
-
-/*         <main className="cards">
+        <main className="cards">
           {megaPokemons.data.slice(0, 30).map((e) => (
             <div key={e.id} className="card">
               <section className="img-container">
@@ -33,4 +28,8 @@ export default function Featured() {
               </section>
             </div>
           ))}
-        </main> */
+        </main>
+      </div>
+    </>
+  );
+}
