@@ -1,5 +1,4 @@
 .header-container {
-
   background-color: #fff;
   display: flex;
   flex-direction: column;
@@ -20,6 +19,10 @@
   *:nth-child(2n) {
     margin: 0 10px 0 10px;
     line-height: 10px;
+  }
+  *:hover {
+    font-weight: 200;
+    letter-spacing: 1px;
   }
 }
 
@@ -51,6 +54,9 @@
     display: flex;
     *:nth-child(2n) {
       margin: 0 60px 0 60px;
+    }
+    *:hover {
+      font-weight: 700;
     }
   }
 }

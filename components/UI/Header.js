@@ -4,6 +4,7 @@ import Image from "next/image";
 import pokecoinSVG from "../../public/pokecoin.svg";
 
 import { useMedia } from "use-media";
+import { motion } from "framer-motion";
 import { MenuButton } from "./MenuButton";
 
 export default function Header() {

@@ -20,6 +20,7 @@
     flex-wrap: wrap;
 
     .card {
+      cursor: pointer;
       flex: 1 0 auto;
       display: grid;
       place-items: center;
