@@ -22,11 +22,11 @@ export default function Featured() {
             <div key={e.id} className="card">
               <section className="img-container">
                 <Image
-                  src={e.images.large}
+                  src={e.images.small}
                   layout="fill"
                   objectFit="fit"
                   priority="true"
-                  quality="96"
+                  quality="100"
                   placeholder="blur"
                   blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mO89OhSPQAIGwMHvnhFoQAAAABJRU5ErkJggg=="
                 />
