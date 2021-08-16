@@ -7,7 +7,9 @@ import { useMedia } from "use-media";
 import { MenuButton } from "./MenuButton";
 
 export default function Header() {
-  const isSmall = useMedia({ maxWidth: "730px" });
+  const isSmall = useMedia({ maxWidth: "768px" });
+  const mobileM = useMedia({ maxWidth: "400px" });
+  const mobileS = useMedia({ maxWidth: "320px" });
   const [showMenu, setShowMenu] = useState(false);
 
   const isClickedHandler = (isClicked) => {
@@ -18,7 +20,10 @@ export default function Header() {
   return (
     <>
       <div className="header-container">
-        <main className="header-sub">
+        <main
+          className="header-sub"
+          style={{ width: mobileM ? (mobileS ? "135vw" : "107vw") : "" }}
+        >
           <section>
             <Link href="/#">
               <a>

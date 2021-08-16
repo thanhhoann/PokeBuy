@@ -5,6 +5,7 @@
   height: 360px;
   background-color: black;
   color: white;
+
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -12,9 +13,11 @@
   .left {
     display: flex;
     flex-direction: column;
-    font-size: 1.5rem;
+    font-size: 1.7vw;
+    padding: 20px;
     letter-spacing: 3px;
     width: 30vw;
+
     * {
       margin: 2px;
     }
@@ -22,7 +25,8 @@
 
   .tilt-container {
     background-color: white;
-    width: 30vw;
+    width: calc(300px + 20vw);
+    height: 400px;
     display: grid;
     place-items: center;
   }

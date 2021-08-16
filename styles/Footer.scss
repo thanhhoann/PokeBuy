@@ -7,7 +7,7 @@
   text-align: center;
   align-items: stretch;
   margin-bottom: 20px;
-  margin-top: 50px;
+  margin-top: 200px;
   font-size: 1.4rem;
   background-color: #fff;
 
@@ -25,23 +25,24 @@
   .newsletter {
     .form {
       display: flex;
-      input {
-        width: 90%;
-        padding: 25px;
+      justify-content: center;
+
+      form {
+        width: 60%;
         border-radius: 10px;
+        input {
+          padding: 20px;
+        }
       }
-      button {
+
+      .button {
         cursor: pointer;
-        z-index: 1000;
-        letter-spacing: 1px;
         font-family: "Roboto";
-        padding: 16px;
-        font-size: 1.2rem;
         background-color: black;
         color: white;
+        padding: 15px;
+        letter-spacing: 2px;
         width: 30%;
-        border-radius: 10px;
-        margin-left: -125px;
       }
     }
   }
