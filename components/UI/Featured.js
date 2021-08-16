@@ -21,8 +21,17 @@ export default function Featured() {
           {megaPokemons.data.slice(0, 40).map((e) => (
             <div key={e.id} className="card">
               <section className="img-container">
-                {e.images.small ? (
-                  <Image src={e.images.small} layout="fill" objectFit="fit" />
+                {e.images ? (
+                  <Image
+                    src={e.images.large}
+                    layout="fill"
+                    objectFit="fit"
+                    priority="true"
+                    quality="90"
+                    onLoadingComplete={() => console.log("done")}
+                    placeholder="blur"
+                    blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mO89OhSPQAIGwMHvnhFoQAAAABJRU5ErkJggg=="
+                  />
                 ) : (
                   <ContentLoader viewBox="0 0 500 280" height={300} width={450}>
                     <rect
