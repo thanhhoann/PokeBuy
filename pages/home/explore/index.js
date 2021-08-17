@@ -25,7 +25,7 @@ export default function Explore(props) {
               <div key={i} className="card">
                 <section className="img-container">
                   <Image
-                    src={e.images.large}
+                    src={e.images.small}
                     layout="fill"
                     objectFit="fit"
                     priority="true"
