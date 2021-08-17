@@ -1,12 +1,10 @@
-import React, { useEffect, useState } from "react";
-import Link from "next/link";
+import React from "react";
 import Image from "next/image";
 
 import axios from "axios";
 
 import Header from "../../../components/UI/Header";
 import Hero from "../../../components/UI/Hero";
-import Featured from "../../../components/UI/Featured";
 import Footer from "../../../components/UI/Footer";
 import Layout from "../../../components/UI/Layout";
 

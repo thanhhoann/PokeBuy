@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { motion } from "framer-motion";
 
 export const MenuButton = (props) => {
   const [isClicked, setIsClicked] = useState(false);

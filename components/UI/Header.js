@@ -4,13 +4,13 @@ import Image from "next/image";
 import pokecoinSVG from "../../public/pokecoin.svg";
 
 import { useMedia } from "use-media";
-import { motion } from "framer-motion";
 import { MenuButton } from "./MenuButton";
 
 export default function Header() {
   const isSmall = useMedia({ maxWidth: "768px" });
   const mobileM = useMedia({ maxWidth: "400px" });
   const mobileS = useMedia({ maxWidth: "320px" });
+
   const [showMenu, setShowMenu] = useState(false);
 
   const isClickedHandler = (isClicked) => {

@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 
-import pokemonImg from "../../public/98_hires.png";
+import pic_0 from "../../public/98_hires.png";
 import pic_1 from "../../public/1.png";
 import pic_2 from "../../public/2.png";
 import pic_3 from "../../public/3.png";
@@ -23,9 +23,9 @@ export default function Hero() {
 
   const easing = [0.35, 0.82, 0.76, 0.25];
 
-  // random pick image
+  // shuffle things up
   let arrImg = [
-    pokemonImg,
+    pic_0,
     pic_9,
     pic_8,
     pic_7,

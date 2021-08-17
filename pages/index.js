@@ -1,23 +1,18 @@
 import Head from "next/head";
-import Image from "next/image";
-import Tilt from "react-tilt";
 
 import { motion } from "framer-motion";
-import pokecoinSVG from "../public/pokecoin.svg";
 import TextLoop from "react-text-loop";
 
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { useRouter } from "next/dist/client/router";
 
 export default function Home() {
   const router = useRouter();
-  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     setTimeout(() => {
       router.push("/home");
-      setIsLoading(false);
-    }, 5000);
+    }, 3000);
   }, []);
 
   const easing = [1, 1.16, 1, -0.39];
@@ -28,7 +23,7 @@ export default function Home() {
     },
     animate: {
       clipPath: "circle(70.7% at 50% 50%)",
-      transition: { duration: 5, ease: easing },
+      transition: { duration: 3, ease: easing },
     },
   };
 
@@ -54,7 +49,10 @@ export default function Home() {
             <h1>Póke</h1>
           </section>
 
-          <TextLoop>
+          <TextLoop
+            interval={1700}
+            springConfig={{ stiffness: 180, damping: 8 }}
+          >
             <h1>mons. Buy.</h1>
             <h1>Buy.</h1>
           </TextLoop>

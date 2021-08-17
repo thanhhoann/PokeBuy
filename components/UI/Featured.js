@@ -1,12 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Image from "next/image";
 
 import featuredCards from "../../pokemonsDB/featured.json";
 
 export default function Featured() {
-  const [cards, setCards] = useState("");
-  const [notFound, setNotFound] = useState(false);
-
   return (
     <>
       <div className="featured-container">

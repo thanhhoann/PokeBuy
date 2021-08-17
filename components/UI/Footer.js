@@ -3,8 +3,6 @@ import { useMedia } from "use-media";
 
 export default function Footer() {
   const tablet = useMedia({ maxWidth: "768px" });
-  const mobileM = useMedia({ maxWidth: "375px" });
-  const mobileS = useMedia({ maxWidth: "320px" });
 
   return (
     <>
