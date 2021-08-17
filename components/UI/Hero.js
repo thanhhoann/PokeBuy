@@ -109,7 +109,15 @@ export default function Hero() {
                   transition: { duration: 1, delay: 1.5 },
                 }}
               >
-                <Image src={img} width={350} height={450} />
+                <Image
+                  src={img}
+                  priority="true"
+                  quality="100"
+                  placeholder="blur"
+                  blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mO89OhSPQAIGwMHvnhFoQAAAABJRU5ErkJggg=="
+                  width={350}
+                  height={450}
+                />
               </motion.div>
             </Tilt>
           </motion.main>
