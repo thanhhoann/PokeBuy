@@ -88,251 +88,111 @@
       }
     },
     {
-      "id": "xy12-2",
-      "name": "M Venusaur-EX",
+      "id": "sm12-4",
+      "name": "Vileplume-GX",
       "supertype": "Pokémon",
-      "subtypes": ["MEGA", "EX"],
-      "hp": "230",
+      "subtypes": ["Stage 2", "GX"],
+      "hp": "240",
       "types": ["Grass"],
-      "evolvesFrom": "Venusaur-EX",
+      "evolvesFrom": "Gloom",
       "rules": [
-        "Mega Evolution rule: When 1 of your Pokémon becomes a Mega Evolution Pokémon, your turn ends.",
-        "Pokémon-EX rule: When a Pokémon-EX has been Knocked Out, your opponent takes 2 Prize cards."
+        "Pokémon-GX rule: When your Pokémon-GX is Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "abilities": [
+        {
+          "name": "Fragrant Flower Garden",
+          "text": "Once during your turn (before your attack), you may heal 30 damage from each of your Pokémon.",
+          "type": "Ability"
+        }
       ],
       "attacks": [
         {
-          "name": "Crisis Vine",
-          "cost": ["Grass", "Grass", "Grass", "Colorless"],
-          "convertedEnergyCost": 4,
-          "damage": "120",
-          "text": "Your opponent's Active Pokémon is now Paralyzed and Poisoned."
-        }
-      ],
-      "weaknesses": [{ "type": "Fire", "value": "×2" }],
-      "retreatCost": ["Colorless", "Colorless", "Colorless", "Colorless"],
-      "convertedRetreatCost": 4,
-      "set": {
-        "id": "xy12",
-        "name": "Evolutions",
-        "series": "XY",
-        "printedTotal": 108,
-        "total": 109,
-        "legalities": { "unlimited": "Legal", "expanded": "Legal" },
-        "ptcgoCode": "EVO",
-        "releaseDate": "2016/11/02",
-        "updatedAt": "2020/09/25 10:09:00",
-        "images": {
-          "symbol": "https://images.pokemontcg.io/xy12/symbol.png",
-          "logo": "https://images.pokemontcg.io/xy12/logo.png"
-        }
-      },
-      "number": "2",
-      "artist": "5ban Graphics",
-      "rarity": "Rare Holo EX",
-      "nationalPokedexNumbers": [3],
-      "legalities": { "unlimited": "Legal", "expanded": "Legal" },
-      "images": {
-        "small": "https://images.pokemontcg.io/xy12/2.png",
-        "large": "https://images.pokemontcg.io/xy12/2_hires.png"
-      },
-      "tcgplayer": {
-        "url": "https://prices.pokemontcg.io/tcgplayer/xy12-2",
-        "updatedAt": "2021/08/14",
-        "prices": {
-          "holofoil": {
-            "low": 4.07,
-            "mid": 7.0,
-            "high": 49.95,
-            "market": 5.02,
-            "directLow": 5.01
-          }
-        }
-      },
-      "cardmarket": {
-        "url": "https://prices.pokemontcg.io/cardmarket/xy12-2",
-        "updatedAt": "2021/08/14",
-        "prices": {
-          "averageSellPrice": 9.1,
-          "lowPrice": 3.0,
-          "trendPrice": 9.29,
-          "germanProLow": null,
-          "suggestedPrice": null,
-          "reverseHoloSell": null,
-          "reverseHoloLow": null,
-          "reverseHoloTrend": 11.77,
-          "lowPriceExPlus": 4.99,
-          "avg1": 8.0,
-          "avg7": 9.12,
-          "avg30": 8.92,
-          "reverseHoloAvg1": 13.0,
-          "reverseHoloAvg7": 12.69,
-          "reverseHoloAvg30": 10.91
-        }
-      }
-    },
-    {
-      "id": "g1-2",
-      "name": "M Venusaur-EX",
-      "supertype": "Pokémon",
-      "subtypes": ["MEGA", "EX"],
-      "hp": "230",
-      "types": ["Grass"],
-      "evolvesFrom": "Venusaur-EX",
-      "rules": [
-        "Mega Evolution rule: When 1 of your Pokémon becomes a Mega Evolution Pokémon, your turn ends.",
-        "Pokémon-EX rule: When a Pokémon-EX has been Knocked Out, your opponent takes 2 Prize cards."
-      ],
-      "attacks": [
+          "name": "Massive Bloom",
+          "cost": ["Grass", "Colorless"],
+          "convertedEnergyCost": 2,
+          "damage": "180-",
+          "text": "This attack does 10 less damage for each damage counter on this Pokémon."
+        },
         {
-          "name": "Bloom Buster",
-          "cost": ["Grass", "Grass", "Colorless", "Colorless"],
-          "convertedEnergyCost": 4,
-          "damage": "130",
-          "text": "Flip a coin. If heads, this attack does 30 damage to each of your opponent's Benched Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+          "name": "Allergic Explosion-GX",
+          "cost": ["Grass"],
+          "convertedEnergyCost": 1,
+          "damage": "50",
+          "text": "Your opponent's Active Pokémon is now Burned, Paralyzed, and Poisoned. (You can't use more than 1 GX attack in a game.)"
         }
       ],
-      "weaknesses": [{ "type": "Fire", "value": "×2" }],
-      "retreatCost": ["Colorless", "Colorless", "Colorless", "Colorless"],
-      "convertedRetreatCost": 4,
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": ["Colorless", "Colorless"],
+      "convertedRetreatCost": 2,
       "set": {
-        "id": "g1",
-        "name": "Generations",
-        "series": "XY",
-        "printedTotal": 115,
-        "total": 115,
-        "legalities": { "unlimited": "Legal", "expanded": "Legal" },
-        "ptcgoCode": "GEN",
-        "releaseDate": "2016/02/22",
+        "id": "sm12",
+        "name": "Cosmic Eclipse",
+        "series": "Sun & Moon",
+        "printedTotal": 236,
+        "total": 271,
+        "legalities": {
+          "unlimited": "Legal",
+          "standard": "Legal",
+          "expanded": "Legal"
+        },
+        "ptcgoCode": "CEC",
+        "releaseDate": "2019/11/01",
         "updatedAt": "2020/08/14 09:35:00",
         "images": {
-          "symbol": "https://images.pokemontcg.io/g1/symbol.png",
-          "logo": "https://images.pokemontcg.io/g1/logo.png"
+          "symbol": "https://images.pokemontcg.io/sm12/symbol.png",
+          "logo": "https://images.pokemontcg.io/sm12/logo.png"
         }
       },
-      "number": "2",
-      "artist": "5ban Graphics",
-      "rarity": "Rare Holo EX",
-      "nationalPokedexNumbers": [3],
-      "legalities": { "unlimited": "Legal", "expanded": "Legal" },
+      "number": "4",
+      "artist": "Kagemaru Himeno",
+      "rarity": "Rare Holo GX",
+      "nationalPokedexNumbers": [45],
+      "legalities": {
+        "unlimited": "Legal",
+        "standard": "Legal",
+        "expanded": "Legal"
+      },
       "images": {
-        "small": "https://images.pokemontcg.io/g1/2.png",
-        "large": "https://images.pokemontcg.io/g1/2_hires.png"
+        "small": "https://images.pokemontcg.io/sm12/4.png",
+        "large": "https://images.pokemontcg.io/sm12/4_hires.png"
       },
       "tcgplayer": {
-        "url": "https://prices.pokemontcg.io/tcgplayer/g1-2",
-        "updatedAt": "2021/08/14",
+        "url": "https://prices.pokemontcg.io/tcgplayer/sm12-4",
+        "updatedAt": "2021/08/16",
         "prices": {
           "holofoil": {
-            "low": 6.0,
-            "mid": 7.61,
-            "high": 19.99,
-            "market": 7.97,
-            "directLow": 6.49
+            "low": 1.75,
+            "mid": 3.4,
+            "high": 17.99,
+            "market": 3.24,
+            "directLow": 4.49
           }
         }
       },
       "cardmarket": {
-        "url": "https://prices.pokemontcg.io/cardmarket/g1-2",
-        "updatedAt": "2021/08/14",
+        "url": "https://prices.pokemontcg.io/cardmarket/sm12-4",
+        "updatedAt": "2021/08/16",
         "prices": {
-          "averageSellPrice": 8.66,
-          "lowPrice": 4.2,
-          "trendPrice": 7.57,
+          "averageSellPrice": 3.59,
+          "lowPrice": 2.0,
+          "trendPrice": 3.82,
           "germanProLow": null,
           "suggestedPrice": null,
           "reverseHoloSell": null,
           "reverseHoloLow": null,
-          "reverseHoloTrend": 8.37,
-          "lowPriceExPlus": 7.5,
-          "avg1": 9.99,
-          "avg7": 8.05,
-          "avg30": 8.4,
-          "reverseHoloAvg1": 7.49,
-          "reverseHoloAvg7": 6.75,
-          "reverseHoloAvg30": 7.59
-        }
-      }
-    },
-    {
-      "id": "xy2-13",
-      "name": "M Charizard-EX",
-      "supertype": "Pokémon",
-      "subtypes": ["MEGA", "EX"],
-      "hp": "220",
-      "types": ["Fire"],
-      "evolvesFrom": "Charizard-EX",
-      "rules": [
-        "Mega Evolution rule: When 1 of your Pokémon becomes a Mega Evolution Pokémon, your turn ends.",
-        "Pokémon-EX rule: When a Pokémon-EX has been Knocked Out, your opponent takes 2 Prize cards."
-      ],
-      "attacks": [
-        {
-          "name": "Crimson Dive",
-          "cost": ["Fire", "Fire", "Colorless", "Colorless", "Colorless"],
-          "convertedEnergyCost": 5,
-          "damage": "300",
-          "text": "This Pokémon does 50 damage to itself."
-        }
-      ],
-      "weaknesses": [{ "type": "Water", "value": "×2" }],
-      "retreatCost": ["Colorless"],
-      "convertedRetreatCost": 1,
-      "set": {
-        "id": "xy2",
-        "name": "Flashfire",
-        "series": "XY",
-        "printedTotal": 106,
-        "total": 109,
-        "legalities": { "unlimited": "Legal", "expanded": "Legal" },
-        "ptcgoCode": "FLF",
-        "releaseDate": "2014/05/07",
-        "updatedAt": "2018/03/04 10:35:00",
-        "images": {
-          "symbol": "https://images.pokemontcg.io/xy2/symbol.png",
-          "logo": "https://images.pokemontcg.io/xy2/logo.png"
-        }
-      },
-      "number": "13",
-      "artist": "5ban Graphics",
-      "rarity": "Rare Holo EX",
-      "nationalPokedexNumbers": [6],
-      "legalities": { "unlimited": "Legal", "expanded": "Legal" },
-      "images": {
-        "small": "https://images.pokemontcg.io/xy2/13.png",
-        "large": "https://images.pokemontcg.io/xy2/13_hires.png"
-      },
-      "tcgplayer": {
-        "url": "https://prices.pokemontcg.io/tcgplayer/xy2-13",
-        "updatedAt": "2021/08/14",
-        "prices": {
-          "holofoil": {
-            "low": 16.12,
-            "mid": 21.07,
-            "high": 40.0,
-            "market": 23.76,
-            "directLow": null
-          }
-        }
-      },
-      "cardmarket": {
-        "url": "https://prices.pokemontcg.io/cardmarket/xy2-13",
-        "updatedAt": "2021/08/14",
-        "prices": {
-          "averageSellPrice": 21.04,
-          "lowPrice": 10.0,
-          "trendPrice": 20.36,
-          "germanProLow": null,
-          "suggestedPrice": null,
-          "reverseHoloSell": null,
-          "reverseHoloLow": null,
-          "reverseHoloTrend": 22.86,
-          "lowPriceExPlus": 13.9,
-          "avg1": 20.93,
-          "avg7": 21.04,
-          "avg30": 17.85,
-          "reverseHoloAvg1": 17.99,
-          "reverseHoloAvg7": 24.25,
-          "reverseHoloAvg30": 21.0
+          "reverseHoloTrend": 4.68,
+          "lowPriceExPlus": 2.0,
+          "avg1": 5.0,
+          "avg7": 3.65,
+          "avg30": 3.47,
+          "reverseHoloAvg1": 6.99,
+          "reverseHoloAvg7": 5.6,
+          "reverseHoloAvg30": 3.84
         }
       }
     },
@@ -416,89 +276,6 @@
           "reverseHoloAvg1": 4.45,
           "reverseHoloAvg7": 4.4,
           "reverseHoloAvg30": 4.91
-        }
-      }
-    },
-    {
-      "id": "g1-12",
-      "name": "M Charizard-EX",
-      "supertype": "Pokémon",
-      "subtypes": ["MEGA", "EX"],
-      "hp": "220",
-      "types": ["Fire"],
-      "evolvesFrom": "Charizard-EX",
-      "rules": [
-        "Mega Evolution rule: When 1 of your Pokémon becomes a Mega Evolution Pokémon, your turn ends.",
-        "Pokémon-EX rule: When a Pokémon-EX has been Knocked Out, your opponent takes 2 Prize cards."
-      ],
-      "attacks": [
-        {
-          "name": "Heat Typhoon",
-          "cost": ["Fire", "Colorless", "Colorless", "Colorless"],
-          "convertedEnergyCost": 4,
-          "damage": "100+",
-          "text": "Flip a coin for each Fire Energy attached to this Pokémon. This attack does 50 more damage for each heads."
-        }
-      ],
-      "weaknesses": [{ "type": "Water", "value": "×2" }],
-      "retreatCost": ["Colorless", "Colorless", "Colorless"],
-      "convertedRetreatCost": 3,
-      "set": {
-        "id": "g1",
-        "name": "Generations",
-        "series": "XY",
-        "printedTotal": 115,
-        "total": 115,
-        "legalities": { "unlimited": "Legal", "expanded": "Legal" },
-        "ptcgoCode": "GEN",
-        "releaseDate": "2016/02/22",
-        "updatedAt": "2020/08/14 09:35:00",
-        "images": {
-          "symbol": "https://images.pokemontcg.io/g1/symbol.png",
-          "logo": "https://images.pokemontcg.io/g1/logo.png"
-        }
-      },
-      "number": "12",
-      "artist": "5ban Graphics",
-      "rarity": "Rare Holo EX",
-      "nationalPokedexNumbers": [6],
-      "legalities": { "unlimited": "Legal", "expanded": "Legal" },
-      "images": {
-        "small": "https://images.pokemontcg.io/g1/12.png",
-        "large": "https://images.pokemontcg.io/g1/12_hires.png"
-      },
-      "tcgplayer": {
-        "url": "https://prices.pokemontcg.io/tcgplayer/g1-12",
-        "updatedAt": "2021/08/14",
-        "prices": {
-          "holofoil": {
-            "low": 23.99,
-            "mid": 58.58,
-            "high": 120.0,
-            "market": 62.89,
-            "directLow": 94.97
-          }
-        }
-      },
-      "cardmarket": {
-        "url": "https://prices.pokemontcg.io/cardmarket/g1-12",
-        "updatedAt": "2021/08/14",
-        "prices": {
-          "averageSellPrice": 44.69,
-          "lowPrice": 17.5,
-          "trendPrice": 39.05,
-          "germanProLow": null,
-          "suggestedPrice": null,
-          "reverseHoloSell": null,
-          "reverseHoloLow": null,
-          "reverseHoloTrend": 95.71,
-          "lowPriceExPlus": 24.5,
-          "avg1": 19.99,
-          "avg7": 52.28,
-          "avg30": 41.58,
-          "reverseHoloAvg1": 18.13,
-          "reverseHoloAvg7": 35.0,
-          "reverseHoloAvg30": 57.1
         }
       }
     },

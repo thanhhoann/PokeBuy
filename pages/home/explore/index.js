@@ -1,14 +1,16 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import Link from "next/link";
 import Image from "next/image";
-import Layout from "../../components/UI/Layout";
-import Header from "../../components/UI/Header";
-import Hero from "../../components/UI/Hero";
-import Footer from "../../components/UI/Footer";
 
-import pokemons from "../../pokemonsDB/pokemons.json";
+import axios from "axios";
 
-export default function Explore() {
-  console.log(pokemons.data);
+import Header from "../../../components/UI/Header";
+import Hero from "../../../components/UI/Hero";
+import Featured from "../../../components/UI/Featured";
+import Footer from "../../../components/UI/Footer";
+import Layout from "../../../components/UI/Layout";
+
+export default function Explore(props) {
   return (
     <>
       <Layout title="Explore">
@@ -16,12 +18,16 @@ export default function Explore() {
         <Hero />
 
         <div className="featured-container">
+          <div className="title">
+            <p>All Cards</p>
+          </div>
+
           <main className="cards">
-            {pokemons.data.map((e) => (
-              <div key={e.id} className="card">
+            {props.all.map((e, i) => (
+              <div key={i} className="card">
                 <section className="img-container">
                   <Image
-                    src={e.images.small}
+                    src={e.images.large}
                     layout="fill"
                     objectFit="fit"
                     priority="true"
@@ -43,4 +49,18 @@ export default function Explore() {
       </Layout>
     </>
   );
+}
+
+export async function getStaticProps(context) {
+  const all = await axios
+    .get(
+      "https://pokebuy-ecom-default-rtdb.asia-southeast1.firebasedatabase.app/all.json"
+    )
+    .then((res) => res.data);
+
+  return {
+    props: {
+      all,
+    },
+  };
 }

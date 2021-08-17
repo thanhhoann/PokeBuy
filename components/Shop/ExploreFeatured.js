@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
-import featuredCards from "../../pokemonsDB/featured.json";
+import Tilt from "react-tilt";
+import ContentLoader from "react-content-loader";
 
-export default function Featured() {
+export default function ExploreFeatured(props) {
   const [cards, setCards] = useState("");
   const [notFound, setNotFound] = useState(false);
 
@@ -11,15 +13,25 @@ export default function Featured() {
     <>
       <div className="featured-container">
         <div className="title">
-          <p>Featured Cards</p>
+          <section>
+            <p>{props.title} Cards</p>
+          </section>
+
+          <section>
+            <Link href="/explore/legend">
+              <a>
+                <div className="btn">Products</div>
+              </a>
+            </Link>
+          </section>
         </div>
 
         <main className="cards">
-          {featuredCards.data.slice(0, 12).map((e) => (
+          {props.pokemonImg.map((e) => (
             <div key={e.id} className="card">
-              <section className="img-container">
+              <section className="img-container" style={{ margin: "10px" }}>
                 <Image
-                  src={e.images.large}
+                  src={e.images.small}
                   layout="fill"
                   objectFit="fit"
                   priority="true"

@@ -26,7 +26,7 @@ export default function Header() {
           style={{ width: mobileM ? (mobileS ? "110vw" : "107vw") : "" }}
         >
           <section>
-            <Link href="/#">
+            <Link href="/login">
               <a>
                 <h3>LOG IN</h3>
               </a>
@@ -37,7 +37,7 @@ export default function Header() {
             <h3>.</h3>
           </section>
 
-          <Link href="/#">
+          <Link href="/register">
             <a>
               <section>
                 <h3>CREATE ACCOUNT</h3>
@@ -47,7 +47,7 @@ export default function Header() {
         </main>
 
         <main className="header-main">
-          <Link href="/#">
+          <Link href="/home">
             <a>
               <div className="header-left">
                 {!mobileM && (
@@ -67,7 +67,7 @@ export default function Header() {
             <MenuButton isClicked={isClickedHandler} />
           ) : (
             <div className="header-right">
-              <Link href="/explore">
+              <Link href="/home/explore">
                 <a>
                   <section>
                     <p>Explore</p>
@@ -75,7 +75,7 @@ export default function Header() {
                 </a>
               </Link>
 
-              <Link href="/#">
+              <Link href="/home/contact">
                 <a>
                   <section>
                     <p>Contact</p>
@@ -83,7 +83,7 @@ export default function Header() {
                 </a>
               </Link>
 
-              <Link href="/#">
+              <Link href="/home/cart">
                 <a>
                   <section>
                     <p>Cart</p>
@@ -96,7 +96,7 @@ export default function Header() {
 
         {showMenu && (
           <div className="modal">
-            <Link href="/explore">
+            <Link href="/home/explore">
               <a>
                 <section>
                   <p>Explore</p>
@@ -104,7 +104,7 @@ export default function Header() {
               </a>
             </Link>
 
-            <Link href="/#">
+            <Link href="/home/contact">
               <a>
                 <section>
                   <p>Contact</p>
@@ -112,7 +112,7 @@ export default function Header() {
               </a>
             </Link>
 
-            <Link href="/#">
+            <Link href="/home/cart">
               <a>
                 <section>
                   <p>Cart</p>
