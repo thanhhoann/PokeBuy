@@ -26,7 +26,7 @@ export default function Header() {
           style={{ width: mobileM ? (mobileS ? "110vw" : "107vw") : "" }}
         >
           <section>
-            <Link href="/login">
+            <Link href="/account/login">
               <a>
                 <h3>LOG IN</h3>
               </a>
@@ -37,7 +37,7 @@ export default function Header() {
             <h3>.</h3>
           </section>
 
-          <Link href="/register">
+          <Link href="/account/register">
             <a>
               <section>
                 <h3>CREATE ACCOUNT</h3>

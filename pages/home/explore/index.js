@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 import axios from "axios";
 
@@ -22,23 +23,25 @@ export default function Explore(props) {
 
           <main className="cards">
             {props.all.map((e, i) => (
-              <div key={i} className="card">
-                <section className="img-container">
-                  <Image
-                    src={e.images.small}
-                    layout="fill"
-                    objectFit="fit"
-                    priority="true"
-                    quality="100"
-                    placeholder="blur"
-                    blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mO89OhSPQAIGwMHvnhFoQAAAABJRU5ErkJggg=="
-                  />
-                </section>
-                <section>
-                  <h3>{e.name}</h3>
-                  <p> $ {e.cardmarket.prices.trendPrice} </p>
-                </section>
-              </div>
+              <Link key={i} href={`/home/explore/${e.id}`}>
+                <div className="card">
+                  <section className="img-container">
+                    <Image
+                      src={e.images.small}
+                      layout="fill"
+                      objectFit="fit"
+                      priority="true"
+                      quality="100"
+                      placeholder="blur"
+                      blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mO89OhSPQAIGwMHvnhFoQAAAABJRU5ErkJggg=="
+                    />
+                  </section>
+                  <section>
+                    <h3>{e.name}</h3>
+                    <p> $ {e.cardmarket.prices.trendPrice} </p>
+                  </section>
+                </div>
+              </Link>
             ))}
           </main>
         </div>
