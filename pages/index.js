@@ -1,6 +1,8 @@
 import Head from "next/head";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
+import loading from "../public/simple_pokeball.gif";
 import TextLoop from "react-text-loop";
 
 import { useEffect } from "react";
@@ -15,15 +17,26 @@ export default function Home() {
     }, 3000);
   }, []);
 
-  const easing = [1, 1.16, 1, -0.39];
+  const easing = [0.63, 0.1, 0.69, 0.03];
 
   const text = {
-    initial: {
-      clipPath: "circle(3.7% at 50% 50%)",
-    },
     animate: {
-      clipPath: "circle(70.7% at 50% 50%)",
+      clipPath: [
+        "circle(0% at 50% 50%)",
+        "circle(30% at 50% 50%)",
+        "circle(100% at 50% 50%)",
+      ],
       transition: { duration: 3, ease: easing },
+    },
+  };
+
+  const img = {
+    animate: {
+      rotateY: 360,
+      transition: {
+        duration: 4,
+        repeat: Infinity,
+      },
     },
   };
 
@@ -50,7 +63,7 @@ export default function Home() {
           </section>
 
           <TextLoop
-            interval={1700}
+            interval={2000}
             springConfig={{ stiffness: 180, damping: 8 }}
           >
             <h1>mons. Buy.</h1>

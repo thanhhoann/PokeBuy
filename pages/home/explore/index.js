@@ -1,15 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
 import axios from "axios";
+import { useMedia } from "use-media";
 
 import Header from "../../../components/UI/Header";
 import Hero from "../../../components/UI/Hero";
 import Footer from "../../../components/UI/Footer";
 import Layout from "../../../components/UI/Layout";
+import Backdrop from "../../../components/UI/Backdrop";
 
 export default function Explore(props) {
+  const mobileS = useMedia({ maxWidth: "320px" });
+  const [isLoading, setIsLoading] = useState(false);
+
   return (
     <>
       <Layout title="Explore">
@@ -21,11 +26,19 @@ export default function Explore(props) {
             <p>All Cards</p>
           </div>
 
+          {isLoading && <Backdrop />}
+
           <main className="cards">
             {props.all.map((e, i) => (
               <Link key={i} href={`/home/explore/${e.id}`}>
-                <div className="card">
-                  <section className="img-container">
+                <div
+                  className="card"
+                  style={{ flex: mobileS && "0", margin: mobileS && "auto" }}
+                >
+                  <section
+                    className="img-container"
+                    onClick={() => setIsLoading(!isLoading)}
+                  >
                     <Image
                       src={e.images.small}
                       layout="fill"

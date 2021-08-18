@@ -78,7 +78,13 @@ export default function Card(props) {
                 <h3>
                   {supertype}{" "}
                   {subtypes.map((e, i) => (
-                    <span key={i} style={{ display: mobileS && "flex" }}>
+                    <span
+                      key={i}
+                      style={{
+                        display: mobileM && "flex",
+                        flexDirection: mobileM && "column",
+                      }}
+                    >
                       {e}
                     </span>
                   ))}

@@ -1,17 +1,19 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import pokecoinSVG from "../../public/pokecoin.svg";
 
 import { useMedia } from "use-media";
 import { MenuButton } from "./MenuButton";
+import Backdrop from "../UI/Backdrop";
 
 export default function Header() {
+  const [isLoading, setIsLoading] = useState(false);
+  const [showMenu, setShowMenu] = useState(false);
+
   const isSmall = useMedia({ maxWidth: "768px" });
   const mobileM = useMedia({ maxWidth: "400px" });
   const mobileS = useMedia({ maxWidth: "320px" });
-
-  const [showMenu, setShowMenu] = useState(false);
 
   const isClickedHandler = (isClicked) => {
     if (isClicked) setShowMenu(true);
@@ -23,7 +25,7 @@ export default function Header() {
       <div className="header-container">
         <main
           className="header-sub"
-          style={{ width: mobileM ? (mobileS ? "110vw" : "107vw") : "" }}
+          style={{ width: mobileM ? (mobileS ? "100vw" : "107vw") : "" }}
         >
           <section>
             <Link href="/account/login">
@@ -46,10 +48,12 @@ export default function Header() {
           </Link>
         </main>
 
+        {isLoading && <Backdrop />}
+
         <main className="header-main">
           <Link href="/home">
             <a>
-              <div className="header-left">
+              <div className="header-left" onClick={() => setIsLoading(true)}>
                 {!mobileM && (
                   <section className="img-container">
                     <Image src={pokecoinSVG} layout="fill" objectFit="fit" />
@@ -69,7 +73,7 @@ export default function Header() {
             <div className="header-right">
               <Link href="/home/explore">
                 <a>
-                  <section>
+                  <section onClick={() => setIsLoading(!isLoading)}>
                     <p>Explore</p>
                   </section>
                 </a>
@@ -77,7 +81,7 @@ export default function Header() {
 
               <Link href="/home/contact">
                 <a>
-                  <section>
+                  <section onClick={() => setIsLoading(true)}>
                     <p>Contact</p>
                   </section>
                 </a>
@@ -85,7 +89,7 @@ export default function Header() {
 
               <Link href="/home/cart">
                 <a>
-                  <section>
+                  <section onClick={() => setIsLoading(true)}>
                     <p>Cart</p>
                   </section>
                 </a>
@@ -98,7 +102,7 @@ export default function Header() {
           <div className="modal">
             <Link href="/home/explore">
               <a>
-                <section>
+                <section onClick={() => setIsLoading(true)}>
                   <p>Explore</p>
                 </section>
               </a>
@@ -106,7 +110,7 @@ export default function Header() {
 
             <Link href="/home/contact">
               <a>
-                <section>
+                <section onClick={() => setIsLoading(true)}>
                   <p>Contact</p>
                 </section>
               </a>
@@ -114,7 +118,7 @@ export default function Header() {
 
             <Link href="/home/cart">
               <a>
-                <section>
+                <section onClick={() => setIsLoading(true)}>
                   <p>Cart</p>
                 </section>
               </a>
