@@ -8,3 +8,4 @@
 - Reduce font size
 - Add dark mode
 - Split more code 
+- Fix eslint problems
