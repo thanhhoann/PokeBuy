@@ -9,4 +9,4 @@
 - Add dark mode
 - Split more code 
 - Fix eslint problems
-- Use getStaticPaths
+- add fallback
