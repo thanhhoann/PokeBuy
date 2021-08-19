@@ -9,3 +9,8 @@
 - Split more code 
 - Fix eslint problems
 - add fallback
+
+- add explore more products on cart page
+- add already purchased this product on id page
+- if mobile then rotate this loading spinner, not rotateY
+- style subscribe button
