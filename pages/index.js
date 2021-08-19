@@ -1,8 +1,6 @@
 import Head from "next/head";
 
 import { motion } from "framer-motion";
-import Image from "next/image";
-import loading from "../public/simple_pokeball.gif";
 import TextLoop from "react-text-loop";
 
 import { useEffect } from "react";
@@ -23,20 +21,10 @@ export default function Home() {
     animate: {
       clipPath: [
         "circle(0% at 50% 50%)",
-        "circle(30% at 50% 50%)",
+        "circle(10% at 50% 50%)",
         "circle(100% at 50% 50%)",
       ],
       transition: { duration: 3, ease: easing },
-    },
-  };
-
-  const img = {
-    animate: {
-      rotateY: 360,
-      transition: {
-        duration: 4,
-        repeat: Infinity,
-      },
     },
   };
 

@@ -3,9 +3,15 @@ import Image from "next/image";
 import Link from "next/link";
 
 import featuredCards from "../../pokemonsDB/featured.json";
+import Backdrop from "../../components/UI/Backdrop";
 
 export default function Featured() {
-  const [isActive, setIsActive] = useState(true);
+  const [isLoading, setIsLoading] = useState(false);
+
+  const backDropHandler = () => {
+    setIsLoading(true);
+    setTimeout(() => setIsLoading(false), 2000);
+  };
 
   return (
     <>
@@ -14,10 +20,12 @@ export default function Featured() {
           <p>Featured Cards</p>
         </div>
 
+        {isLoading && <Backdrop />}
+
         <main className="cards">
           {featuredCards.data.slice(0, 12).map((e) => (
             <Link key={e.id} href={`/home/explore/${e.id}`}>
-              <div className="card">
+              <div className="card" onClick={backDropHandler}>
                 <section className="img-container">
                   <Image
                     src={e.images.large}

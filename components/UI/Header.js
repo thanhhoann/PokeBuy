@@ -20,6 +20,11 @@ export default function Header() {
     else setShowMenu(false);
   };
 
+  const backDropHandler = () => {
+    setIsLoading(true);
+    setTimeout(() => setIsLoading(false), 2000);
+  };
+
   return (
     <>
       <div className="header-container">
@@ -53,7 +58,7 @@ export default function Header() {
         <main className="header-main">
           <Link href="/home">
             <a>
-              <div className="header-left" onClick={() => setIsLoading(true)}>
+              <div className="header-left" onClick={backDropHandler}>
                 {!mobileM && (
                   <section className="img-container">
                     <Image src={pokecoinSVG} layout="fill" objectFit="fit" />
@@ -73,7 +78,7 @@ export default function Header() {
             <div className="header-right">
               <Link href="/home/explore">
                 <a>
-                  <section onClick={() => setIsLoading(!isLoading)}>
+                  <section onClick={backDropHandler}>
                     <p>Explore</p>
                   </section>
                 </a>
@@ -81,7 +86,7 @@ export default function Header() {
 
               <Link href="/home/contact">
                 <a>
-                  <section onClick={() => setIsLoading(true)}>
+                  <section onClick={backDropHandler}>
                     <p>Contact</p>
                   </section>
                 </a>
@@ -89,7 +94,7 @@ export default function Header() {
 
               <Link href="/home/cart">
                 <a>
-                  <section onClick={() => setIsLoading(true)}>
+                  <section onClick={backDropHandler}>
                     <p>Cart</p>
                   </section>
                 </a>
@@ -102,7 +107,7 @@ export default function Header() {
           <div className="modal">
             <Link href="/home/explore">
               <a>
-                <section onClick={() => setIsLoading(true)}>
+                <section onClick={backDropHandler}>
                   <p>Explore</p>
                 </section>
               </a>
@@ -110,7 +115,7 @@ export default function Header() {
 
             <Link href="/home/contact">
               <a>
-                <section onClick={() => setIsLoading(true)}>
+                <section onClick={backDropHandler}>
                   <p>Contact</p>
                 </section>
               </a>
@@ -118,7 +123,7 @@ export default function Header() {
 
             <Link href="/home/cart">
               <a>
-                <section onClick={() => setIsLoading(true)}>
+                <section onClick={backDropHandler}>
                   <p>Cart</p>
                 </section>
               </a>
