@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "prepare": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "dependencies": {
     "@material-ui/core": "^4.12.3",
@@ -36,10 +38,12 @@
     "redux": "^4.1.1",
     "redux-toolkit": "^1.1.2",
     "sass": "^1.37.5",
-    "use-media": "^1.4.0"
+    "use-media": "^1.4.0",
+    "@snyk/protect": "latest"
   },
   "devDependencies": {
     "eslint": "7.32.0",
     "eslint-config-next": "11.1.0"
-  }
+  },
+  "snyk": true
 }
