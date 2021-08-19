@@ -19,8 +19,8 @@ export default function Cart() {
           </div>
 
           <main className="cards">
-            {newItems.map((e) => (
-              <div className="card">
+            {newItems.map((e, i) => (
+              <div className="card" key={i}>
                 <section className="img-container">
                   <Image
                     src={e.image}

@@ -248,12 +248,16 @@ export default function Card(props) {
 }
 
 export async function getServerSideProps({ query }) {
-  const data = await axios
-    .get(`https://api.pokemontcg.io/v2/cards/${query.id}`, {
-      headers: {
-        "X-API-Key": "b53e5d64-502e-4837-948b-8d092e16fa09",
-      },
-    })
-    .then((res) => res.data.data);
-  return { props: { data } };
+  try {
+    const data = await axios
+      .get(`https://api.pokemontcg.io/v2/cards/${query.id}`, {
+        headers: {
+          "X-API-Key": "b53e5d64-502e-4837-948b-8d092e16fa09",
+        },
+      })
+      .then((res) => res.data.data);
+    return { props: { data } };
+  } catch (error) {
+    console.log(error);
+  }
 }
