@@ -6,8 +6,6 @@ import TextLoop from "react-text-loop";
 import { useEffect } from "react";
 import { useRouter } from "next/dist/client/router";
 
-export const config = { amp: true };
-
 export default function Home() {
   const router = useRouter();
 
