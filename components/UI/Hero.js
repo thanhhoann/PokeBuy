@@ -110,6 +110,7 @@ export default function Hero() {
                 }}
               >
                 <Image
+                  alt="Featured"
                   src={img}
                   priority="true"
                   quality="100"

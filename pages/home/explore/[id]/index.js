@@ -19,7 +19,13 @@ export default function Card(props) {
   const { name, cardmarket, images, subtypes, supertype, types } = props.data;
 
   const typeImg = types.map((e, i) => (
-    <Image key={i} src={`/${e.toLowerCase()}.png`} width={50} height={50} />
+    <Image
+      key={i}
+      src={`/${e.toLowerCase()}.png`}
+      width={50}
+      height={50}
+      alt="Card"
+    />
   ));
 
   return (
