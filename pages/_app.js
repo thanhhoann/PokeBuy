@@ -7,8 +7,12 @@ import "../styles/Footer.scss";
 import "../styles/Explore.scss";
 import "../styles/Login.scss";
 import "../styles/Card.scss";
+import "../styles/Cart.module.scss";
 
 import { motion } from "framer-motion";
+
+import { Provider } from "react-redux";
+import store from "../store/store";
 
 function MyApp({ Component, pageProps, router }) {
   const easing = [0.63, 0.1, 0.69, 0.03];
@@ -24,13 +28,15 @@ function MyApp({ Component, pageProps, router }) {
           pageAnimate: {
             clipPath: [" inset(0 100% 0 0)", " inset(0 0% 0 0)"],
             transition: {
-              duration: 1,
+              duration: 0.5,
               ease: easing,
             },
           },
         }}
       >
-        <Component {...pageProps} />;
+        <Provider store={store}>
+          <Component {...pageProps} />;
+        </Provider>
       </motion.div>
     </>
   );

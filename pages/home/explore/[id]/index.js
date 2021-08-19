@@ -1,22 +1,33 @@
+import React, { useEffect } from "react";
 import axios from "axios";
 import Image from "next/image";
+import Link from "next/link";
 import Layout from "../../../../components/UI/Layout";
 import Header from "../../../../components/UI/Header";
 import Footer from "../../../../components/UI/Footer";
-import ContentLoader from "react-content-loader";
+
 import { motion } from "framer-motion";
 import Tilt from "react-tilt";
+
 import { useMedia } from "use-media";
 import { useState } from "react";
 
+import { useDispatch, useSelector } from "react-redux";
+import { cartActions } from "../../../../store/cart";
+
 export default function Card(props) {
-  const [isLoading, setIsLoading] = useState(true);
+  const { name, cardmarket, images, subtypes, supertype, types } = props.data;
+
+  const [tempCart, setTempCart] = useState(0);
+  const [selected, setSelected] = useState("");
+  const [notSelected, setNotSelected] = useState(false);
+  const [isAdded, setIsAdded] = useState(false);
+
+  const dispatch = useDispatch();
+
   const tablet = useMedia({ maxWidth: "768px" });
   const mobileL = useMedia({ maxWidth: "425px" });
   const mobileM = useMedia({ maxWidth: "400px" });
-  const mobileS = useMedia({ maxWidth: "320px" });
-
-  const { name, cardmarket, images, subtypes, supertype, types } = props.data;
 
   const typeImg = types.map((e, i) => (
     <Image
@@ -27,6 +38,63 @@ export default function Card(props) {
       alt="Card"
     />
   ));
+
+  const trendPriceHandler = () => {
+    if (selected === "trendPriceHandler") {
+      setSelected("");
+    } else {
+      setSelected("trendPriceHandler");
+    }
+    setNotSelected(false);
+    setTempCart(Math.round(Number(cardmarket.prices.trendPrice)));
+  };
+
+  const oneDayVenueHandler = () => {
+    if (selected === "oneDayVenueHandler") {
+      setSelected("");
+    } else {
+      setSelected("oneDayVenueHandler");
+    }
+    setNotSelected(false);
+    setTempCart(Math.round(Number(cardmarket.prices.avg1)));
+  };
+
+  const sevenDayVenueHandler = () => {
+    if (selected === "sevenDayVenueHandler") {
+      setSelected("");
+    } else {
+      setSelected("sevenDayVenueHandler");
+    }
+    setNotSelected(false);
+    setTempCart(Math.floor(Number(cardmarket.prices.avg7)));
+  };
+
+  const thirtyDayVenueHandler = () => {
+    if (selected === "thirtyDayVenueHandler") {
+      setSelected("");
+    } else {
+      setSelected("thirtyDayVenueHandler");
+    }
+    setNotSelected(false);
+    setTempCart(Math.round(Number(cardmarket.prices.avg30)));
+  };
+
+  const addToCartHandler = () => {
+    if (selected === "") {
+      setNotSelected(true);
+      setIsAdded(false);
+    } else {
+      setIsAdded(true);
+      dispatch(cartActions.totalCart(tempCart));
+      dispatch(
+        cartActions.checkout({
+          price: tempCart,
+          name: name,
+          image: images.small,
+        })
+      );
+    }
+  };
 
   return (
     <>
@@ -106,27 +174,70 @@ export default function Card(props) {
                 justifyContent: mobileL && "center",
               }}
             >
-              <section>
+              <section
+                onClick={trendPriceHandler}
+                style={{
+                  backgroundColor: selected === "trendPriceHandler" && "black",
+                  color: selected === "trendPriceHandler" && "white",
+                }}
+              >
                 <h3>Price trend</h3>
                 <h4>{cardmarket.prices.trendPrice} €</h4>
               </section>
 
-              <section>
+              <section
+                onClick={oneDayVenueHandler}
+                style={{
+                  backgroundColor: selected === "oneDayVenueHandler" && "black",
+                  color: selected === "oneDayVenueHandler" && "white",
+                }}
+              >
                 <h3>1 day venue</h3>
                 <h4>{cardmarket.prices.avg1} €</h4>
               </section>
 
-              <section>
+              <motion.section
+                onClick={sevenDayVenueHandler}
+                style={{
+                  backgroundColor:
+                    selected === "sevenDayVenueHandler" && "black",
+                  color: selected === "sevenDayVenueHandler" && "white",
+                }}
+              >
                 <h3>7 day venue</h3>
                 <h4>{cardmarket.prices.avg7} €</h4>
-              </section>
+              </motion.section>
 
-              <section>
+              <section
+                onClick={thirtyDayVenueHandler}
+                style={{
+                  backgroundColor:
+                    selected === "thirtyDayVenueHandler" && "black",
+                  color: selected === "thirtyDayVenueHandler" && "white",
+                }}
+              >
                 <h3>30 day venue</h3>
                 <h4>{cardmarket.prices.avg30} €</h4>
               </section>
             </div>
             <div className="attack"></div>
+
+            <div className="addToCart" onClick={addToCartHandler}>
+              Add to Cart
+            </div>
+            {notSelected && <h4>Please select a price plan</h4>}
+            {isAdded && !notSelected && (
+              <section className="successful">
+                <h4>Successfully added 😆</h4>
+                <Link href="/home/explore">
+                  <a>
+                    <div className="successful-dialog">
+                      Catch more pókemons ✨
+                    </div>
+                  </a>
+                </Link>
+              </section>
+            )}
           </section>
         </main>
 

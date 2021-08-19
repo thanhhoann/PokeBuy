@@ -25,7 +25,7 @@
       flex: 1 0 auto;
       display: grid;
       place-items: center;
-      transition: all 0.4s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+      transition: all 0.2s cubic-bezier(0.785, 0.135, 0.15, 0.86);
 
       &:hover {
         transform: scale(1.1);

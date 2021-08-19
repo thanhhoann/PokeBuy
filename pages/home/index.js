@@ -5,7 +5,12 @@ import Header from "../../components/UI/Header";
 import Hero from "../../components/UI/Hero";
 import Layout from "../../components/UI/Layout";
 
+import { useSelector } from "react-redux";
+
 export default function Home() {
+  const counter = useSelector((state) => state.counter);
+  console.log(counter)
+
   return (
     <>
       <Layout title="Home">

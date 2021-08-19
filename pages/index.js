@@ -5,6 +5,8 @@ import TextLoop from "react-text-loop";
 
 import { useEffect } from "react";
 import { useRouter } from "next/dist/client/router";
+import { useSelector } from "react-redux";
+import counter from "../store/counter";
 
 export default function Home() {
   const router = useRouter();

@@ -6,10 +6,14 @@ import pokecoinSVG from "../../public/pokecoin.svg";
 import { useMedia } from "use-media";
 import { MenuButton } from "./MenuButton";
 import Backdrop from "../UI/Backdrop";
+import { useSelector } from "react-redux";
+import Cart from "../Shop/Cart";
 
 export default function Header() {
   const [isLoading, setIsLoading] = useState(false);
   const [showMenu, setShowMenu] = useState(false);
+
+  const cart = useSelector((state) => state.cart.cart);
 
   const isSmall = useMedia({ maxWidth: "768px" });
   const mobileM = useMedia({ maxWidth: "400px" });
@@ -95,7 +99,7 @@ export default function Header() {
               <Link href="/home/cart">
                 <a>
                   <section onClick={backDropHandler}>
-                    <p>Cart</p>
+                    <p>Cart ({cart} €)</p>
                   </section>
                 </a>
               </Link>
@@ -103,6 +107,7 @@ export default function Header() {
           )}
         </main>
 
+        {/* Mobile size */}
         {showMenu && (
           <div className="modal">
             <Link href="/home/explore">
@@ -124,7 +129,7 @@ export default function Header() {
             <Link href="/home/cart">
               <a>
                 <section onClick={backDropHandler}>
-                  <p>Cart</p>
+                  <p>Cart ({cart} €)</p>
                 </section>
               </a>
             </Link>
