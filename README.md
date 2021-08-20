@@ -13,3 +13,4 @@
 - style subscribe button
 - use GraphQL to get data
 - testing auth edge cases
+- add profile page
