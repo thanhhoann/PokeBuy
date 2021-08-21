@@ -19,6 +19,7 @@ export default function Explore(props) {
     <>
       <Layout title="Explore">
         <Header />
+        <Hero cards={props.hero} />
 
         <div className="featured-container">
           <div className="title">

@@ -11,6 +11,7 @@ export default function Home(props) {
     <>
       <Layout title="Home">
         <Header />
+        <Hero cards={props.hero} />
         <Featured cards={props.featured} />
         <Footer />
       </Layout>
