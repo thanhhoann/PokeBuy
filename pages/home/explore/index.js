@@ -15,10 +15,7 @@ export default function Explore(props) {
   const mobileS = useMedia({ maxWidth: "320px" });
   const [isLoading, setIsLoading] = useState(false);
 
-  console.log(props.all);
-
   const result = props.all.map((e) => e.images);
-  console.log(result);
 
   return (
     <>
