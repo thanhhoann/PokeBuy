@@ -20,9 +20,9 @@
     margin: 0 10px 0 10px;
     line-height: 10px;
   }
-  *:hover {
-    font-weight: 200;
-    letter-spacing: 1px;
+
+  h3:hover {
+    text-decoration: underline;
   }
 }
 
@@ -50,14 +50,17 @@
   }
 
   .header-right {
-    cursor: pointer;
     font-size: 1.5rem;
     display: flex;
+    transition: all 1 cubic-bezier(0.77, 0, 0.175, 1);
+
     *:nth-child(2n) {
       margin: 0 60px 0 60px;
     }
-    *:hover {
-      font-weight: 700;
+
+    p:hover {
+      cursor: pointer;
+      text-decoration: underline;
     }
   }
 }

@@ -247,10 +247,23 @@ export default function Card(props) {
   );
 }
 
-export async function getServerSideProps({ query }) {
+export async function getStaticPaths() {
+  const res = await fetch(
+    "https://pokebuy-ecom-default-rtdb.asia-southeast1.firebasedatabase.app/all.json"
+  );
+  const data = await res.json();
+
+  const paths = data.map((e) => ({
+    params: { id: e.id },
+  }));
+
+  return { paths, fallback: false };
+}
+
+export async function getStaticProps({ params }) {
   try {
     const data = await axios
-      .get(`https://api.pokemontcg.io/v2/cards/${query.id}`, {
+      .get(`https://api.pokemontcg.io/v2/cards/${params.id}`, {
         headers: {
           "X-API-Key": "b53e5d64-502e-4837-948b-8d092e16fa09",
         },

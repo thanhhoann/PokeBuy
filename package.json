@@ -9,12 +9,15 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emotion/styled": "^11.3.0",
+    "@hookform/error-message": "^2.0.0",
     "@material-ui/core": "^4.12.3",
     "@material-ui/lab": "^4.0.0-alpha.60",
     "@reduxjs/toolkit": "^1.6.1",
     "axios": "^0.21.1",
     "firebase": "^8.9.1",
     "firebase-admin": "^9.11.0",
+    "formik": "^2.2.9",
     "framer-motion": "^4.1.17",
     "next": "^11.1.1-canary.7",
     "next-auth": "^3.28.0",
@@ -26,9 +29,12 @@
     "react-animated-cursor": "^2.2.0",
     "react-content-loader": "^6.0.3",
     "react-dom": "17.0.2",
+    "react-firebase-hooks": "^3.0.4",
     "react-firebaseui": "^5.0.2",
     "react-gsap": "^3.2.1",
+    "react-hook-form": "^7.12.2",
     "react-intersection-observer": "^8.32.0",
+    "react-loader-spinner": "^4.0.0",
     "react-loading-overlay": "^1.0.1",
     "react-query": "^3.19.6",
     "react-redux": "^7.2.4",
@@ -37,7 +43,8 @@
     "redux": "^4.1.1",
     "redux-toolkit": "^1.1.2",
     "sass": "^1.37.5",
-    "use-media": "^1.4.0"
+    "use-media": "^1.4.0",
+    "yup": "^0.32.9"
   },
   "devDependencies": {
     "eslint": "7.32.0",

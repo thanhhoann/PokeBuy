@@ -14,33 +14,69 @@
   }
 
   .form {
-    width: 38vw;
+    margin-top: 100px;
+    width: 100vw;
     height: 78vh;
-    display: grid;
-    place-items: center;
 
-    .facebook {
-      width: 80%;
-      height: 20%;
-      background-color: blue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    p {
+      font-size: 1.2rem;
+      letter-spacing: 2px;
     }
-    .google {
-      width: 80%;
-      height: 20%;
-      background-color: red;
+
+    form {
+      width: 70%;
+      display: flex;
+      flex-direction: column;
+
+      input {
+        border-radius: 3px;
+        cursor: pointer;
+        font-family: "Josefin Sans", sans-serif;
+        font-size: 1.2rem;
+        width: 100%;
+        margin: 10px 0;
+        border: 2px solid black;
+        padding: 20px;
+      }
+
+      .btn {
+        margin-top: 10px;
+        border: 1px solid #000;
+        border-radius: 3px;
+        cursor: pointer;
+        padding: 18px;
+        font-size: 1.3rem;
+        font-family: "Josefin Sans", sans-serif;
+        background-color: black;
+        color: white;
+      }
+
+      .extend {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+        p {
+          cursor: pointer;
+          font-size: 1.1rem;
+          letter-spacing: 0px;
+          &:hover {
+            font-weight: 800;
+          }
+        }
+      }
     }
   }
 
   .header-sub {
-    display: none;
-
     *:nth-child(2n) {
       margin: 0 10px 0 10px;
       line-height: 10px;
-    }
-    *:hover {
-      font-weight: 200;
-      letter-spacing: 1px;
     }
   }
 

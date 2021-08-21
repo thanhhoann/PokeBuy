@@ -15,6 +15,8 @@ export default function Explore(props) {
   const mobileS = useMedia({ maxWidth: "320px" });
   const [isLoading, setIsLoading] = useState(false);
 
+  console.log(props);
+
   return (
     <>
       <Layout title="Explore">

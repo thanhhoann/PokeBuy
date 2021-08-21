@@ -13,6 +13,7 @@ import { motion } from "framer-motion";
 
 import { Provider } from "react-redux";
 import store from "../store/store";
+import { AuthContextProvider } from "../store/auth-context";
 
 function MyApp({ Component, pageProps, router }) {
   const easing = [0.63, 0.1, 0.69, 0.03];
@@ -34,9 +35,11 @@ function MyApp({ Component, pageProps, router }) {
           },
         }}
       >
-        <Provider store={store}>
-          <Component {...pageProps} />;
-        </Provider>
+        <AuthContextProvider>
+          <Provider store={store}>
+            <Component {...pageProps} />;
+          </Provider>
+        </AuthContextProvider>
       </motion.div>
     </>
   );

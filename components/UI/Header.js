@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import pokecoinSVG from "../../public/pokecoin.svg";
@@ -7,13 +7,15 @@ import { useMedia } from "use-media";
 import { MenuButton } from "./MenuButton";
 import Backdrop from "../UI/Backdrop";
 import { useSelector } from "react-redux";
-import Cart from "../Shop/Cart";
+import AuthContext from "../../store/auth-context";
 
 export default function Header() {
   const [isLoading, setIsLoading] = useState(false);
   const [showMenu, setShowMenu] = useState(false);
 
   const cart = useSelector((state) => state.cart.cart);
+  const authContext = useContext(AuthContext);
+  const isLoggedIn = authContext.isLoggedIn;
 
   const isSmall = useMedia({ maxWidth: "768px" });
   const mobileM = useMedia({ maxWidth: "400px" });
@@ -29,6 +31,10 @@ export default function Header() {
     setTimeout(() => setIsLoading(false), 2000);
   };
 
+  const logoutHandler = () => {
+    authContext.logout();
+  };
+
   return (
     <>
       <div className="header-container">
@@ -37,24 +43,38 @@ export default function Header() {
           style={{ width: mobileM ? (mobileS ? "100vw" : "107vw") : "" }}
         >
           <section>
-            <Link href="/account/login">
-              <a>
-                <h3>LOG IN</h3>
-              </a>
-            </Link>
+            {authContext.name ? (
+              <Link href="/account/profile">
+                <a>
+                  <h3>MY ACCOUNT</h3>
+                </a>
+              </Link>
+            ) : (
+              <Link href="/account/login">
+                <a>
+                  <h3>LOG IN</h3>
+                </a>
+              </Link>
+            )}
           </section>
 
           <section>
             <h3>.</h3>
           </section>
 
-          <Link href="/account/register">
-            <a>
-              <section>
-                <h3>CREATE ACCOUNT</h3>
-              </section>
-            </a>
-          </Link>
+          {!authContext.name ? (
+            <Link href="/account/register">
+              <a>
+                <section>
+                  <h3>CREATE ACCOUNT</h3>
+                </section>
+              </a>
+            </Link>
+          ) : (
+            <section onClick={logoutHandler}>
+              <h3 style={{ cursor: "pointer" }}>LOG OUT</h3>
+            </section>
+          )}
         </main>
 
         {isLoading && <Backdrop />}
