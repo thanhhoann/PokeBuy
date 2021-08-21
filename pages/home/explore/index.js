@@ -15,6 +15,11 @@ export default function Explore(props) {
   const mobileS = useMedia({ maxWidth: "320px" });
   const [isLoading, setIsLoading] = useState(false);
 
+  console.log(props.all);
+
+  const result = props.all.map((e) => e.images);
+  console.log(result);
+
   return (
     <>
       <Layout title="Explore">
@@ -70,7 +75,7 @@ export async function getStaticProps(context) {
     .get(
       "https://pokebuy-ecom-default-rtdb.asia-southeast1.firebasedatabase.app/all.json"
     )
-    .then((res) => res.data);
+    .then((res) => res.data.slice(0, 150));
 
   const hero = await axios
     .get(
