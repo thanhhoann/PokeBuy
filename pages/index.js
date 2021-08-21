@@ -5,13 +5,10 @@ import TextLoop from "react-text-loop";
 
 import { useEffect } from "react";
 import { useRouter } from "next/dist/client/router";
-import { useSelector } from "react-redux";
-import counter from "../store/counter";
 
 export default function Home() {
   const router = useRouter();
 
-  console.log("Logging in...");
   useEffect(() => {
     setTimeout(() => {
       router.push("/home");
@@ -54,7 +51,7 @@ export default function Home() {
           </section>
 
           <TextLoop
-            interval={2000}
+            interval={2500}
             springConfig={{ stiffness: 180, damping: 8 }}
           >
             <h1>mons. Buy.</h1>

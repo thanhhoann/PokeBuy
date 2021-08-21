@@ -19,7 +19,7 @@ export default function Explore(props) {
     <>
       <Layout title="Explore">
         <Header />
-        <Hero />
+        <Hero cards={props.hero}/>
 
         <div className="featured-container">
           <div className="title">
@@ -72,9 +72,16 @@ export async function getStaticProps(context) {
     )
     .then((res) => res.data);
 
+  const hero = await axios
+    .get(
+      "https://pokebuy-ecom-default-rtdb.asia-southeast1.firebasedatabase.app/hero.json"
+    )
+    .then((res) => res.data);
+
   return {
     props: {
       all,
+      hero,
     },
   };
 }

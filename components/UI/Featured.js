@@ -1,11 +1,10 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-import featuredCards from "../../pokemonsDB/featured.json";
 import Backdrop from "../../components/UI/Backdrop";
 
-export default function Featured() {
+export default function Featured(props) {
   const [isLoading, setIsLoading] = useState(false);
 
   const backDropHandler = () => {
@@ -23,7 +22,7 @@ export default function Featured() {
         {isLoading && <Backdrop />}
 
         <main className="cards">
-          {featuredCards.data.slice(0, 12).map((e) => (
+          {props.cards.map((e) => (
             <Link key={e.id} href={`/home/explore/${e.id}`}>
               <div className="card" onClick={backDropHandler}>
                 <section className="img-container">
