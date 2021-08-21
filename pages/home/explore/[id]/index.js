@@ -253,7 +253,7 @@ export async function getStaticPaths() {
   );
   const data = await res.json();
 
-  const paths = data.map((e) => ({
+  const paths = data.slice(0, 150).map((e) => ({
     params: { id: e.id },
   }));
 
