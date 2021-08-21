@@ -1,7 +1,7 @@
 ## Live demo
 🚀 https://pokebuy.vercel.app/
 ## To do list
-- Improve first large contentful paint
+- choose hero section images again
 - Add more details to [id] page
 - Reduce font size
 - Add dark mode
