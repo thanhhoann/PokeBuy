@@ -1,7 +1,6 @@
 ## Live demo
 🚀 https://pokebuy.vercel.app/
 ## To do list
-- choose hero section images again
 - Add more details to [id] page
 - Reduce font size
 - Add dark mode
@@ -10,7 +9,7 @@
 - add fallback
 - add already purchased this product on id page
 - if mobile then rotate this loading spinner, not rotateY
-- style subscribe button
+- style the subscribe button
 - use GraphQL to get data
 - testing auth edge cases
 - add profile page
