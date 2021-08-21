@@ -28,7 +28,7 @@ export default function Featured() {
               <div className="card" onClick={backDropHandler}>
                 <section className="img-container">
                   <Image
-                    src={e.images.large}
+                    src={e.images.small}
                     layout="fill"
                     objectFit="fit"
                     priority="true"
