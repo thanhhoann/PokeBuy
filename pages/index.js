@@ -1,68 +1,41 @@
-import Head from "next/head";
+import React from "react";
+import axios from "axios";
+import Featured from "../components/UI/Featured";
+import Footer from "../components/UI/Footer";
+import Header from "../components/UI/Header";
+import Hero from "../components/UI/Hero";
+import Layout from "../components/UI/Layout";
 
-import { motion } from "framer-motion";
-import TextLoop from "react-text-loop";
-
-import { useEffect } from "react";
-import { useRouter } from "next/dist/client/router";
-
-export default function Home() {
-  const router = useRouter();
-
-  useEffect(() => {
-    setTimeout(() => {
-      router.push("/home");
-    }, 3000);
-  }, []);
-
-  const easing = [0.63, 0.1, 0.69, 0.03];
-
-  const text = {
-    animate: {
-      clipPath: [
-        "circle(0% at 50% 50%)",
-        "circle(10% at 50% 50%)",
-        "circle(100% at 50% 50%)",
-      ],
-      transition: { duration: 3, ease: easing },
-    },
-  };
-
+export default function Home(props) {
   return (
     <>
-      <motion.div className="loading-screen">
-        <Head>
-          <title>Home | PókeBuy.</title>
-          <meta
-            name="description"
-            content="Get your favorite pókemon cards with ease."
-          />
-          <meta
-            name="google-site-verification"
-            content="Ot02JW5JSGZiiZo8tR2fMKhHxdInuawmKB1E4QG6afo"
-          />
-          <link rel="icon" href="./pokecoin.svg" />
-        </Head>
-        <motion.section
-          className="title-container"
-          variants={text}
-          initial="initial"
-          animate="animate"
-          exit="exit"
-        >
-          <section>
-            <h1>Póke</h1>
-          </section>
-
-          <TextLoop
-            interval={2500}
-            springConfig={{ stiffness: 180, damping: 8 }}
-          >
-            <h1>mons. Buy.</h1>
-            <h1>Buy.</h1>
-          </TextLoop>
-        </motion.section>
-      </motion.div>
+      <Layout title="Home">
+        <Header />
+        <Hero cards={props.hero} />
+        <Featured cards={props.featured} />
+        <Footer />
+      </Layout>
     </>
   );
+}
+
+export async function getStaticProps(context) {
+  const featured = await axios
+    .get(
+      "https://pokebuy-ecom-default-rtdb.asia-southeast1.firebasedatabase.app/featured.json"
+    )
+    .then((res) => res.data);
+
+  const hero = await axios
+    .get(
+      "https://pokebuy-ecom-default-rtdb.asia-southeast1.firebasedatabase.app/hero.json"
+    )
+    .then((res) => res.data);
+
+  return {
+    props: {
+      featured,
+      hero,
+    },
+  };
 }

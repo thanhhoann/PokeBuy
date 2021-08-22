@@ -2,9 +2,9 @@ import React, { useEffect } from "react";
 import axios from "axios";
 import Image from "next/image";
 import Link from "next/link";
-import Layout from "../../../../components/UI/Layout";
-import Header from "../../../../components/UI/Header";
-import Footer from "../../../../components/UI/Footer";
+import Layout from "../../../components/UI/Layout";
+import Header from "../../../components/UI/Header";
+import Footer from "../../../components/UI/Footer";
 
 import { motion } from "framer-motion";
 import Tilt from "react-tilt";
@@ -13,7 +13,7 @@ import { useMedia } from "use-media";
 import { useState } from "react";
 
 import { useDispatch, useSelector } from "react-redux";
-import { cartActions } from "../../../../store/cart";
+import { cartActions } from "../../../store/cart";
 
 export default function Card(props) {
   const { name, cardmarket, images, subtypes, supertype, types } = props.data;

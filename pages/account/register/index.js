@@ -45,7 +45,7 @@ export default function Login() {
         if (res.ok) {
           setIsLoading(false);
           authContext.login(data.idToken, data.displayName);
-          router.replace("/home");
+          router.replace("/");
         } else {
           setIsLoading(false);
           setError(data.error.message);

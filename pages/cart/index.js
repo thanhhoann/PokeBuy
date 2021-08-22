@@ -1,7 +1,7 @@
 import React from "react";
-import Layout from "../../../components/UI/Layout";
-import Header from "../../../components/UI/Header";
-import Footer from "../../../components/UI/Footer";
+import Layout from "../../components/UI/Layout";
+import Header from "../../components/UI/Header";
+import Footer from "../../components/UI/Footer";
 import Image from "next/image";
 import { useSelector } from "react-redux";
 

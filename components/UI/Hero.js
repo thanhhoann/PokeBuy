@@ -25,7 +25,7 @@ export default function Hero(props) {
         animate={{
           opacity: 1,
           x: 0,
-          transition: { duration: 0.8 },
+          transition: { duration: 0.5 },
         }}
       >
         <motion.main
@@ -35,7 +35,7 @@ export default function Hero(props) {
           animate={{
             opacity: 1,
             y: 0,
-            transition: { duration: 1, ease: easing, delay: 1 },
+            transition: { duration: 0.7, ease: easing, delay: 0.7 },
           }}
         >
           <section>
@@ -57,7 +57,7 @@ export default function Hero(props) {
             animate={{
               opacity: 1,
               scaleX: 1,
-              transition: { duration: 0.5, delay: 1 },
+              transition: { duration: 0.5, delay: 0.5 },
             }}
           >
             <Tilt
@@ -70,7 +70,7 @@ export default function Hero(props) {
                 animate={{
                   opacity: 1,
                   scale: 1,
-                  transition: { duration: 1, delay: 1.5 },
+                  transition: { duration: 0.5, delay: 1 },
                 }}
               >
                 <Image

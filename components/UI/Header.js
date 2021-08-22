@@ -80,7 +80,7 @@ export default function Header() {
         {isLoading && <Backdrop />}
 
         <main className="header-main">
-          <Link href="/home">
+          <Link href="/">
             <a>
               <div className="header-left" onClick={backDropHandler}>
                 {!mobileM && (
@@ -100,7 +100,7 @@ export default function Header() {
             <MenuButton isClicked={isClickedHandler} />
           ) : (
             <div className="header-right">
-              <Link href="/home/explore">
+              <Link href="/explore">
                 <a>
                   <section onClick={backDropHandler}>
                     <p>Explore</p>
@@ -108,7 +108,7 @@ export default function Header() {
                 </a>
               </Link>
 
-              <Link href="/home/contact">
+              <Link href="/contact">
                 <a>
                   <section onClick={backDropHandler}>
                     <p>Contact</p>
@@ -116,7 +116,7 @@ export default function Header() {
                 </a>
               </Link>
 
-              <Link href="/home/cart">
+              <Link href="/cart">
                 <a>
                   <section onClick={backDropHandler}>
                     <p>Cart ({cart} €)</p>
@@ -130,7 +130,7 @@ export default function Header() {
         {/* Mobile size */}
         {showMenu && (
           <div className="modal">
-            <Link href="/home/explore">
+            <Link href="/explore">
               <a>
                 <section onClick={backDropHandler}>
                   <p>Explore</p>
@@ -138,7 +138,7 @@ export default function Header() {
               </a>
             </Link>
 
-            <Link href="/home/contact">
+            <Link href="/contact">
               <a>
                 <section onClick={backDropHandler}>
                   <p>Contact</p>
@@ -146,7 +146,7 @@ export default function Header() {
               </a>
             </Link>
 
-            <Link href="/home/cart">
+            <Link href="/cart">
               <a>
                 <section onClick={backDropHandler}>
                   <p>Cart ({cart} €)</p>

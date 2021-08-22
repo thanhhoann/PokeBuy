@@ -40,10 +40,12 @@ export default function Login() {
       ).then(async (res) => {
         const data = await res.json();
         if (res.ok) {
-          authContext.login(data.idToken, data.displayName);
-          router.replace("/home");
+          const expTime = new Date(
+            new Date().getTime() + Number(data.expiresIn * 1000)
+          );
+          authContext.login(data.idToken, data.displayName, expTime);
+          router.replace("/");
         } else {
-          console.log(data.error.message);
           let errorMessage = data.error.message
             .replace(/_/gi, " ")
             .toLowerCase();
@@ -53,13 +55,10 @@ export default function Login() {
             }, 2000);
             setError(errorMessage);
           });
-          console.log(errorMessage);
         }
       });
     }
   };
-
-  console.log(error);
 
   return (
     <>

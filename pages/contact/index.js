@@ -1,18 +1,15 @@
-import React from "react";
 import axios from "axios";
-import Featured from "../../components/UI/Featured";
-import Footer from "../../components/UI/Footer";
+import Layout from "../../components/UI/Layout";
 import Header from "../../components/UI/Header";
 import Hero from "../../components/UI/Hero";
-import Layout from "../../components/UI/Layout";
+import Footer from "../../components/UI/Footer";
 
-export default function Home(props) {
+export default function Contact(props) {
   return (
     <>
-      <Layout title="Home">
+      <Layout title="Contact">
         <Header />
         <Hero cards={props.hero} />
-        <Featured cards={props.featured} />
         <Footer />
       </Layout>
     </>
@@ -20,12 +17,6 @@ export default function Home(props) {
 }
 
 export async function getStaticProps(context) {
-  const featured = await axios
-    .get(
-      "https://pokebuy-ecom-default-rtdb.asia-southeast1.firebasedatabase.app/featured.json"
-    )
-    .then((res) => res.data);
-
   const hero = await axios
     .get(
       "https://pokebuy-ecom-default-rtdb.asia-southeast1.firebasedatabase.app/hero.json"
@@ -34,7 +25,6 @@ export async function getStaticProps(context) {
 
   return {
     props: {
-      featured,
       hero,
     },
   };

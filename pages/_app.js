@@ -16,25 +16,9 @@ import store from "../store/store";
 import { AuthContextProvider } from "../store/auth-context";
 
 function MyApp({ Component, pageProps, router }) {
-  const easing = [0.63, 0.1, 0.69, 0.03];
-
   return (
     <>
-      <motion.div
-        key={router.route}
-        initial="pageInitial"
-        animate="pageAnimate"
-        exit="pageExit"
-        variants={{
-          pageAnimate: {
-            clipPath: [" inset(0 100% 0 0)", " inset(0 0% 0 0)"],
-            transition: {
-              duration: 0.5,
-              ease: easing,
-            },
-          },
-        }}
-      >
+      <motion.div>
         <AuthContextProvider>
           <Provider store={store}>
             <Component {...pageProps} />;
