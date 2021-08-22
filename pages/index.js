@@ -6,18 +6,7 @@ import Header from "../components/UI/Header";
 import Hero from "../components/UI/Hero";
 import Layout from "../components/UI/Layout";
 
-export default function Home(props) {
-  return (
-    <>
-      <Layout title="Home">
-        <Header />
-        <Hero cards={props.hero} />
-        <Featured cards={props.featured} />
-        <Footer />
-      </Layout>
-    </>
-  );
-}
+import { getPlaiceholder } from "plaiceholder";
 
 export async function getStaticProps(context) {
   const featured = await axios
@@ -26,16 +15,39 @@ export async function getStaticProps(context) {
     )
     .then((res) => res.data);
 
-  const hero = await axios
+  const heroImagePaths = await axios
     .get(
       "https://pokebuy-ecom-default-rtdb.asia-southeast1.firebasedatabase.app/hero.json"
     )
     .then((res) => res.data);
 
+  const heroImages = await Promise.all(
+    heroImagePaths.map(async (e) => {
+      const { base64, img } = await getPlaiceholder(e);
+      return {
+        ...img,
+        blurDataURL: base64,
+      };
+    })
+  ).then((e) => e);
+
   return {
     props: {
       featured,
-      hero,
+      heroImages,
     },
   };
+}
+
+export default function Home(props) {
+  return (
+    <>
+      <Layout title="Home">
+        <Header />
+        <Hero cards={props.heroImages} />
+        <Featured cards={props.featured} />
+        <Footer />
+      </Layout>
+    </>
+  );
 }

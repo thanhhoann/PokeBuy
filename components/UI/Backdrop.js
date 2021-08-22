@@ -21,8 +21,8 @@ export default function Spinner() {
       <Backdrop className={classes.backdrop} open="true">
         <motion.div
           animate={{
-            rotateY: 360,
-            transition: { duration: 2, repeat: Infinity },
+            rotate: 360,
+            transition: { duration: 1.5, repeat: Infinity },
           }}
         >
           <Image src={pokecoin} width={150} height={150} />
