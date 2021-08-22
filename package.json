@@ -1,7 +1,8 @@
 {
-  "name": "ecommerce",
+  "name": "pokebuy-ecom",
   "version": "0.1.0",
-  "private": true,
+  "private": "true",
+  "license": "MIT License",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
