@@ -11,7 +11,6 @@ export default function Hero(props) {
   const mobileS = useMedia({ maxWidth: "320px" });
 
   const easing = [0.35, 0.82, 0.76, 0.25];
-  
 
   // shuffle things up
   let arrImg = props.cards;
@@ -19,15 +18,7 @@ export default function Hero(props) {
 
   return (
     <>
-      <motion.div
-        className="hero-container"
-        initial={{ opacity: 0.1, x: -1000 }}
-        animate={{
-          opacity: 1,
-          x: 0,
-          transition: { duration: 0.5 },
-        }}
-      >
+      <motion.div className="hero-container">
         <motion.main
           className="left"
           style={{ fontSize: mobileM && (mobileS ? ".8rem" : "1rem") }}
