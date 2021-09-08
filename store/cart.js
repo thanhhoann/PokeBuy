@@ -18,7 +18,6 @@ const cartSlice = createSlice({
     },
     checkout(state, action) {
       const e = action.payload;
-      console.log(e);
       state.newItem.push({
         name: e.name,
         image: e.image,

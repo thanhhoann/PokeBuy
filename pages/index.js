@@ -8,7 +8,7 @@ import Layout from "../components/UI/Layout";
 
 import { getPlaiceholder } from "plaiceholder";
 
-export async function getStaticProps(context) {
+export async function getStaticProps() {
   const featured = await axios
     .get(
       "https://pokebuy-ecom-default-rtdb.asia-southeast1.firebasedatabase.app/featured.json"

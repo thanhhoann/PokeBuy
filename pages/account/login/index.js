@@ -114,7 +114,7 @@ export default function Login() {
               <section className="extend">
                 {!forgotPassword ? (
                   <>
-                    <Link href="/home/explore">
+                    <Link href="/explore">
                       <a>
                         <p>Wanna explore more ? 👀</p>
                       </a>

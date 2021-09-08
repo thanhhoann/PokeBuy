@@ -6,6 +6,7 @@ import { useMedia } from "use-media";
 import useSWR from "swr";
 import axios from "axios";
 import { getPlaiceholder } from "plaiceholder";
+import Loader from "react-loader-spinner";
 
 import Header from "../../components/UI/Header";
 import Hero from "../../components/UI/Hero";
@@ -89,7 +90,7 @@ export default function Explore(props) {
           {isLoading && <Backdrop />}
 
           <main className="cards">
-            {currentPageList &&
+            {currentPageList ? (
               currentPageList.data.map((e, i) => {
                 return (
                   <Link key={i} href={`/explore/${e.id}`}>
@@ -123,7 +124,17 @@ export default function Explore(props) {
                     </div>
                   </Link>
                 );
-              })}
+              })
+            ) : (
+              <Loader
+                style={{ margin: "10px" }}
+                type="Puff"
+                color="black"
+                height={100}
+                width={100}
+                timeout={5000}
+              />
+            )}
           </main>
 
           <section>

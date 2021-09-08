@@ -12,6 +12,7 @@ export default function Featured(props) {
     setTimeout(() => setIsLoading(false), 2000);
   };
 
+
   return (
     <>
       <div className="featured-container">
@@ -23,7 +24,7 @@ export default function Featured(props) {
 
         <main className="cards">
           {props.cards.map((e) => (
-            <Link key={e.id} href={`/home/explore/${e.id}`}>
+            <Link key={e.id} href={`/explore/${e.id}`}>
               <div className="card" onClick={backDropHandler}>
                 <section className="img-container">
                   <Image

@@ -18,6 +18,8 @@ import { cartActions } from "../../../store/cart";
 export default function Card(props) {
   const { name, cardmarket, images, subtypes, supertype, types } = props.data;
 
+  console.log(name);
+
   const [tempCart, setTempCart] = useState(0);
   const [selected, setSelected] = useState("");
   const [notSelected, setNotSelected] = useState(false);
@@ -229,7 +231,7 @@ export default function Card(props) {
             {isAdded && !notSelected && (
               <section className="successful">
                 <h4>Successfully added 😆</h4>
-                <Link href="/home/explore">
+                <Link href="/explore">
                   <a>
                     <div className="successful-dialog">
                       Catch more pókemons ✨
@@ -247,20 +249,20 @@ export default function Card(props) {
   );
 }
 
-export async function getStaticPaths() {
-  const res = await fetch(
-    "https://pokebuy-ecom-default-rtdb.asia-southeast1.firebasedatabase.app/all.json"
-  );
-  const data = await res.json();
+// export async function getStaticPaths() {
+// const res = await fetch(
+// "https://pokebuy-ecom-default-rtdb.asia-southeast1.firebasedatabase.app/all.json"
+// );
+// const data = await res.json();
 
-  const paths = data.slice(0, 150).map((e) => ({
-    params: { id: e.id },
-  }));
+// const paths = data.slice(0, 150).map((e) => ({
+// params: { id: e.id },
+// }));
 
-  return { paths, fallback: false };
-}
+// return { paths, fallback: false };
+// }
 
-export async function getStaticProps({ params }) {
+export async function getServerSideProps({ params }) {
   try {
     const data = await axios
       .get(`https://api.pokemontcg.io/v2/cards/${params.id}`, {

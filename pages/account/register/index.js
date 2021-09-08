@@ -131,7 +131,7 @@ export default function Login() {
                 )}
               </button>
               <section className="extend">
-                <Link href="/home/explore">
+                <Link href="/explore">
                   <a>
                     <p>Wanna explore more ? 👀</p>
                   </a>
