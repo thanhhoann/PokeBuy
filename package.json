@@ -38,7 +38,7 @@
     "react-firebase-hooks": "^3.0.4",
     "react-firebaseui": "^5.0.2",
     "react-gsap": "^3.2.1",
-    "react-hook-form": "^7.12.2",
+    "react-hook-form": "^7.25.1",
     "react-intersection-observer": "^8.32.0",
     "react-loader-spinner": "^4.0.0",
     "react-loading-overlay": "^1.0.1",
