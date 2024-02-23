@@ -22,27 +22,30 @@ export default function Featured(props) {
         {isLoading && <Backdrop />}
 
         <main className="cards">
-          {props.cards.map((e) => (
-            <Link key={e.id} href={`/explore/${e.id}`}>
-              <div className="card" onClick={backDropHandler}>
-                <section className="img-container">
-                  <Image
-                    src={e.images.small}
-                    fill
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                    priority="true"
-                    quality="100"
-                    placeholder="blur"
-                    blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mO89OhSPQAIGwMHvnhFoQAAAABJRU5ErkJggg=="
-                    alt="featured cards"
-                  />
-                </section>
-                <section> <h3>{e.name}</h3>
-                  <p> $ {e.cardmarket.prices.trendPrice} </p>
-                </section>
-              </div>
-            </Link>
-          ))}
+          {props.cards &&
+            props.cards.map((e) => (
+              <Link key={e.id} href={`/explore/${e.id}`}>
+                <div className="card" onClick={backDropHandler}>
+                  <section className="img-container">
+                    <Image
+                      src={e.images.small}
+                      fill
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                      priority="true"
+                      quality="100"
+                      placeholder="blur"
+                      blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mO89OhSPQAIGwMHvnhFoQAAAABJRU5ErkJggg=="
+                      alt="featured cards"
+                    />
+                  </section>
+                  <section>
+                    {" "}
+                    <h3>{e.name}</h3>
+                    <p> $ {e.cardmarket.prices.trendPrice} </p>
+                  </section>
+                </div>
+              </Link>
+            ))}
         </main>
       </div>
     </>

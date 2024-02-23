@@ -15,16 +15,10 @@ import Layout from "../../components/UI/Layout";
 import Backdrop from "../../components/UI/Backdrop";
 import Paginator from "../../components/UI/Pagination";
 
-import db_images from "../../pokemonsDB/images.json";
-
 export async function getStaticProps(context) {
-  // const heroImagePaths = await axios
-  //   .get(
-  //     "https://pokebuy-ecom-default-rtdb.asia-southeast1.firebasedatabase.app/hero.json"
-  //   )
-  //   .then((res) => res.data);
-
-  const heroImages = db_images;
+  const hero_cards = await axios
+    .get(process.env.FIREBASE_DB_URL + "hero_cards.json")
+    .then((res) => res.data.data);
 
   // const heroImages = await Promise.all(
   //   heroImagePaths.map(async (e) => {
@@ -38,7 +32,7 @@ export async function getStaticProps(context) {
 
   return {
     props: {
-      heroImages,
+      hero_cards,
     },
   };
 }

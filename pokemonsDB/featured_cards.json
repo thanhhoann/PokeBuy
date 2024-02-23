@@ -1,0 +1,3089 @@
+{
+  "data": [
+    {
+      "id": "xy7-8",
+      "name": "M Sceptile-EX",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "MEGA",
+        "EX"
+      ],
+      "hp": "220",
+      "types": [
+        "Grass"
+      ],
+      "evolvesFrom": "Sceptile-EX",
+      "rules": [
+        "Mega Evolution rule: When 1 of your Pokémon becomes a Mega Evolution Pokémon, your turn ends.",
+        "Pokémon-EX rule: When a Pokémon-EX has been Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "ancientTrait": {
+        "name": "θ Stop",
+        "text": "Prevent all effects of your opponent's Pokémon's Abilities done to this Pokémon."
+      },
+      "attacks": [
+        {
+          "name": "Jagged Saber",
+          "cost": [
+            "Grass",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "100",
+          "text": "You may attach up to 2 Grass Energy cards from your hand to your Benched Pokémon in any way you like. If you attached Energy to a Pokémon in this way, heal all damage from that Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless"
+      ],
+      "convertedRetreatCost": 2,
+      "set": {
+        "id": "xy7",
+        "name": "Ancient Origins",
+        "series": "XY",
+        "printedTotal": 98,
+        "total": 100,
+        "legalities": {
+          "unlimited": "Legal",
+          "expanded": "Legal"
+        },
+        "ptcgoCode": "AOR",
+        "releaseDate": "2015/08/12",
+        "updatedAt": "2020/08/14 09:35:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/xy7/symbol.png",
+          "logo": "https://images.pokemontcg.io/xy7/logo.png"
+        }
+      },
+      "number": "8",
+      "artist": "5ban Graphics",
+      "rarity": "Rare Holo EX",
+      "nationalPokedexNumbers": [
+        254
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy7/8.png",
+        "large": "https://images.pokemontcg.io/xy7/8_hires.png"
+      },
+      "tcgplayer": {
+        "url": "https://prices.pokemontcg.io/tcgplayer/xy7-8",
+        "updatedAt": "2021/08/14",
+        "prices": {
+          "holofoil": {
+            "low": 4.01,
+            "mid": 6.54,
+            "high": 130991.11,
+            "market": 7.09,
+            "directLow": 4.01
+          }
+        }
+      },
+      "cardmarket": {
+        "url": "https://prices.pokemontcg.io/cardmarket/xy7-8",
+        "updatedAt": "2021/08/14",
+        "prices": {
+          "averageSellPrice": 5.05,
+          "lowPrice": 3.5,
+          "trendPrice": 5.82,
+          "germanProLow": null,
+          "suggestedPrice": null,
+          "reverseHoloSell": null,
+          "reverseHoloLow": null,
+          "reverseHoloTrend": 6.87,
+          "lowPriceExPlus": 5.0,
+          "avg1": 5.5,
+          "avg7": 5.75,
+          "avg30": 5.78,
+          "reverseHoloAvg1": 4.5,
+          "reverseHoloAvg7": 6.09,
+          "reverseHoloAvg30": 6.92
+        }
+      }
+    },
+    {
+      "id": "sm12-4",
+      "name": "Vileplume-GX",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 2",
+        "GX"
+      ],
+      "hp": "240",
+      "types": [
+        "Grass"
+      ],
+      "evolvesFrom": "Gloom",
+      "rules": [
+        "Pokémon-GX rule: When your Pokémon-GX is Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "abilities": [
+        {
+          "name": "Fragrant Flower Garden",
+          "text": "Once during your turn (before your attack), you may heal 30 damage from each of your Pokémon.",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Massive Bloom",
+          "cost": [
+            "Grass",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "180-",
+          "text": "This attack does 10 less damage for each damage counter on this Pokémon."
+        },
+        {
+          "name": "Allergic Explosion-GX",
+          "cost": [
+            "Grass"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "50",
+          "text": "Your opponent's Active Pokémon is now Burned, Paralyzed, and Poisoned. (You can't use more than 1 GX attack in a game.)"
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless"
+      ],
+      "convertedRetreatCost": 2,
+      "set": {
+        "id": "sm12",
+        "name": "Cosmic Eclipse",
+        "series": "Sun & Moon",
+        "printedTotal": 236,
+        "total": 271,
+        "legalities": {
+          "unlimited": "Legal",
+          "standard": "Legal",
+          "expanded": "Legal"
+        },
+        "ptcgoCode": "CEC",
+        "releaseDate": "2019/11/01",
+        "updatedAt": "2020/08/14 09:35:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/sm12/symbol.png",
+          "logo": "https://images.pokemontcg.io/sm12/logo.png"
+        }
+      },
+      "number": "4",
+      "artist": "Kagemaru Himeno",
+      "rarity": "Rare Holo GX",
+      "nationalPokedexNumbers": [
+        45
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "standard": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sm12/4.png",
+        "large": "https://images.pokemontcg.io/sm12/4_hires.png"
+      },
+      "tcgplayer": {
+        "url": "https://prices.pokemontcg.io/tcgplayer/sm12-4",
+        "updatedAt": "2021/08/16",
+        "prices": {
+          "holofoil": {
+            "low": 1.75,
+            "mid": 3.4,
+            "high": 17.99,
+            "market": 3.24,
+            "directLow": 4.49
+          }
+        }
+      },
+      "cardmarket": {
+        "url": "https://prices.pokemontcg.io/cardmarket/sm12-4",
+        "updatedAt": "2021/08/16",
+        "prices": {
+          "averageSellPrice": 3.59,
+          "lowPrice": 2.0,
+          "trendPrice": 3.82,
+          "germanProLow": null,
+          "suggestedPrice": null,
+          "reverseHoloSell": null,
+          "reverseHoloLow": null,
+          "reverseHoloTrend": 4.68,
+          "lowPriceExPlus": 2.0,
+          "avg1": 5.0,
+          "avg7": 3.65,
+          "avg30": 3.47,
+          "reverseHoloAvg1": 6.99,
+          "reverseHoloAvg7": 5.6,
+          "reverseHoloAvg30": 3.84
+        }
+      }
+    },
+    {
+      "id": "xy3-5",
+      "name": "M Heracross-EX",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "MEGA",
+        "EX"
+      ],
+      "hp": "220",
+      "types": [
+        "Grass"
+      ],
+      "evolvesFrom": "Heracross-EX",
+      "rules": [
+        "Mega Evolution rule: When 1 of your Pokémon becomes a Mega Evolution Pokémon, your turn ends.",
+        "Pokémon-EX rule: When a Pokémon-EX has been Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "attacks": [
+        {
+          "name": "Big Bang Horn",
+          "cost": [
+            "Grass",
+            "Grass",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "180-",
+          "text": "This attack does 180 damage minus 10 damage for each damage counter on this Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless",
+        "Colorless"
+      ],
+      "convertedRetreatCost": 3,
+      "set": {
+        "id": "xy3",
+        "name": "Furious Fists",
+        "series": "XY",
+        "printedTotal": 111,
+        "total": 113,
+        "legalities": {
+          "unlimited": "Legal",
+          "expanded": "Legal"
+        },
+        "ptcgoCode": "FFI",
+        "releaseDate": "2014/08/13",
+        "updatedAt": "2018/03/04 10:35:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/xy3/symbol.png",
+          "logo": "https://images.pokemontcg.io/xy3/logo.png"
+        }
+      },
+      "number": "5",
+      "artist": "5ban Graphics",
+      "rarity": "Rare Holo EX",
+      "nationalPokedexNumbers": [
+        214
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy3/5.png",
+        "large": "https://images.pokemontcg.io/xy3/5_hires.png"
+      },
+      "tcgplayer": {
+        "url": "https://prices.pokemontcg.io/tcgplayer/xy3-5",
+        "updatedAt": "2021/08/14",
+        "prices": {
+          "holofoil": {
+            "low": 3.24,
+            "mid": 4.63,
+            "high": 17.91,
+            "market": 5.03,
+            "directLow": 6.1
+          }
+        }
+      },
+      "cardmarket": {
+        "url": "https://prices.pokemontcg.io/cardmarket/xy3-5",
+        "updatedAt": "2021/08/14",
+        "prices": {
+          "averageSellPrice": 5.49,
+          "lowPrice": 1.0,
+          "trendPrice": 5.97,
+          "germanProLow": null,
+          "suggestedPrice": null,
+          "reverseHoloSell": null,
+          "reverseHoloLow": null,
+          "reverseHoloTrend": 4.6,
+          "lowPriceExPlus": 3.95,
+          "avg1": 4.0,
+          "avg7": 5.85,
+          "avg30": 5.37,
+          "reverseHoloAvg1": 4.45,
+          "reverseHoloAvg7": 4.4,
+          "reverseHoloAvg30": 4.91
+        }
+      }
+    },
+    {
+      "id": "xy4-24",
+      "name": "M Manectric-EX",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "MEGA",
+        "EX"
+      ],
+      "hp": "210",
+      "types": [
+        "Lightning"
+      ],
+      "evolvesFrom": "Manectric-EX",
+      "rules": [
+        "Mega Evolution rule: When 1 of your Pokémon becomes a Mega Evolution Pokémon, your turn ends.",
+        "Pokémon-EX rule: When a Pokémon-EX has been Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "attacks": [
+        {
+          "name": "Turbo Bolt",
+          "cost": [
+            "Lightning",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "110",
+          "text": "Attach 2 basic Energy cards from your discard pile to 1 of your Benched Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Metal",
+          "value": "-20"
+        }
+      ],
+      "set": {
+        "id": "xy4",
+        "name": "Phantom Forces",
+        "series": "XY",
+        "printedTotal": 119,
+        "total": 119,
+        "legalities": {
+          "unlimited": "Legal",
+          "expanded": "Legal"
+        },
+        "ptcgoCode": "PHF",
+        "releaseDate": "2014/11/05",
+        "updatedAt": "2020/08/14 09:35:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/xy4/symbol.png",
+          "logo": "https://images.pokemontcg.io/xy4/logo.png"
+        }
+      },
+      "number": "24",
+      "artist": "5ban Graphics",
+      "rarity": "Rare Holo EX",
+      "nationalPokedexNumbers": [
+        310
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy4/24.png",
+        "large": "https://images.pokemontcg.io/xy4/24_hires.png"
+      },
+      "tcgplayer": {
+        "url": "https://prices.pokemontcg.io/tcgplayer/xy4-24",
+        "updatedAt": "2021/08/14",
+        "prices": {
+          "holofoil": {
+            "low": 3.2,
+            "mid": 4.5,
+            "high": 13.5,
+            "market": 4.2,
+            "directLow": 11.69
+          }
+        }
+      },
+      "cardmarket": {
+        "url": "https://prices.pokemontcg.io/cardmarket/xy4-24",
+        "updatedAt": "2021/08/14",
+        "prices": {
+          "averageSellPrice": 3.13,
+          "lowPrice": 1.01,
+          "trendPrice": 4.33,
+          "germanProLow": null,
+          "suggestedPrice": null,
+          "reverseHoloSell": null,
+          "reverseHoloLow": null,
+          "reverseHoloTrend": 3.38,
+          "lowPriceExPlus": 2.5,
+          "avg1": 2.75,
+          "avg7": 3.55,
+          "avg30": 3.57,
+          "reverseHoloAvg1": 1.99,
+          "reverseHoloAvg7": 3.03,
+          "reverseHoloAvg30": 3.98
+        }
+      }
+    },
+    {
+      "id": "xy8-22",
+      "name": "M Houndoom-EX",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "MEGA",
+        "EX"
+      ],
+      "hp": "210",
+      "types": [
+        "Fire"
+      ],
+      "evolvesFrom": "Houndoom-EX",
+      "rules": [
+        "Mega Evolution rule: When 1 of your Pokémon becomes a Mega Evolution Pokémon, your turn ends.",
+        "Pokémon-EX rule: When a Pokémon-EX has been Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "attacks": [
+        {
+          "name": "Inferno Fang",
+          "cost": [
+            "Fire",
+            "Fire"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "80+",
+          "text": "You may discard all Fire Energy attached to this Pokémon. If you do, this attack does 80 more damage."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Water",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
+      ],
+      "convertedRetreatCost": 1,
+      "set": {
+        "id": "xy8",
+        "name": "BREAKthrough",
+        "series": "XY",
+        "printedTotal": 162,
+        "total": 164,
+        "legalities": {
+          "unlimited": "Legal",
+          "expanded": "Legal"
+        },
+        "ptcgoCode": "BKT",
+        "releaseDate": "2015/11/04",
+        "updatedAt": "2019/04/10 19:59:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/xy8/symbol.png",
+          "logo": "https://images.pokemontcg.io/xy8/logo.png"
+        }
+      },
+      "number": "22",
+      "artist": "5ban Graphics",
+      "rarity": "Rare Holo EX",
+      "nationalPokedexNumbers": [
+        229
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy8/22.png",
+        "large": "https://images.pokemontcg.io/xy8/22_hires.png"
+      },
+      "tcgplayer": {
+        "url": "https://prices.pokemontcg.io/tcgplayer/xy8-22",
+        "updatedAt": "2021/08/14",
+        "prices": {
+          "holofoil": {
+            "low": 3.93,
+            "mid": 5.95,
+            "high": 21.99,
+            "market": 5.35,
+            "directLow": 5.37
+          }
+        }
+      },
+      "cardmarket": {
+        "url": "https://prices.pokemontcg.io/cardmarket/xy8-22",
+        "updatedAt": "2021/08/14",
+        "prices": {
+          "averageSellPrice": 4.88,
+          "lowPrice": 5.0,
+          "trendPrice": 5.7,
+          "germanProLow": null,
+          "suggestedPrice": null,
+          "reverseHoloSell": null,
+          "reverseHoloLow": null,
+          "reverseHoloTrend": 5.17,
+          "lowPriceExPlus": 5.0,
+          "avg1": 4.0,
+          "avg7": 5.27,
+          "avg30": 6.7,
+          "reverseHoloAvg1": 2.5,
+          "reverseHoloAvg7": 4.26,
+          "reverseHoloAvg30": 4.93
+        }
+      }
+    },
+    {
+      "id": "xy4-24a",
+      "name": "M Manectric-EX",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "MEGA",
+        "EX"
+      ],
+      "hp": "210",
+      "types": [
+        "Lightning"
+      ],
+      "evolvesFrom": "Manectric-EX",
+      "rules": [
+        "Mega Evolution rule: When 1 of your Pokémon becomes a Mega Evolution Pokémon, your turn ends.",
+        "Pokémon-EX rule: When a Pokémon-EX has been Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "attacks": [
+        {
+          "name": "Turbo Bolt",
+          "cost": [
+            "Lightning",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "110",
+          "text": "Attach 2 basic Energy cards from your discard pile to 1 of your Benched Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Metal",
+          "value": "-20"
+        }
+      ],
+      "set": {
+        "id": "xy4",
+        "name": "Phantom Forces",
+        "series": "XY",
+        "printedTotal": 119,
+        "total": 119,
+        "legalities": {
+          "unlimited": "Legal",
+          "expanded": "Legal"
+        },
+        "ptcgoCode": "PHF",
+        "releaseDate": "2014/11/05",
+        "updatedAt": "2020/08/14 09:35:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/xy4/symbol.png",
+          "logo": "https://images.pokemontcg.io/xy4/logo.png"
+        }
+      },
+      "number": "24a",
+      "artist": "5ban Graphics",
+      "rarity": "Rare Holo EX",
+      "nationalPokedexNumbers": [
+        310
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy4/24a.png",
+        "large": "https://images.pokemontcg.io/xy4/24a_hires.png"
+      },
+      "cardmarket": {
+        "url": "https://prices.pokemontcg.io/cardmarket/xy4-24a",
+        "updatedAt": "2021/08/14",
+        "prices": {
+          "averageSellPrice": 6.07,
+          "lowPrice": 5.9,
+          "trendPrice": 5.48,
+          "germanProLow": null,
+          "suggestedPrice": null,
+          "reverseHoloSell": null,
+          "reverseHoloLow": null,
+          "reverseHoloTrend": 4.38,
+          "lowPriceExPlus": 5.9,
+          "avg1": 6.47,
+          "avg7": 5.99,
+          "avg30": 4.4,
+          "reverseHoloAvg1": 4.0,
+          "reverseHoloAvg7": 4.67,
+          "reverseHoloAvg30": 3.89
+        }
+      }
+    },
+    {
+      "id": "xy7-28",
+      "name": "M Ampharos-EX",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "MEGA",
+        "EX"
+      ],
+      "hp": "220",
+      "types": [
+        "Lightning"
+      ],
+      "evolvesFrom": "Ampharos-EX",
+      "rules": [
+        "Mega Evolution rule: When 1 of your Pokémon becomes a Mega Evolution Pokémon, your turn ends.",
+        "Pokémon-EX rule: When a Pokémon-EX has been Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "attacks": [
+        {
+          "name": "Exavolt",
+          "cost": [
+            "Lightning",
+            "Lightning",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 4,
+          "damage": "120+",
+          "text": "You may do 50 more damage and leave your opponent's Active Pokémon Paralyzed. If you do, this Pokémon does 30 damage to itself."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Metal",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless",
+        "Colorless"
+      ],
+      "convertedRetreatCost": 3,
+      "set": {
+        "id": "xy7",
+        "name": "Ancient Origins",
+        "series": "XY",
+        "printedTotal": 98,
+        "total": 100,
+        "legalities": {
+          "unlimited": "Legal",
+          "expanded": "Legal"
+        },
+        "ptcgoCode": "AOR",
+        "releaseDate": "2015/08/12",
+        "updatedAt": "2020/08/14 09:35:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/xy7/symbol.png",
+          "logo": "https://images.pokemontcg.io/xy7/logo.png"
+        }
+      },
+      "number": "28",
+      "artist": "5ban Graphics",
+      "rarity": "Rare Holo EX",
+      "nationalPokedexNumbers": [
+        181
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy7/28.png",
+        "large": "https://images.pokemontcg.io/xy7/28_hires.png"
+      },
+      "tcgplayer": {
+        "url": "https://prices.pokemontcg.io/tcgplayer/xy7-28",
+        "updatedAt": "2021/08/14",
+        "prices": {
+          "holofoil": {
+            "low": 4.01,
+            "mid": 5.47,
+            "high": 14.99,
+            "market": 5.39,
+            "directLow": 4.65
+          }
+        }
+      },
+      "cardmarket": {
+        "url": "https://prices.pokemontcg.io/cardmarket/xy7-28",
+        "updatedAt": "2021/08/14",
+        "prices": {
+          "averageSellPrice": 4.24,
+          "lowPrice": 3.25,
+          "trendPrice": 5.27,
+          "germanProLow": null,
+          "suggestedPrice": null,
+          "reverseHoloSell": null,
+          "reverseHoloLow": null,
+          "reverseHoloTrend": 5.29,
+          "lowPriceExPlus": 3.25,
+          "avg1": 4.0,
+          "avg7": 5.03,
+          "avg30": 4.96,
+          "reverseHoloAvg1": 3.5,
+          "reverseHoloAvg7": 5.02,
+          "reverseHoloAvg30": 5.59
+        }
+      }
+    },
+    {
+      "id": "xy10-26",
+      "name": "M Alakazam-EX",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "MEGA",
+        "EX"
+      ],
+      "hp": "210",
+      "types": [
+        "Psychic"
+      ],
+      "evolvesFrom": "Alakazam-EX",
+      "rules": [
+        "Mega Evolution rule: When 1 of your Pokémon becomes a Mega Evolution Pokémon, your turn ends.",
+        "Pokémon-EX rule: When a Pokémon-EX has been Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "attacks": [
+        {
+          "name": "Zen Force",
+          "cost": [
+            "Psychic",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "10+",
+          "text": "This attack does 30 more damage for each damage counter on your opponent's Active Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Psychic",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
+      ],
+      "convertedRetreatCost": 1,
+      "set": {
+        "id": "xy10",
+        "name": "Fates Collide",
+        "series": "XY",
+        "printedTotal": 124,
+        "total": 125,
+        "legalities": {
+          "unlimited": "Legal",
+          "expanded": "Legal"
+        },
+        "ptcgoCode": "FCO",
+        "releaseDate": "2016/05/02",
+        "updatedAt": "2018/09/03 11:49:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/xy10/symbol.png",
+          "logo": "https://images.pokemontcg.io/xy10/logo.png"
+        }
+      },
+      "number": "26",
+      "artist": "5ban Graphics",
+      "rarity": "Rare Holo EX",
+      "nationalPokedexNumbers": [
+        65
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy10/26.png",
+        "large": "https://images.pokemontcg.io/xy10/26_hires.png"
+      },
+      "tcgplayer": {
+        "url": "https://prices.pokemontcg.io/tcgplayer/xy10-26",
+        "updatedAt": "2021/08/14",
+        "prices": {
+          "holofoil": {
+            "low": 2.49,
+            "mid": 5.0,
+            "high": 25.99,
+            "market": 4.46,
+            "directLow": 5.22
+          }
+        }
+      },
+      "cardmarket": {
+        "url": "https://prices.pokemontcg.io/cardmarket/xy10-26",
+        "updatedAt": "2021/08/14",
+        "prices": {
+          "averageSellPrice": 5.1,
+          "lowPrice": 2.0,
+          "trendPrice": 4.69,
+          "germanProLow": null,
+          "suggestedPrice": null,
+          "reverseHoloSell": null,
+          "reverseHoloLow": null,
+          "reverseHoloTrend": 7.21,
+          "lowPriceExPlus": 4.5,
+          "avg1": 2.0,
+          "avg7": 5.12,
+          "avg30": 5.98,
+          "reverseHoloAvg1": 7.9,
+          "reverseHoloAvg7": 5.82,
+          "reverseHoloAvg30": 5.72
+        }
+      }
+    },
+    {
+      "id": "xy12-22",
+      "name": "M Blastoise-EX",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "MEGA",
+        "EX"
+      ],
+      "hp": "220",
+      "types": [
+        "Water"
+      ],
+      "evolvesFrom": "Blastoise-EX",
+      "rules": [
+        "Mega Evolution rule: When 1 of your Pokémon becomes a Mega Evolution Pokémon, your turn ends.",
+        "Pokémon-EX rule: When a Pokémon-EX has been Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "attacks": [
+        {
+          "name": "Hydro Bombard",
+          "cost": [
+            "Water",
+            "Water",
+            "Water"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "120",
+          "text": "This attack does 30 damage to 2 of your opponent's Benched Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Grass",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless",
+        "Colorless"
+      ],
+      "convertedRetreatCost": 3,
+      "set": {
+        "id": "xy12",
+        "name": "Evolutions",
+        "series": "XY",
+        "printedTotal": 108,
+        "total": 109,
+        "legalities": {
+          "unlimited": "Legal",
+          "expanded": "Legal"
+        },
+        "ptcgoCode": "EVO",
+        "releaseDate": "2016/11/02",
+        "updatedAt": "2020/09/25 10:09:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/xy12/symbol.png",
+          "logo": "https://images.pokemontcg.io/xy12/logo.png"
+        }
+      },
+      "number": "22",
+      "artist": "5ban Graphics",
+      "rarity": "Rare Holo EX",
+      "nationalPokedexNumbers": [
+        9
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy12/22.png",
+        "large": "https://images.pokemontcg.io/xy12/22_hires.png"
+      },
+      "tcgplayer": {
+        "url": "https://prices.pokemontcg.io/tcgplayer/xy12-22",
+        "updatedAt": "2021/08/14",
+        "prices": {
+          "holofoil": {
+            "low": 4.5,
+            "mid": 9.01,
+            "high": 82.0,
+            "market": 7.02,
+            "directLow": 8.99
+          }
+        }
+      },
+      "cardmarket": {
+        "url": "https://prices.pokemontcg.io/cardmarket/xy12-22",
+        "updatedAt": "2021/08/14",
+        "prices": {
+          "averageSellPrice": 10.06,
+          "lowPrice": 4.0,
+          "trendPrice": 10.22,
+          "germanProLow": null,
+          "suggestedPrice": null,
+          "reverseHoloSell": null,
+          "reverseHoloLow": null,
+          "reverseHoloTrend": 10.14,
+          "lowPriceExPlus": 7.0,
+          "avg1": 8.0,
+          "avg7": 8.99,
+          "avg30": 11.49,
+          "reverseHoloAvg1": 10.73,
+          "reverseHoloAvg7": 12.12,
+          "reverseHoloAvg30": 13.97
+        }
+      }
+    },
+    {
+      "id": "xy12-27",
+      "name": "M Slowbro-EX",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "MEGA",
+        "EX"
+      ],
+      "hp": "220",
+      "types": [
+        "Water"
+      ],
+      "evolvesFrom": "Slowbro-EX",
+      "rules": [
+        "Mega Evolution rule: When 1 of your Pokémon becomes a Mega Evolution Pokémon, your turn ends.",
+        "Pokémon-EX rule: When a Pokémon-EX has been Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "attacks": [
+        {
+          "name": "Loll Roll Spin",
+          "cost": [
+            "Water",
+            "Water",
+            "Water"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "100+",
+          "text": "This Pokémon is now Confused. During your next turn, this Pokémon's Loll Roll Spin attack does 100 more damage (before applying Weakness and Resistance)."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Grass",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless",
+        "Colorless"
+      ],
+      "convertedRetreatCost": 3,
+      "set": {
+        "id": "xy12",
+        "name": "Evolutions",
+        "series": "XY",
+        "printedTotal": 108,
+        "total": 109,
+        "legalities": {
+          "unlimited": "Legal",
+          "expanded": "Legal"
+        },
+        "ptcgoCode": "EVO",
+        "releaseDate": "2016/11/02",
+        "updatedAt": "2020/09/25 10:09:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/xy12/symbol.png",
+          "logo": "https://images.pokemontcg.io/xy12/logo.png"
+        }
+      },
+      "number": "27",
+      "artist": "5ban Graphics",
+      "rarity": "Rare Holo EX",
+      "nationalPokedexNumbers": [
+        80
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy12/27.png",
+        "large": "https://images.pokemontcg.io/xy12/27_hires.png"
+      },
+      "tcgplayer": {
+        "url": "https://prices.pokemontcg.io/tcgplayer/xy12-27",
+        "updatedAt": "2021/08/14",
+        "prices": {
+          "holofoil": {
+            "low": 1.75,
+            "mid": 3.0,
+            "high": 49.95,
+            "market": 2.72,
+            "directLow": 1.87
+          }
+        }
+      },
+      "cardmarket": {
+        "url": "https://prices.pokemontcg.io/cardmarket/xy12-27",
+        "updatedAt": "2021/08/14",
+        "prices": {
+          "averageSellPrice": 3.29,
+          "lowPrice": 0.75,
+          "trendPrice": 3.35,
+          "germanProLow": null,
+          "suggestedPrice": null,
+          "reverseHoloSell": null,
+          "reverseHoloLow": null,
+          "reverseHoloTrend": 3.67,
+          "lowPriceExPlus": 2.5,
+          "avg1": 7.9,
+          "avg7": 3.65,
+          "avg30": 3.81,
+          "reverseHoloAvg1": 2.79,
+          "reverseHoloAvg7": 4.03,
+          "reverseHoloAvg30": 4.48
+        }
+      }
+    },
+    {
+      "id": "xy9-27",
+      "name": "M Gyarados-EX",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "MEGA",
+        "EX"
+      ],
+      "hp": "240",
+      "types": [
+        "Water"
+      ],
+      "evolvesFrom": "Gyarados-EX",
+      "rules": [
+        "Mega Evolution rule: When 1 of your Pokémon becomes a Mega Evolution Pokémon, your turn ends.",
+        "Pokémon-EX rule: When a Pokémon-EX has been Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "attacks": [
+        {
+          "name": "Blast Geyser",
+          "cost": [
+            "Colorless",
+            "Colorless",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 4,
+          "damage": "120+",
+          "text": "You may do 20 more damage for each Water Energy attached to this Pokémon. If you do, discard the top 2 cards of your deck."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Lightning",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless"
+      ],
+      "convertedRetreatCost": 2,
+      "set": {
+        "id": "xy9",
+        "name": "BREAKpoint",
+        "series": "XY",
+        "printedTotal": 122,
+        "total": 123,
+        "legalities": {
+          "unlimited": "Legal",
+          "expanded": "Legal"
+        },
+        "ptcgoCode": "BKP",
+        "releaseDate": "2016/02/03",
+        "updatedAt": "2020/08/14 09:35:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/xy9/symbol.png",
+          "logo": "https://images.pokemontcg.io/xy9/logo.png"
+        }
+      },
+      "number": "27",
+      "artist": "5ban Graphics",
+      "rarity": "Rare Holo EX",
+      "nationalPokedexNumbers": [
+        130
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy9/27.png",
+        "large": "https://images.pokemontcg.io/xy9/27_hires.png"
+      },
+      "tcgplayer": {
+        "url": "https://prices.pokemontcg.io/tcgplayer/xy9-27",
+        "updatedAt": "2021/08/14",
+        "prices": {
+          "holofoil": {
+            "low": 8.07,
+            "mid": 11.0,
+            "high": 39.95,
+            "market": 13.95,
+            "directLow": 8.83
+          }
+        }
+      },
+      "cardmarket": {
+        "url": "https://prices.pokemontcg.io/cardmarket/xy9-27",
+        "updatedAt": "2021/08/14",
+        "prices": {
+          "averageSellPrice": 6.98,
+          "lowPrice": 6.0,
+          "trendPrice": 6.91,
+          "germanProLow": null,
+          "suggestedPrice": null,
+          "reverseHoloSell": null,
+          "reverseHoloLow": null,
+          "reverseHoloTrend": 5.46,
+          "lowPriceExPlus": 6.0,
+          "avg1": 7.23,
+          "avg7": 6.68,
+          "avg30": 6.68,
+          "reverseHoloAvg1": 5.0,
+          "reverseHoloAvg7": 5.77,
+          "reverseHoloAvg30": 5.49
+        }
+      }
+    },
+    {
+      "id": "xy6-35",
+      "name": "M Gallade-EX",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "MEGA",
+        "EX"
+      ],
+      "hp": "220",
+      "types": [
+        "Psychic"
+      ],
+      "evolvesFrom": "Gallade-EX",
+      "rules": [
+        "Mega Evolution rule: When 1 of your Pokémon becomes a Mega Evolution Pokémon, your turn ends.",
+        "Pokémon-EX rule: When a Pokémon-EX has been Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "attacks": [
+        {
+          "name": "Unwavering Blade",
+          "cost": [
+            "Psychic",
+            "Psychic",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "110",
+          "text": "This attack does 30 damage to each of your opponent's Benched Pokémon that has any damage counters on it. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Psychic",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless"
+      ],
+      "convertedRetreatCost": 2,
+      "set": {
+        "id": "xy6",
+        "name": "Roaring Skies",
+        "series": "XY",
+        "printedTotal": 108,
+        "total": 110,
+        "legalities": {
+          "unlimited": "Legal",
+          "expanded": "Legal"
+        },
+        "ptcgoCode": "ROS",
+        "releaseDate": "2015/05/06",
+        "updatedAt": "2020/08/14 09:35:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/xy6/symbol.png",
+          "logo": "https://images.pokemontcg.io/xy6/logo.png"
+        }
+      },
+      "number": "35",
+      "artist": "5ban Graphics",
+      "rarity": "Rare Holo EX",
+      "nationalPokedexNumbers": [
+        475
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy6/35.png",
+        "large": "https://images.pokemontcg.io/xy6/35_hires.png"
+      },
+      "tcgplayer": {
+        "url": "https://prices.pokemontcg.io/tcgplayer/xy6-35",
+        "updatedAt": "2021/08/14",
+        "prices": {
+          "holofoil": {
+            "low": 2.15,
+            "mid": 3.32,
+            "high": 20.0,
+            "market": 3.11,
+            "directLow": 3.29
+          }
+        }
+      },
+      "cardmarket": {
+        "url": "https://prices.pokemontcg.io/cardmarket/xy6-35",
+        "updatedAt": "2021/08/14",
+        "prices": {
+          "averageSellPrice": 4.05,
+          "lowPrice": 2.0,
+          "trendPrice": 5.71,
+          "germanProLow": null,
+          "suggestedPrice": null,
+          "reverseHoloSell": null,
+          "reverseHoloLow": null,
+          "reverseHoloTrend": 4.95,
+          "lowPriceExPlus": 3.0,
+          "avg1": 3.75,
+          "avg7": 5.44,
+          "avg30": 3.68,
+          "reverseHoloAvg1": 9.49,
+          "reverseHoloAvg7": 3.68,
+          "reverseHoloAvg30": 3.27
+        }
+      }
+    },
+    {
+      "id": "xy4-35",
+      "name": "M Gengar-EX",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "MEGA",
+        "EX"
+      ],
+      "hp": "220",
+      "types": [
+        "Psychic"
+      ],
+      "evolvesFrom": "Gengar-EX",
+      "rules": [
+        "Mega Evolution rule: When 1 of your Pokémon becomes a Mega Evolution Pokémon, your turn ends.",
+        "Pokémon-EX rule: When a Pokémon-EX has been Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "attacks": [
+        {
+          "name": "Phantom Gate",
+          "cost": [
+            "Psychic",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "",
+          "text": "Choose 1 of your opponent's Pokémon's attacks and use it as this attack."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Darkness",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Fighting",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
+      ],
+      "convertedRetreatCost": 1,
+      "set": {
+        "id": "xy4",
+        "name": "Phantom Forces",
+        "series": "XY",
+        "printedTotal": 119,
+        "total": 119,
+        "legalities": {
+          "unlimited": "Legal",
+          "expanded": "Legal"
+        },
+        "ptcgoCode": "PHF",
+        "releaseDate": "2014/11/05",
+        "updatedAt": "2020/08/14 09:35:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/xy4/symbol.png",
+          "logo": "https://images.pokemontcg.io/xy4/logo.png"
+        }
+      },
+      "number": "35",
+      "artist": "5ban Graphics",
+      "rarity": "Rare Holo EX",
+      "nationalPokedexNumbers": [
+        94
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy4/35.png",
+        "large": "https://images.pokemontcg.io/xy4/35_hires.png"
+      },
+      "tcgplayer": {
+        "url": "https://prices.pokemontcg.io/tcgplayer/xy4-35",
+        "updatedAt": "2021/08/14",
+        "prices": {
+          "holofoil": {
+            "low": 16.0,
+            "mid": 18.3,
+            "high": 51.54,
+            "market": 20.93,
+            "directLow": null
+          }
+        }
+      },
+      "cardmarket": {
+        "url": "https://prices.pokemontcg.io/cardmarket/xy4-35",
+        "updatedAt": "2021/08/14",
+        "prices": {
+          "averageSellPrice": 20.37,
+          "lowPrice": 5.0,
+          "trendPrice": 18.25,
+          "germanProLow": null,
+          "suggestedPrice": null,
+          "reverseHoloSell": null,
+          "reverseHoloLow": null,
+          "reverseHoloTrend": 16.11,
+          "lowPriceExPlus": 11.5,
+          "avg1": 29.89,
+          "avg7": 17.27,
+          "avg30": 13.73,
+          "reverseHoloAvg1": 25.0,
+          "reverseHoloAvg7": 15.71,
+          "reverseHoloAvg30": 12.58
+        }
+      }
+    },
+    {
+      "id": "xy8-35",
+      "name": "M Glalie-EX",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "MEGA",
+        "EX"
+      ],
+      "hp": "220",
+      "types": [
+        "Water"
+      ],
+      "evolvesFrom": "Glalie-EX",
+      "evolvesTo": [
+        "Froslass"
+      ],
+      "rules": [
+        "Mega Evolution rule: When 1 of your Pokémon becomes a Mega Evolution Pokémon, your turn ends.",
+        "Pokémon-EX rule: When a Pokémon-EX has been Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "attacks": [
+        {
+          "name": "Cryo Mouth",
+          "cost": [
+            "Water",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "100+",
+          "text": "If this Pokémon has 10 or more damage counters on it, this attack does 150 more damage."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Metal",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless",
+        "Colorless"
+      ],
+      "convertedRetreatCost": 3,
+      "set": {
+        "id": "xy8",
+        "name": "BREAKthrough",
+        "series": "XY",
+        "printedTotal": 162,
+        "total": 164,
+        "legalities": {
+          "unlimited": "Legal",
+          "expanded": "Legal"
+        },
+        "ptcgoCode": "BKT",
+        "releaseDate": "2015/11/04",
+        "updatedAt": "2019/04/10 19:59:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/xy8/symbol.png",
+          "logo": "https://images.pokemontcg.io/xy8/logo.png"
+        }
+      },
+      "number": "35",
+      "artist": "5ban Graphics",
+      "rarity": "Rare Holo EX",
+      "nationalPokedexNumbers": [
+        362
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy8/35.png",
+        "large": "https://images.pokemontcg.io/xy8/35_hires.png"
+      },
+      "tcgplayer": {
+        "url": "https://prices.pokemontcg.io/tcgplayer/xy8-35",
+        "updatedAt": "2021/08/14",
+        "prices": {
+          "holofoil": {
+            "low": 1.65,
+            "mid": 3.74,
+            "high": 20.65,
+            "market": 3.2,
+            "directLow": 1.98
+          }
+        }
+      },
+      "cardmarket": {
+        "url": "https://prices.pokemontcg.io/cardmarket/xy8-35",
+        "updatedAt": "2021/08/14",
+        "prices": {
+          "averageSellPrice": 2.99,
+          "lowPrice": 0.75,
+          "trendPrice": 3.74,
+          "germanProLow": null,
+          "suggestedPrice": null,
+          "reverseHoloSell": null,
+          "reverseHoloLow": null,
+          "reverseHoloTrend": 3.67,
+          "lowPriceExPlus": 2.5,
+          "avg1": 2.69,
+          "avg7": 3.43,
+          "avg30": 3.13,
+          "reverseHoloAvg1": 3.5,
+          "reverseHoloAvg7": 3.36,
+          "reverseHoloAvg30": 3.13
+        }
+      }
+    },
+    {
+      "id": "xy7-43",
+      "name": "M Tyranitar-EX",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "MEGA",
+        "EX"
+      ],
+      "hp": "240",
+      "types": [
+        "Darkness"
+      ],
+      "evolvesFrom": "Tyranitar-EX",
+      "rules": [
+        "Mega Evolution rule: When 1 of your Pokémon becomes a Mega Evolution Pokémon, your turn ends.",
+        "Pokémon-EX rule: When a Pokémon-EX has been Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "ancientTrait": {
+        "name": "θ Double",
+        "text": "This Pokémon may have up to 2 Pokémon Tool cards attached to it."
+      },
+      "attacks": [
+        {
+          "name": "Destroyer King",
+          "cost": [
+            "Darkness",
+            "Darkness",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 4,
+          "damage": "110+",
+          "text": "This attack does 60 more damage for each damage counter on your opponent's Active Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Psychic",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless",
+        "Colorless",
+        "Colorless"
+      ],
+      "convertedRetreatCost": 4,
+      "set": {
+        "id": "xy7",
+        "name": "Ancient Origins",
+        "series": "XY",
+        "printedTotal": 98,
+        "total": 100,
+        "legalities": {
+          "unlimited": "Legal",
+          "expanded": "Legal"
+        },
+        "ptcgoCode": "AOR",
+        "releaseDate": "2015/08/12",
+        "updatedAt": "2020/08/14 09:35:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/xy7/symbol.png",
+          "logo": "https://images.pokemontcg.io/xy7/logo.png"
+        }
+      },
+      "number": "43",
+      "artist": "5ban Graphics",
+      "rarity": "Rare Holo EX",
+      "nationalPokedexNumbers": [
+        248
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy7/43.png",
+        "large": "https://images.pokemontcg.io/xy7/43_hires.png"
+      },
+      "tcgplayer": {
+        "url": "https://prices.pokemontcg.io/tcgplayer/xy7-43",
+        "updatedAt": "2021/08/14",
+        "prices": {
+          "holofoil": {
+            "low": 4.76,
+            "mid": 7.44,
+            "high": 28.99,
+            "market": 6.67,
+            "directLow": 5.14
+          }
+        }
+      },
+      "cardmarket": {
+        "url": "https://prices.pokemontcg.io/cardmarket/xy7-43",
+        "updatedAt": "2021/08/14",
+        "prices": {
+          "averageSellPrice": 4.95,
+          "lowPrice": 2.9,
+          "trendPrice": 4.65,
+          "germanProLow": null,
+          "suggestedPrice": null,
+          "reverseHoloSell": null,
+          "reverseHoloLow": null,
+          "reverseHoloTrend": 8.15,
+          "lowPriceExPlus": 3.5,
+          "avg1": 5.25,
+          "avg7": 4.86,
+          "avg30": 4.75,
+          "reverseHoloAvg1": 6.89,
+          "reverseHoloAvg7": 7.23,
+          "reverseHoloAvg30": 5.82
+        }
+      }
+    },
+    {
+      "id": "xyp-XY35",
+      "name": "M Metagross-EX",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "MEGA",
+        "EX"
+      ],
+      "hp": "220",
+      "types": [
+        "Metal"
+      ],
+      "evolvesFrom": "Metagross-EX",
+      "rules": [
+        "Mega Evolution rule: When 1 of your Pokémon becomes a Mega Evolution Pokémon, your turn ends.",
+        "Pokémon-EX rule: When a Pokémon-EX has been Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "attacks": [
+        {
+          "name": "Gatling Slug",
+          "cost": [
+            "Colorless",
+            "Colorless",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 4,
+          "damage": "130+",
+          "text": "This attack does 10 more damage for each Metal Energy attached to this Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Psychic",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless",
+        "Colorless",
+        "Colorless"
+      ],
+      "convertedRetreatCost": 4,
+      "set": {
+        "id": "xyp",
+        "name": "XY Black Star Promos",
+        "series": "XY",
+        "printedTotal": 183,
+        "total": 183,
+        "legalities": {
+          "unlimited": "Legal",
+          "expanded": "Legal"
+        },
+        "ptcgoCode": "PR-XY",
+        "releaseDate": "2013/10/12",
+        "updatedAt": "2020/08/14 09:35:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/xyp/symbol.png",
+          "logo": "https://images.pokemontcg.io/xyp/logo.png"
+        }
+      },
+      "number": "XY35",
+      "artist": "5ban Graphics",
+      "rarity": "Promo",
+      "nationalPokedexNumbers": [
+        376
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xyp/XY35.png",
+        "large": "https://images.pokemontcg.io/xyp/XY35_hires.png"
+      },
+      "tcgplayer": {
+        "url": "https://prices.pokemontcg.io/tcgplayer/xyp-XY35",
+        "updatedAt": "2021/08/14",
+        "prices": {
+          "holofoil": {
+            "low": 8.14,
+            "mid": 10.68,
+            "high": 17.58,
+            "market": 9.87,
+            "directLow": null
+          }
+        }
+      },
+      "cardmarket": {
+        "url": "https://prices.pokemontcg.io/cardmarket/xyp-XY35",
+        "updatedAt": "2021/08/14",
+        "prices": {
+          "averageSellPrice": 20.0,
+          "lowPrice": 13.5,
+          "trendPrice": 23.66,
+          "germanProLow": null,
+          "suggestedPrice": null,
+          "reverseHoloSell": null,
+          "reverseHoloLow": null,
+          "reverseHoloTrend": 14.57,
+          "lowPriceExPlus": 15.0,
+          "avg1": 20.0,
+          "avg7": 27.97,
+          "avg30": 16.37,
+          "reverseHoloAvg1": 24.99,
+          "reverseHoloAvg7": 15.1,
+          "reverseHoloAvg30": 12.23
+        }
+      }
+    },
+    {
+      "id": "xyp-XY44",
+      "name": "M Diancie-EX",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "MEGA",
+        "EX"
+      ],
+      "hp": "190",
+      "types": [
+        "Fairy"
+      ],
+      "evolvesFrom": "Diancie-EX",
+      "rules": [
+        "Mega Evolution rule: When 1 of your Pokémon becomes a Mega Evolution Pokémon, your turn ends.",
+        "Pokémon-EX rule: When a Pokémon-EX has been Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "attacks": [
+        {
+          "name": "Diamond Force",
+          "cost": [
+            "Fairy",
+            "Fairy",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "100",
+          "text": "During your opponent's next turn, prevent all damage done to each of your Pokémon from your opponent's Pokémon-EX. (If this Pokémon is no longer your Active Pokémon, this effect ends.)"
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Metal",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Darkness",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless"
+      ],
+      "convertedRetreatCost": 2,
+      "set": {
+        "id": "xyp",
+        "name": "XY Black Star Promos",
+        "series": "XY",
+        "printedTotal": 183,
+        "total": 183,
+        "legalities": {
+          "unlimited": "Legal",
+          "expanded": "Legal"
+        },
+        "ptcgoCode": "PR-XY",
+        "releaseDate": "2013/10/12",
+        "updatedAt": "2020/08/14 09:35:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/xyp/symbol.png",
+          "logo": "https://images.pokemontcg.io/xyp/logo.png"
+        }
+      },
+      "number": "XY44",
+      "artist": "5ban Graphics",
+      "rarity": "Promo",
+      "nationalPokedexNumbers": [
+        719
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xyp/XY44.png",
+        "large": "https://images.pokemontcg.io/xyp/XY44_hires.png"
+      },
+      "tcgplayer": {
+        "url": "https://prices.pokemontcg.io/tcgplayer/xyp-XY44",
+        "updatedAt": "2021/08/14",
+        "prices": {
+          "holofoil": {
+            "low": 3.48,
+            "mid": 5.24,
+            "high": 10.48,
+            "market": 10.49,
+            "directLow": null
+          }
+        }
+      },
+      "cardmarket": {
+        "url": "https://prices.pokemontcg.io/cardmarket/xyp-XY44",
+        "updatedAt": "2021/08/14",
+        "prices": {
+          "averageSellPrice": 3.0,
+          "lowPrice": 3.0,
+          "trendPrice": 4.57,
+          "germanProLow": null,
+          "suggestedPrice": null,
+          "reverseHoloSell": null,
+          "reverseHoloLow": null,
+          "reverseHoloTrend": 11.52,
+          "lowPriceExPlus": 3.0,
+          "avg1": 3.0,
+          "avg7": 4.11,
+          "avg30": 7.43,
+          "reverseHoloAvg1": 10.0,
+          "reverseHoloAvg7": 11.4,
+          "reverseHoloAvg30": 8.73
+        }
+      }
+    },
+    {
+      "id": "xy2-69",
+      "name": "M Charizard-EX",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "MEGA",
+        "EX"
+      ],
+      "hp": "230",
+      "types": [
+        "Dragon"
+      ],
+      "evolvesFrom": "Charizard-EX",
+      "rules": [
+        "Mega Evolution rule: When 1 of your Pokémon becomes a Mega Evolution Pokémon, your turn ends.",
+        "Pokémon-EX rule: When a Pokémon-EX has been Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "attacks": [
+        {
+          "name": "Wild Blaze",
+          "cost": [
+            "Fire",
+            "Fire",
+            "Darkness",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 5,
+          "damage": "300",
+          "text": "Discard the top 5 cards of your deck."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fairy",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless",
+        "Colorless"
+      ],
+      "convertedRetreatCost": 3,
+      "set": {
+        "id": "xy2",
+        "name": "Flashfire",
+        "series": "XY",
+        "printedTotal": 106,
+        "total": 109,
+        "legalities": {
+          "unlimited": "Legal",
+          "expanded": "Legal"
+        },
+        "ptcgoCode": "FLF",
+        "releaseDate": "2014/05/07",
+        "updatedAt": "2018/03/04 10:35:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/xy2/symbol.png",
+          "logo": "https://images.pokemontcg.io/xy2/logo.png"
+        }
+      },
+      "number": "69",
+      "artist": "5ban Graphics",
+      "rarity": "Rare Holo EX",
+      "nationalPokedexNumbers": [
+        6
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy2/69.png",
+        "large": "https://images.pokemontcg.io/xy2/69_hires.png"
+      },
+      "tcgplayer": {
+        "url": "https://prices.pokemontcg.io/tcgplayer/xy2-69",
+        "updatedAt": "2021/08/14",
+        "prices": {
+          "holofoil": {
+            "low": 47.95,
+            "mid": 68.32,
+            "high": 219.99,
+            "market": 69.06,
+            "directLow": null
+          }
+        }
+      },
+      "cardmarket": {
+        "url": "https://prices.pokemontcg.io/cardmarket/xy2-69",
+        "updatedAt": "2021/08/14",
+        "prices": {
+          "averageSellPrice": 44.73,
+          "lowPrice": 25.0,
+          "trendPrice": 44.39,
+          "germanProLow": null,
+          "suggestedPrice": null,
+          "reverseHoloSell": null,
+          "reverseHoloLow": null,
+          "reverseHoloTrend": 44.08,
+          "lowPriceExPlus": 35.0,
+          "avg1": 15.0,
+          "avg7": 45.62,
+          "avg30": 43.66,
+          "reverseHoloAvg1": 12.5,
+          "reverseHoloAvg7": 37.93,
+          "reverseHoloAvg30": 47.45
+        }
+      }
+    },
+    {
+      "id": "xy6-59",
+      "name": "M Latios-EX",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "MEGA",
+        "EX"
+      ],
+      "hp": "220",
+      "types": [
+        "Dragon"
+      ],
+      "evolvesFrom": "Latios-EX",
+      "rules": [
+        "Mega Evolution rule: When 1 of your Pokémon becomes a Mega Evolution Pokémon, your turn ends.",
+        "Pokémon-EX rule: When a Pokémon-EX has been Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "attacks": [
+        {
+          "name": "Sonic Ace",
+          "cost": [
+            "Water",
+            "Psychic",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "",
+          "text": "Discard 2 Energy attached to this Pokémon. This attack does 120 damage to 1 of your opponent's Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fairy",
+          "value": "×2"
+        }
+      ],
+      "set": {
+        "id": "xy6",
+        "name": "Roaring Skies",
+        "series": "XY",
+        "printedTotal": 108,
+        "total": 110,
+        "legalities": {
+          "unlimited": "Legal",
+          "expanded": "Legal"
+        },
+        "ptcgoCode": "ROS",
+        "releaseDate": "2015/05/06",
+        "updatedAt": "2020/08/14 09:35:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/xy6/symbol.png",
+          "logo": "https://images.pokemontcg.io/xy6/logo.png"
+        }
+      },
+      "number": "59",
+      "artist": "5ban Graphics",
+      "rarity": "Rare Holo EX",
+      "nationalPokedexNumbers": [
+        381
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy6/59.png",
+        "large": "https://images.pokemontcg.io/xy6/59_hires.png"
+      },
+      "tcgplayer": {
+        "url": "https://prices.pokemontcg.io/tcgplayer/xy6-59",
+        "updatedAt": "2021/08/14",
+        "prices": {
+          "holofoil": {
+            "low": 4.25,
+            "mid": 6.2,
+            "high": 16.99,
+            "market": 5.65,
+            "directLow": 5.24
+          }
+        }
+      },
+      "cardmarket": {
+        "url": "https://prices.pokemontcg.io/cardmarket/xy6-59",
+        "updatedAt": "2021/08/14",
+        "prices": {
+          "averageSellPrice": 6.45,
+          "lowPrice": 6.99,
+          "trendPrice": 7.9,
+          "germanProLow": null,
+          "suggestedPrice": null,
+          "reverseHoloSell": null,
+          "reverseHoloLow": null,
+          "reverseHoloTrend": 3.5,
+          "lowPriceExPlus": 7.0,
+          "avg1": 7.9,
+          "avg7": 7.95,
+          "avg30": 7.95,
+          "reverseHoloAvg1": 3.5,
+          "reverseHoloAvg7": 3.5,
+          "reverseHoloAvg30": 3.5
+        }
+      }
+    },
+    {
+      "id": "xy6-61",
+      "name": "M Rayquaza-EX",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "MEGA",
+        "EX"
+      ],
+      "hp": "230",
+      "types": [
+        "Dragon"
+      ],
+      "evolvesFrom": "Rayquaza-EX",
+      "rules": [
+        "Mega Evolution rule: When 1 of your Pokémon becomes a Mega Evolution Pokémon, your turn ends.",
+        "Pokémon-EX rule: When a Pokémon-EX has been Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "ancientTrait": {
+        "name": "Δ Wild",
+        "text": "Any damage done to this Pokémon by attacks from your opponent's Grass, Fire, Water, or Lightning Pokémon is reduced by 20 (after applying Weakness and Resistance)."
+      },
+      "attacks": [
+        {
+          "name": "Dragon Ascent",
+          "cost": [
+            "Fire",
+            "Fire",
+            "Fire",
+            "Lightning",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 5,
+          "damage": "300",
+          "text": "Discard 2 Energy attached to this Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fairy",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless"
+      ],
+      "convertedRetreatCost": 2,
+      "set": {
+        "id": "xy6",
+        "name": "Roaring Skies",
+        "series": "XY",
+        "printedTotal": 108,
+        "total": 110,
+        "legalities": {
+          "unlimited": "Legal",
+          "expanded": "Legal"
+        },
+        "ptcgoCode": "ROS",
+        "releaseDate": "2015/05/06",
+        "updatedAt": "2020/08/14 09:35:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/xy6/symbol.png",
+          "logo": "https://images.pokemontcg.io/xy6/logo.png"
+        }
+      },
+      "number": "61",
+      "artist": "5ban Graphics",
+      "rarity": "Rare Holo EX",
+      "nationalPokedexNumbers": [
+        384
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy6/61.png",
+        "large": "https://images.pokemontcg.io/xy6/61_hires.png"
+      },
+      "tcgplayer": {
+        "url": "https://prices.pokemontcg.io/tcgplayer/xy6-61",
+        "updatedAt": "2021/08/14",
+        "prices": {
+          "holofoil": {
+            "low": 11.47,
+            "mid": 18.08,
+            "high": 52.99,
+            "market": 19.61,
+            "directLow": 19.99
+          }
+        }
+      },
+      "cardmarket": {
+        "url": "https://prices.pokemontcg.io/cardmarket/xy6-61",
+        "updatedAt": "2021/08/14",
+        "prices": {
+          "averageSellPrice": 21.33,
+          "lowPrice": 3.0,
+          "trendPrice": 18.98,
+          "germanProLow": null,
+          "suggestedPrice": null,
+          "reverseHoloSell": null,
+          "reverseHoloLow": null,
+          "reverseHoloTrend": 15.14,
+          "lowPriceExPlus": 8.0,
+          "avg1": 27.5,
+          "avg7": 19.24,
+          "avg30": 17.72,
+          "reverseHoloAvg1": 18.0,
+          "reverseHoloAvg7": 17.48,
+          "reverseHoloAvg30": 13.19
+        }
+      }
+    },
+    {
+      "id": "xy11-68",
+      "name": "M Steelix-EX",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "MEGA",
+        "EX"
+      ],
+      "hp": "240",
+      "types": [
+        "Metal",
+        "Fighting"
+      ],
+      "evolvesFrom": "Steelix-EX",
+      "rules": [
+        "Mega Evolution rule: When 1 of your Pokémon becomes a Mega Evolution Pokémon, your turn ends.",
+        "Pokémon-EX rule: When a Pokémon-EX has been Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "attacks": [
+        {
+          "name": "Canyon Axe",
+          "cost": [
+            "Metal",
+            "Colorless",
+            "Colorless",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 5,
+          "damage": "160",
+          "text": "This attack does 10 damage to each of your opponent's Benched Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Psychic",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless",
+        "Colorless",
+        "Colorless"
+      ],
+      "convertedRetreatCost": 4,
+      "set": {
+        "id": "xy11",
+        "name": "Steam Siege",
+        "series": "XY",
+        "printedTotal": 114,
+        "total": 116,
+        "legalities": {
+          "unlimited": "Legal",
+          "expanded": "Legal"
+        },
+        "ptcgoCode": "STS",
+        "releaseDate": "2016/08/03",
+        "updatedAt": "2019/04/10 19:59:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/xy11/symbol.png",
+          "logo": "https://images.pokemontcg.io/xy11/logo.png"
+        }
+      },
+      "number": "68",
+      "artist": "5ban Graphics",
+      "rarity": "Rare Holo EX",
+      "nationalPokedexNumbers": [
+        208
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy11/68.png",
+        "large": "https://images.pokemontcg.io/xy11/68_hires.png"
+      },
+      "tcgplayer": {
+        "url": "https://prices.pokemontcg.io/tcgplayer/xy11-68",
+        "updatedAt": "2021/08/14",
+        "prices": {
+          "holofoil": {
+            "low": 2.5,
+            "mid": 5.0,
+            "high": 14.99,
+            "market": 4.64,
+            "directLow": 5.0
+          }
+        }
+      },
+      "cardmarket": {
+        "url": "https://prices.pokemontcg.io/cardmarket/xy11-68",
+        "updatedAt": "2021/08/14",
+        "prices": {
+          "averageSellPrice": 3.43,
+          "lowPrice": 0.8,
+          "trendPrice": 3.67,
+          "germanProLow": null,
+          "suggestedPrice": null,
+          "reverseHoloSell": null,
+          "reverseHoloLow": null,
+          "reverseHoloTrend": 4.39,
+          "lowPriceExPlus": 2.75,
+          "avg1": 3.5,
+          "avg7": 3.49,
+          "avg30": 3.55,
+          "reverseHoloAvg1": 0.7,
+          "reverseHoloAvg7": 4.9,
+          "reverseHoloAvg30": 4.2
+        }
+      }
+    },
+    {
+      "id": "xy3-55",
+      "name": "M Lucario-EX",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "MEGA",
+        "EX"
+      ],
+      "hp": "220",
+      "types": [
+        "Fighting"
+      ],
+      "evolvesFrom": "Lucario-EX",
+      "rules": [
+        "Mega Evolution rule: When 1 of your Pokémon becomes a Mega Evolution Pokémon, your turn ends.",
+        "Pokémon-EX rule: When a Pokémon-EX has been Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "attacks": [
+        {
+          "name": "Rising Fist",
+          "cost": [
+            "Fighting",
+            "Fighting",
+            "Fighting"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "140",
+          "text": "Discard an Energy attached to your opponent's Active Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Psychic",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless"
+      ],
+      "convertedRetreatCost": 2,
+      "set": {
+        "id": "xy3",
+        "name": "Furious Fists",
+        "series": "XY",
+        "printedTotal": 111,
+        "total": 113,
+        "legalities": {
+          "unlimited": "Legal",
+          "expanded": "Legal"
+        },
+        "ptcgoCode": "FFI",
+        "releaseDate": "2014/08/13",
+        "updatedAt": "2018/03/04 10:35:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/xy3/symbol.png",
+          "logo": "https://images.pokemontcg.io/xy3/logo.png"
+        }
+      },
+      "number": "55",
+      "artist": "5ban Graphics",
+      "rarity": "Rare Holo EX",
+      "nationalPokedexNumbers": [
+        448
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy3/55.png",
+        "large": "https://images.pokemontcg.io/xy3/55_hires.png"
+      },
+      "tcgplayer": {
+        "url": "https://prices.pokemontcg.io/tcgplayer/xy3-55",
+        "updatedAt": "2021/08/14",
+        "prices": {
+          "holofoil": {
+            "low": 7.97,
+            "mid": 9.97,
+            "high": 21.99,
+            "market": 12.45,
+            "directLow": 9.57
+          }
+        }
+      },
+      "cardmarket": {
+        "url": "https://prices.pokemontcg.io/cardmarket/xy3-55",
+        "updatedAt": "2021/08/14",
+        "prices": {
+          "averageSellPrice": 9.32,
+          "lowPrice": 3.0,
+          "trendPrice": 9.31,
+          "germanProLow": null,
+          "suggestedPrice": null,
+          "reverseHoloSell": null,
+          "reverseHoloLow": null,
+          "reverseHoloTrend": 9.39,
+          "lowPriceExPlus": 5.0,
+          "avg1": 8.5,
+          "avg7": 8.85,
+          "avg30": 7.3,
+          "reverseHoloAvg1": 8.45,
+          "reverseHoloAvg7": 7.81,
+          "reverseHoloAvg30": 8.49
+        }
+      }
+    },
+    {
+      "id": "xy3-55a",
+      "name": "M Lucario-EX",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "MEGA",
+        "EX"
+      ],
+      "hp": "220",
+      "types": [
+        "Fighting"
+      ],
+      "evolvesFrom": "Lucario-EX",
+      "rules": [
+        "Mega Evolution rule: When 1 of your Pokémon becomes a Mega Evolution Pokémon, your turn ends.",
+        "Pokémon-EX rule: When a Pokémon-EX has been Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "attacks": [
+        {
+          "name": "Rising Fist",
+          "cost": [
+            "Fighting",
+            "Fighting",
+            "Fighting"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "140",
+          "text": "Discard an Energy attached to your opponent's Active Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Psychic",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless"
+      ],
+      "convertedRetreatCost": 2,
+      "set": {
+        "id": "xy3",
+        "name": "Furious Fists",
+        "series": "XY",
+        "printedTotal": 111,
+        "total": 113,
+        "legalities": {
+          "unlimited": "Legal",
+          "expanded": "Legal"
+        },
+        "ptcgoCode": "FFI",
+        "releaseDate": "2014/08/13",
+        "updatedAt": "2018/03/04 10:35:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/xy3/symbol.png",
+          "logo": "https://images.pokemontcg.io/xy3/logo.png"
+        }
+      },
+      "number": "55a",
+      "artist": "5ban Graphics",
+      "rarity": "Rare Holo EX",
+      "nationalPokedexNumbers": [
+        448
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy3/55a.png",
+        "large": "https://images.pokemontcg.io/xy3/55a_hires.png"
+      },
+      "cardmarket": {
+        "url": "https://prices.pokemontcg.io/cardmarket/xy3-55a",
+        "updatedAt": "2021/08/14",
+        "prices": {
+          "averageSellPrice": 6.0,
+          "lowPrice": 5.0,
+          "trendPrice": 6.92,
+          "germanProLow": null,
+          "suggestedPrice": null,
+          "reverseHoloSell": null,
+          "reverseHoloLow": null,
+          "reverseHoloTrend": 4.82,
+          "lowPriceExPlus": 5.0,
+          "avg1": 6.0,
+          "avg7": 6.04,
+          "avg30": 5.12,
+          "reverseHoloAvg1": 3.99,
+          "reverseHoloAvg7": 4.2,
+          "reverseHoloAvg30": 4.2
+        }
+      }
+    },
+    {
+      "id": "xy8-63",
+      "name": "M Mewtwo-EX",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "MEGA",
+        "EX"
+      ],
+      "hp": "230",
+      "types": [
+        "Psychic"
+      ],
+      "evolvesFrom": "Mewtwo-EX",
+      "rules": [
+        "Mega Evolution rule: When 1 of your Pokémon becomes a Mega Evolution Pokémon, your turn ends.",
+        "Pokémon-EX rule: When a Pokémon-EX has been Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "attacks": [
+        {
+          "name": "Vanishing Strike",
+          "cost": [
+            "Psychic",
+            "Fighting",
+            "Fighting",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 4,
+          "damage": "150+",
+          "text": "If there is any Stadium card in play, this attack does 50 more damage, and this attack's damage isn't affected by Resistance or any effects on your opponent's Active Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Psychic",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless",
+        "Colorless"
+      ],
+      "convertedRetreatCost": 3,
+      "set": {
+        "id": "xy8",
+        "name": "BREAKthrough",
+        "series": "XY",
+        "printedTotal": 162,
+        "total": 164,
+        "legalities": {
+          "unlimited": "Legal",
+          "expanded": "Legal"
+        },
+        "ptcgoCode": "BKT",
+        "releaseDate": "2015/11/04",
+        "updatedAt": "2019/04/10 19:59:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/xy8/symbol.png",
+          "logo": "https://images.pokemontcg.io/xy8/logo.png"
+        }
+      },
+      "number": "63",
+      "artist": "5ban Graphics",
+      "rarity": "Rare Holo EX",
+      "nationalPokedexNumbers": [
+        150
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy8/63.png",
+        "large": "https://images.pokemontcg.io/xy8/63_hires.png"
+      },
+      "tcgplayer": {
+        "url": "https://prices.pokemontcg.io/tcgplayer/xy8-63",
+        "updatedAt": "2021/08/14",
+        "prices": {
+          "holofoil": {
+            "low": 12.0,
+            "mid": 15.01,
+            "high": 36.29,
+            "market": 16.44,
+            "directLow": 8.41
+          }
+        }
+      },
+      "cardmarket": {
+        "url": "https://prices.pokemontcg.io/cardmarket/xy8-63",
+        "updatedAt": "2021/08/14",
+        "prices": {
+          "averageSellPrice": null,
+          "lowPrice": 10.0,
+          "trendPrice": 6.87,
+          "germanProLow": null,
+          "suggestedPrice": null,
+          "reverseHoloSell": null,
+          "reverseHoloLow": null,
+          "reverseHoloTrend": 6.79,
+          "lowPriceExPlus": 10.0,
+          "avg1": 7.0,
+          "avg7": 5.33,
+          "avg30": 5.33,
+          "reverseHoloAvg1": 5.0,
+          "reverseHoloAvg7": 6.3,
+          "reverseHoloAvg30": 6.3
+        }
+      }
+    },
+    {
+      "id": "xy12-65",
+      "name": "M Pidgeot-EX",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "MEGA",
+        "EX"
+      ],
+      "hp": "220",
+      "types": [
+        "Colorless"
+      ],
+      "evolvesFrom": "Pidgeot-EX",
+      "rules": [
+        "Mega Evolution rule: When 1 of your Pokémon becomes a Mega Evolution Pokémon, your turn ends.",
+        "Pokémon-EX rule: When a Pokémon-EX has been Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "attacks": [
+        {
+          "name": "Mach Cyclone",
+          "cost": [
+            "Colorless",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "130",
+          "text": "You may have your opponent switch his or her Active Pokémon with 1 of his or her Benched Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Lightning",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Fighting",
+          "value": "-20"
+        }
+      ],
+      "set": {
+        "id": "xy12",
+        "name": "Evolutions",
+        "series": "XY",
+        "printedTotal": 108,
+        "total": 109,
+        "legalities": {
+          "unlimited": "Legal",
+          "expanded": "Legal"
+        },
+        "ptcgoCode": "EVO",
+        "releaseDate": "2016/11/02",
+        "updatedAt": "2020/09/25 10:09:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/xy12/symbol.png",
+          "logo": "https://images.pokemontcg.io/xy12/logo.png"
+        }
+      },
+      "number": "65",
+      "artist": "5ban Graphics",
+      "rarity": "Rare Holo EX",
+      "nationalPokedexNumbers": [
+        18
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy12/65.png",
+        "large": "https://images.pokemontcg.io/xy12/65_hires.png"
+      },
+      "tcgplayer": {
+        "url": "https://prices.pokemontcg.io/tcgplayer/xy12-65",
+        "updatedAt": "2021/08/14",
+        "prices": {
+          "holofoil": {
+            "low": 1.29,
+            "mid": 2.75,
+            "high": 19.95,
+            "market": 1.86,
+            "directLow": 2.63
+          }
+        }
+      },
+      "cardmarket": {
+        "url": "https://prices.pokemontcg.io/cardmarket/xy12-65",
+        "updatedAt": "2021/08/14",
+        "prices": {
+          "averageSellPrice": 3.92,
+          "lowPrice": 2.0,
+          "trendPrice": 4.36,
+          "germanProLow": null,
+          "suggestedPrice": null,
+          "reverseHoloSell": null,
+          "reverseHoloLow": null,
+          "reverseHoloTrend": 4.82,
+          "lowPriceExPlus": 2.5,
+          "avg1": 7.0,
+          "avg7": 5.03,
+          "avg30": 4.39,
+          "reverseHoloAvg1": 2.9,
+          "reverseHoloAvg7": 5.14,
+          "reverseHoloAvg30": 4.7
+        }
+      }
+    },
+    {
+      "id": "xy8-64",
+      "name": "M Mewtwo-EX",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "MEGA",
+        "EX"
+      ],
+      "hp": "210",
+      "types": [
+        "Psychic"
+      ],
+      "evolvesFrom": "Mewtwo-EX",
+      "rules": [
+        "Mega Evolution rule: When 1 of your Pokémon becomes a Mega Evolution Pokémon, your turn ends.",
+        "Pokémon-EX rule: When a Pokémon-EX has been Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "attacks": [
+        {
+          "name": "Psychic Infinity",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "10+",
+          "text": "This attack does 30 more damage times the amount of Energy attached to both Active Pokémon. This attack's damage isn't affected by Weakness."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Psychic",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless"
+      ],
+      "convertedRetreatCost": 2,
+      "set": {
+        "id": "xy8",
+        "name": "BREAKthrough",
+        "series": "XY",
+        "printedTotal": 162,
+        "total": 164,
+        "legalities": {
+          "unlimited": "Legal",
+          "expanded": "Legal"
+        },
+        "ptcgoCode": "BKT",
+        "releaseDate": "2015/11/04",
+        "updatedAt": "2019/04/10 19:59:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/xy8/symbol.png",
+          "logo": "https://images.pokemontcg.io/xy8/logo.png"
+        }
+      },
+      "number": "64",
+      "artist": "5ban Graphics",
+      "rarity": "Rare Holo EX",
+      "nationalPokedexNumbers": [
+        150
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy8/64.png",
+        "large": "https://images.pokemontcg.io/xy8/64_hires.png"
+      },
+      "tcgplayer": {
+        "url": "https://prices.pokemontcg.io/tcgplayer/xy8-64",
+        "updatedAt": "2021/08/14",
+        "prices": {
+          "holofoil": {
+            "low": 6.76,
+            "mid": 10.58,
+            "high": 38.99,
+            "market": 10.66,
+            "directLow": 7.25
+          }
+        }
+      },
+      "cardmarket": {
+        "url": "https://prices.pokemontcg.io/cardmarket/xy8-64",
+        "updatedAt": "2021/08/14",
+        "prices": {
+          "averageSellPrice": 6.99,
+          "lowPrice": 5.5,
+          "trendPrice": 7.38,
+          "germanProLow": null,
+          "suggestedPrice": null,
+          "reverseHoloSell": null,
+          "reverseHoloLow": null,
+          "reverseHoloTrend": 7.8,
+          "lowPriceExPlus": 7.0,
+          "avg1": 8.42,
+          "avg7": 7.05,
+          "avg30": 8.08,
+          "reverseHoloAvg1": 3.6,
+          "reverseHoloAvg7": 7.36,
+          "reverseHoloAvg30": 7.52
+        }
+      }
+    },
+    {
+      "id": "xy2-79",
+      "name": "M Kangaskhan-EX",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "MEGA",
+        "EX"
+      ],
+      "hp": "230",
+      "types": [
+        "Colorless"
+      ],
+      "evolvesFrom": "Kangaskhan-EX",
+      "rules": [
+        "Mega Evolution rule: When 1 of your Pokémon becomes a Mega Evolution Pokémon, your turn ends.",
+        "Pokémon-EX rule: When a Pokémon-EX has been Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "attacks": [
+        {
+          "name": "Wham Bam Punch",
+          "cost": [
+            "Colorless",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "100+",
+          "text": "Flip a coin until you get tails. This attack does 30 more damage for each heads."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless",
+        "Colorless"
+      ],
+      "convertedRetreatCost": 3,
+      "set": {
+        "id": "xy2",
+        "name": "Flashfire",
+        "series": "XY",
+        "printedTotal": 106,
+        "total": 109,
+        "legalities": {
+          "unlimited": "Legal",
+          "expanded": "Legal"
+        },
+        "ptcgoCode": "FLF",
+        "releaseDate": "2014/05/07",
+        "updatedAt": "2018/03/04 10:35:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/xy2/symbol.png",
+          "logo": "https://images.pokemontcg.io/xy2/logo.png"
+        }
+      },
+      "number": "79",
+      "artist": "5ban Graphics",
+      "rarity": "Rare Holo EX",
+      "nationalPokedexNumbers": [
+        115
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy2/79.png",
+        "large": "https://images.pokemontcg.io/xy2/79_hires.png"
+      },
+      "tcgplayer": {
+        "url": "https://prices.pokemontcg.io/tcgplayer/xy2-79",
+        "updatedAt": "2021/08/14",
+        "prices": {
+          "holofoil": {
+            "low": 3.69,
+            "mid": 6.0,
+            "high": 18.99,
+            "market": 6.29,
+            "directLow": 7.19
+          }
+        }
+      },
+      "cardmarket": {
+        "url": "https://prices.pokemontcg.io/cardmarket/xy2-79",
+        "updatedAt": "2021/08/14",
+        "prices": {
+          "averageSellPrice": 5.5,
+          "lowPrice": 2.99,
+          "trendPrice": 5.12,
+          "germanProLow": null,
+          "suggestedPrice": null,
+          "reverseHoloSell": null,
+          "reverseHoloLow": null,
+          "reverseHoloTrend": 5.97,
+          "lowPriceExPlus": 3.33,
+          "avg1": 3.5,
+          "avg7": 4.97,
+          "avg30": 5.04,
+          "reverseHoloAvg1": 2.0,
+          "reverseHoloAvg7": 5.42,
+          "reverseHoloAvg30": 5.78
+        }
+      }
+    },
+    {
+      "id": "xyp-XY63",
+      "name": "M Absol-EX",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "MEGA",
+        "EX"
+      ],
+      "hp": "210",
+      "types": [
+        "Darkness"
+      ],
+      "evolvesFrom": "Absol-EX",
+      "rules": [
+        "Mega Evolution rule: When 1 of your Pokémon becomes a Mega Evolution Pokémon, your turn ends.",
+        "Pokémon-EX rule: When a Pokémon-EX has been Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "attacks": [
+        {
+          "name": "Disaster Wing",
+          "cost": [
+            "Darkness",
+            "Darkness"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "80+",
+          "text": "Discard the top card of your opponent's deck. If that card is a Trainer card, this attack does 80 more damage."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Psychic",
+          "value": "-20"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless"
+      ],
+      "convertedRetreatCost": 2,
+      "set": {
+        "id": "xyp",
+        "name": "XY Black Star Promos",
+        "series": "XY",
+        "printedTotal": 183,
+        "total": 183,
+        "legalities": {
+          "unlimited": "Legal",
+          "expanded": "Legal"
+        },
+        "ptcgoCode": "PR-XY",
+        "releaseDate": "2013/10/12",
+        "updatedAt": "2020/08/14 09:35:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/xyp/symbol.png",
+          "logo": "https://images.pokemontcg.io/xyp/logo.png"
+        }
+      },
+      "number": "XY63",
+      "artist": "5ban Graphics",
+      "rarity": "Promo",
+      "nationalPokedexNumbers": [
+        359
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xyp/XY63.png",
+        "large": "https://images.pokemontcg.io/xyp/XY63_hires.png"
+      },
+      "tcgplayer": {
+        "url": "https://prices.pokemontcg.io/tcgplayer/xyp-XY63",
+        "updatedAt": "2021/08/14",
+        "prices": {
+          "holofoil": {
+            "low": 1.99,
+            "mid": 3.6,
+            "high": 12.59,
+            "market": 4.81,
+            "directLow": null
+          }
+        }
+      },
+      "cardmarket": {
+        "url": "https://prices.pokemontcg.io/cardmarket/xyp-XY63",
+        "updatedAt": "2021/08/14",
+        "prices": {
+          "averageSellPrice": 8.3,
+          "lowPrice": 4.25,
+          "trendPrice": 5.1,
+          "germanProLow": null,
+          "suggestedPrice": null,
+          "reverseHoloSell": null,
+          "reverseHoloLow": null,
+          "reverseHoloTrend": 5.74,
+          "lowPriceExPlus": 4.25,
+          "avg1": 7.0,
+          "avg7": 7.14,
+          "avg30": 5.98,
+          "reverseHoloAvg1": 5.9,
+          "reverseHoloAvg7": 6.13,
+          "reverseHoloAvg30": 5.65
+        }
+      }
+    }
+  ]
+}
