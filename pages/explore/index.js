@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-
 import { useMedia } from "use-media";
 import useSWR from "swr";
 import Loader from "react-loader-spinner";
@@ -66,10 +65,10 @@ export default function Explore() {
 
           <ListLayout>
             {currentPageList ? (
-              currentPageList.data.map((e, i) => {
+              currentPageList.data.map((card, i) => {
                 return (
-                  <Center width={"100%"}>
-                    <Link key={i} href={`/explore/${e.id}`}>
+                  <Center width={"100%"} key={card.id}>
+                    <Link key={i} href={`/explore/${card.id}`}>
                       <div
                         className="card"
                         style={{
@@ -82,7 +81,7 @@ export default function Explore() {
                           onClick={() => setIsLoading(!isLoading)}
                         >
                           <Image
-                            src={e.images.small}
+                            src={card.images.small}
                             // layout="fill"
                             // objectFit="fit"
                             width={200}
@@ -97,8 +96,8 @@ export default function Explore() {
                           />
                         </section>
                         <section>
-                          <h3>{e.name}</h3>
-                          <p> $ {e?.cardmarket?.prices?.trendPrice} </p>
+                          <h3>{card.name}</h3>
+                          <p> $ {card?.cardmarket?.prices?.trendPrice} </p>
                         </section>
                       </div>
                     </Link>
