@@ -15,16 +15,32 @@ import { Provider } from "react-redux";
 import store from "../store/store";
 import { AuthContextProvider } from "../store/auth-context";
 
+import {
+  ChakraBaseProvider,
+  extendBaseTheme,
+  theme as chakraTheme,
+} from "@chakra-ui/react";
+
+const { Button } = chakraTheme.components;
+
+const theme = extendBaseTheme({
+  components: {
+    Button,
+  },
+});
+
 function MyApp({ Component, pageProps, router }) {
   return (
     <>
-      <motion.div>
-        <AuthContextProvider>
-          <Provider store={store}>
-            <Component {...pageProps} />;
-          </Provider>
-        </AuthContextProvider>
-      </motion.div>
+      <ChakraBaseProvider theme={theme}>
+        <motion.div>
+          <AuthContextProvider>
+            <Provider store={store}>
+              <Component {...pageProps} />;
+            </Provider>
+          </AuthContextProvider>
+        </motion.div>
+      </ChakraBaseProvider>
     </>
   );
 }

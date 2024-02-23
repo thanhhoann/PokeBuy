@@ -1,13 +1,12 @@
 import React, { useContext, useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import pokecoinSVG from "../../public/pokecoin.svg";
-
 import { useMedia } from "use-media";
+import pokecoinSVG from "../../public/pokecoin.svg";
 import { MenuButton } from "./MenuButton";
 import Backdrop from "../UI/Backdrop";
-import { useSelector } from "react-redux";
 import AuthContext from "../../store/auth-context";
+import { useSelector } from "react-redux";
 
 export default function Header() {
   const [isLoading, setIsLoading] = useState(false);
@@ -15,7 +14,6 @@ export default function Header() {
 
   const cart = useSelector((state) => state.cart.cart);
   const authContext = useContext(AuthContext);
-  const isLoggedIn = authContext.isLoggedIn;
 
   const isSmall = useMedia({ maxWidth: "768px" });
   const mobileM = useMedia({ maxWidth: "400px" });
@@ -31,6 +29,7 @@ export default function Header() {
     setTimeout(() => setIsLoading(false), 2000);
   };
 
+  const isLoggedIn = authContext.isLoggedIn;
   const logoutHandler = () => {
     authContext.logout();
   };

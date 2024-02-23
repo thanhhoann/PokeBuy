@@ -3,6 +3,8 @@ import Image from "next/image";
 import Link from "next/link";
 
 import Backdrop from "../../components/UI/Backdrop";
+import { SimpleGrid } from "@chakra-ui/react";
+import ListLayout from "./ListLayout";
 
 export default function Featured(props) {
   const [isLoading, setIsLoading] = useState(false);
@@ -21,7 +23,7 @@ export default function Featured(props) {
 
         {isLoading && <Backdrop />}
 
-        <main className="cards">
+        <ListLayout>
           {props.cards &&
             props.cards.map((e) => (
               <Link key={e.id} href={`/explore/${e.id}`}>
@@ -29,8 +31,10 @@ export default function Featured(props) {
                   <section className="img-container">
                     <Image
                       src={e.images.small}
-                      fill
-                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                      // fill
+                      // sizes="(max-width: 768px) 1vw, (max-width: 1200px) 1vw, 1vw"
+                      width={300}
+                      height={300}
                       priority="true"
                       quality="100"
                       placeholder="blur"
@@ -46,7 +50,7 @@ export default function Featured(props) {
                 </div>
               </Link>
             ))}
-        </main>
+        </ListLayout>
       </div>
     </>
   );

@@ -4,40 +4,17 @@ import Link from "next/link";
 
 import { useMedia } from "use-media";
 import useSWR from "swr";
-import axios from "axios";
-// import { getPlaiceholder } from "plaiceholder";
 import Loader from "react-loader-spinner";
 
 import Header from "../../components/UI/Header";
-import Hero from "../../components/UI/Hero";
 import Footer from "../../components/UI/Footer";
 import Layout from "../../components/UI/Layout";
 import Backdrop from "../../components/UI/Backdrop";
 import Paginator from "../../components/UI/Pagination";
+import { SimpleGrid, Box, Center } from "@chakra-ui/react";
+import ListLayout from "@/components/UI/ListLayout";
 
-export async function getStaticProps(context) {
-  const hero_cards = await axios
-    .get(process.env.FIREBASE_DB_URL + "hero_cards.json")
-    .then((res) => res.data.data);
-
-  // const heroImages = await Promise.all(
-  //   heroImagePaths.map(async (e) => {
-  //     const { base64, img } = await getPlaiceholder(e);
-  //     return {
-  //       ...img,
-  //       blurDataURL: base64,
-  //     };
-  //   }),
-  // ).then((e) => e);
-
-  return {
-    props: {
-      hero_cards,
-    },
-  };
-}
-
-export default function Explore(props) {
+export default function Explore() {
   const mobileS = useMedia({ maxWidth: "320px" });
   const [isLoading, setIsLoading] = useState(false);
   const [currentPage, setCurrentPage] = useState(1);
@@ -87,41 +64,45 @@ export default function Explore(props) {
 
           {isLoading && <Backdrop />}
 
-          <main className="cards">
+          <ListLayout>
             {currentPageList ? (
               currentPageList.data.map((e, i) => {
                 return (
-                  <Link key={i} href={`/explore/${e.id}`}>
-                    <div
-                      className="card"
-                      style={{
-                        flex: mobileS && "0",
-                        margin: mobileS && "auto",
-                      }}
-                    >
-                      <section
-                        className="img-container"
-                        onClick={() => setIsLoading(!isLoading)}
+                  <Center width={"100%"}>
+                    <Link key={i} href={`/explore/${e.id}`}>
+                      <div
+                        className="card"
+                        style={{
+                          flex: mobileS && "0",
+                          margin: mobileS && "auto",
+                        }}
                       >
-                        <Image
-                          src={e.images.small}
-                          layout="fill"
-                          objectFit="fit"
-                          priority="true"
-                          quality="100"
-                          placeholder="blur"
-                          blurDataURL={`data:image/svg+xml;base64,${toBase64(
-                            shimmer(200, 200),
-                          )}`}
-                          alt="test"
-                        />
-                      </section>
-                      <section>
-                        <h3>{e.name}</h3>
-                        <p> $ {e?.cardmarket?.prices?.trendPrice} </p>
-                      </section>
-                    </div>
-                  </Link>
+                        <section
+                          className="img-container"
+                          onClick={() => setIsLoading(!isLoading)}
+                        >
+                          <Image
+                            src={e.images.small}
+                            // layout="fill"
+                            // objectFit="fit"
+                            width={200}
+                            height={300}
+                            priority="true"
+                            quality="100"
+                            placeholder="blur"
+                            blurDataURL={`data:image/svg+xml;base64,${toBase64(
+                              shimmer(200, 200),
+                            )}`}
+                            alt="test"
+                          />
+                        </section>
+                        <section>
+                          <h3>{e.name}</h3>
+                          <p> $ {e?.cardmarket?.prices?.trendPrice} </p>
+                        </section>
+                      </div>
+                    </Link>
+                  </Center>
                 );
               })
             ) : (
@@ -134,7 +115,7 @@ export default function Explore(props) {
                 timeout={5000}
               />
             )}
-          </main>
+          </ListLayout>
 
           <section>
             <Paginator page={(e) => setCurrentPage(e)} />
