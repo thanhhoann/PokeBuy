@@ -3,7 +3,7 @@ const withImages = require('next-images')
 
 const nextConfig = {
       reactStrictMode: false,
-      webpack5: false,
+      // webpack5: false,
       images: {
             domains: ['images.pokemontcg.io', 'images.unsplash.com'],
             disableStaticImages: true,

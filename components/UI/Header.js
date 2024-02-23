@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import pokecoinSVG from "../../public/pokecoin.svg";
@@ -35,57 +35,61 @@ export default function Header() {
     authContext.logout();
   };
 
+  const [isClient, setIsClient] = useState(false);
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
+
   return (
     <>
-      <div className="header-container">
-        <main
-          className="header-sub"
-          style={{ width: mobileM ? (mobileS ? "100vw" : "107vw") : "" }}
-        >
-          <section>
-            {authContext.name ? (
-              <Link href="/account/profile">
-                <a>
+      {isClient && (
+        <div className="header-container">
+          <main
+            className="header-sub"
+            style={{ width: mobileM ? (mobileS ? "100vw" : "107vw") : "" }}
+          >
+            <section>
+              {authContext.name ? (
+                <Link href="/account/profile">
                   <h3>MY ACCOUNT</h3>
-                </a>
-              </Link>
-            ) : (
-              <Link href="/account/login">
-                <a>
+                </Link>
+              ) : (
+                <Link href="/account/login">
                   <h3>LOG IN</h3>
-                </a>
-              </Link>
-            )}
-          </section>
+                </Link>
+              )}
+            </section>
 
-          <section>
-            <h3>.</h3>
-          </section>
+            <section>
+              <h3>.</h3>
+            </section>
 
-          {!authContext.name ? (
-            <Link href="/account/register">
-              <a>
+            {!authContext.name ? (
+              <Link href="/account/register">
                 <section>
                   <h3>CREATE ACCOUNT</h3>
                 </section>
-              </a>
-            </Link>
-          ) : (
-            <section onClick={logoutHandler}>
-              <h3 style={{ cursor: "pointer" }}>LOG OUT</h3>
-            </section>
-          )}
-        </main>
+              </Link>
+            ) : (
+              <section onClick={logoutHandler}>
+                <h3 style={{ cursor: "pointer" }}>LOG OUT</h3>
+              </section>
+            )}
+          </main>
 
-        {isLoading && <Backdrop />}
+          {isLoading && <Backdrop />}
 
-        <main className="header-main">
-          <Link href="/">
-            <a>
+          <main className="header-main">
+            <Link href="/">
               <div className="header-left" onClick={backDropHandler}>
                 {!mobileM && (
                   <section className="img-container">
-                    <Image src={pokecoinSVG} layout="fill" objectFit="fit" />
+                    <Image
+                      src={pokecoinSVG}
+                      fill
+                      // objectFit="fit"
+                      alt="pokecoin SVG"
+                    />
                   </section>
                 )}
 
@@ -93,69 +97,57 @@ export default function Header() {
                   <h1 style={{ fontSize: mobileS && "1.8rem" }}>PókeBuy.</h1>
                 </section>
               </div>
-            </a>
-          </Link>
+            </Link>
 
-          {isSmall ? (
-            <MenuButton isClicked={isClickedHandler} />
-          ) : (
-            <div className="header-right">
-              <Link href="/explore">
-                <a>
+            {isSmall ? (
+              <MenuButton isClicked={isClickedHandler} />
+            ) : (
+              <div className="header-right">
+                <Link href="/explore">
                   <section onClick={backDropHandler}>
                     <p>Explore</p>
                   </section>
-                </a>
-              </Link>
+                </Link>
 
-              <Link href="/contact">
-                <a>
+                <Link href="/contact">
                   <section onClick={backDropHandler}>
                     <p>Contact</p>
                   </section>
-                </a>
-              </Link>
+                </Link>
 
-              <Link href="/cart">
-                <a>
+                <Link href="/cart">
                   <section onClick={backDropHandler}>
                     <p>Cart ({cart} €)</p>
                   </section>
-                </a>
-              </Link>
-            </div>
-          )}
-        </main>
+                </Link>
+              </div>
+            )}
+          </main>
 
-        {/* Mobile size */}
-        {showMenu && (
-          <div className="modal">
-            <Link href="/explore">
-              <a>
+          {/* Mobile size */}
+          {showMenu && (
+            <div className="modal">
+              <Link href="/explore">
                 <section onClick={backDropHandler}>
                   <p>Explore</p>
                 </section>
-              </a>
-            </Link>
+              </Link>
 
-            <Link href="/contact">
-              <a>
+              <Link href="/contact">
                 <section onClick={backDropHandler}>
                   <p>Contact</p>
                 </section>
-              </a>
-            </Link>
+              </Link>
 
-            <Link href="/cart">
-              <a>
+              <Link href="/cart">
                 <section onClick={backDropHandler}>
                   <p>Cart ({cart} €)</p>
                 </section>
-              </a>
-            </Link>
-          </div>
-        )}
-      </div>
+              </Link>
+            </div>
+          )}
+        </div>
+      )}
     </>
   );
 }

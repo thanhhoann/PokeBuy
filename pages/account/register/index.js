@@ -39,7 +39,7 @@ export default function Login() {
           headers: {
             "Content-Type": "application/json",
           },
-        }
+        },
       ).then(async (res) => {
         const data = await res.json();
         if (res.ok) {
@@ -132,14 +132,10 @@ export default function Login() {
               </button>
               <section className="extend">
                 <Link href="/explore">
-                  <a>
-                    <p>Wanna explore more ? 👀</p>
-                  </a>
+                  <p>Wanna explore more ? 👀</p>
                 </Link>
                 <Link href="/account/login">
-                  <a>
-                    <p>Log in 🚀</p>
-                  </a>
+                  <p>Log in 🚀</p>
                 </Link>
               </section>
             </form>

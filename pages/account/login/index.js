@@ -115,9 +115,7 @@ export default function Login() {
                 {!forgotPassword ? (
                   <>
                     <Link href="/explore">
-                      <a>
                         <p>Wanna explore more ? 👀</p>
-                      </a>
                     </Link>
                     <p onClick={() => setForgotPassword(true)}>
                       Forgot your password ? 😖

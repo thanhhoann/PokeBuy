@@ -5,7 +5,7 @@ import Link from "next/link";
 import { useMedia } from "use-media";
 import useSWR from "swr";
 import axios from "axios";
-import { getPlaiceholder } from "plaiceholder";
+// import { getPlaiceholder } from "plaiceholder";
 import Loader from "react-loader-spinner";
 
 import Header from "../../components/UI/Header";
@@ -15,22 +15,26 @@ import Layout from "../../components/UI/Layout";
 import Backdrop from "../../components/UI/Backdrop";
 import Paginator from "../../components/UI/Pagination";
 
-export async function getStaticProps(context) {
-  const heroImagePaths = await axios
-    .get(
-      "https://pokebuy-ecom-default-rtdb.asia-southeast1.firebasedatabase.app/hero.json"
-    )
-    .then((res) => res.data);
+import db_images from "../../pokemonsDB/images.json";
 
-  const heroImages = await Promise.all(
-    heroImagePaths.map(async (e) => {
-      const { base64, img } = await getPlaiceholder(e);
-      return {
-        ...img,
-        blurDataURL: base64,
-      };
-    })
-  ).then((e) => e);
+export async function getStaticProps(context) {
+  // const heroImagePaths = await axios
+  //   .get(
+  //     "https://pokebuy-ecom-default-rtdb.asia-southeast1.firebasedatabase.app/hero.json"
+  //   )
+  //   .then((res) => res.data);
+
+  const heroImages = db_images;
+
+  // const heroImages = await Promise.all(
+  //   heroImagePaths.map(async (e) => {
+  //     const { base64, img } = await getPlaiceholder(e);
+  //     return {
+  //       ...img,
+  //       blurDataURL: base64,
+  //     };
+  //   }),
+  // ).then((e) => e);
 
   return {
     props: {
@@ -45,13 +49,13 @@ export default function Explore(props) {
   const [currentPage, setCurrentPage] = useState(1);
 
   const currentPageRes = useSWR(
-    `https://api.pokemontcg.io/v2/cards?page=${currentPage}&pageSize=50`
+    `https://api.pokemontcg.io/v2/cards?page=${currentPage}&pageSize=50`,
   );
   const currentPageList = currentPageRes.data;
 
   // prefetching next page
   const nextPageRes = useSWR(
-    `https://api.pokemontcg.io/v2/cards?page=${currentPage + 1}&pageSize=50`
+    `https://api.pokemontcg.io/v2/cards?page=${currentPage + 1}&pageSize=50`,
   );
 
   const paginationHandler = (page) => {
@@ -113,8 +117,9 @@ export default function Explore(props) {
                           quality="100"
                           placeholder="blur"
                           blurDataURL={`data:image/svg+xml;base64,${toBase64(
-                            shimmer(200, 200)
+                            shimmer(200, 200),
                           )}`}
+                          alt="test"
                         />
                       </section>
                       <section>

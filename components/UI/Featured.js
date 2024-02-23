@@ -12,7 +12,6 @@ export default function Featured(props) {
     setTimeout(() => setIsLoading(false), 2000);
   };
 
-
   return (
     <>
       <div className="featured-container">
@@ -29,16 +28,16 @@ export default function Featured(props) {
                 <section className="img-container">
                   <Image
                     src={e.images.small}
-                    layout="fill"
-                    objectFit="fit"
+                    fill
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     priority="true"
                     quality="100"
                     placeholder="blur"
                     blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mO89OhSPQAIGwMHvnhFoQAAAABJRU5ErkJggg=="
+                    alt="featured cards"
                   />
                 </section>
-                <section>
-                  <h3>{e.name}</h3>
+                <section> <h3>{e.name}</h3>
                   <p> $ {e.cardmarket.prices.trendPrice} </p>
                 </section>
               </div>

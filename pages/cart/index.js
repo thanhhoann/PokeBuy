@@ -30,6 +30,7 @@ export default function Cart() {
                     quality="100"
                     placeholder="blur"
                     blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mO89OhSPQAIGwMHvnhFoQAAAABJRU5ErkJggg=="
+                    alt="test"
                   />
                 </section>
                 <section>

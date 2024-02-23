@@ -25,7 +25,7 @@ export default function Spinner() {
             transition: { duration: 1.5, repeat: Infinity },
           }}
         >
-          <Image src={pokecoin} width={150} height={150} />
+          <Image src={pokecoin} width={150} height={150} alt="Spinner"/>
         </motion.div>
       </Backdrop>
     </div>

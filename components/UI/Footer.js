@@ -14,9 +14,7 @@ export default function Footer() {
             </section>
 
             <Link href="/#">
-              <a>
-                <p>Contact us</p>
-              </a>
+              <p>Contact us</p>
             </Link>
           </main>
 
@@ -60,9 +58,7 @@ export default function Footer() {
             </section>
 
             <Link href="/#">
-              <a>
-                <p>Contact us</p>
-              </a>
+              <p>Contact us</p>
             </Link>
           </main>
 

@@ -93,7 +93,7 @@ export default function Card(props) {
           price: tempCart,
           name: name,
           image: images.small,
-        })
+        }),
       );
     }
   };
@@ -132,6 +132,7 @@ export default function Card(props) {
                     quality="100"
                     placeholder="blur"
                     blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mO89OhSPQAIGwMHvnhFoQAAAABJRU5ErkJggg=="
+                    alt="test"
                   />
                 </section>
               </motion.div>
@@ -232,11 +233,9 @@ export default function Card(props) {
               <section className="successful">
                 <h4>Successfully added 😆</h4>
                 <Link href="/explore">
-                  <a>
-                    <div className="successful-dialog">
-                      Catch more pókemons ✨
-                    </div>
-                  </a>
+                  <div className="successful-dialog">
+                    Catch more pókemons ✨
+                  </div>
                 </Link>
               </section>
             )}
