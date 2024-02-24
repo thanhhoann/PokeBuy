@@ -49,6 +49,7 @@
         "react-loading-overlay": "^1.0.1",
         "react-query": "^3.19.6",
         "react-redux": "^7.2.4",
+        "react-scroll-parallax": "^3.4.5",
         "react-text-loop": "^2.3.0",
         "react-tilt": "^0.1.4",
         "redux": "^4.1.1",

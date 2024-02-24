@@ -4,15 +4,21 @@ import Link from "next/link";
 
 import Backdrop from "../../components/UI/Backdrop";
 import { SimpleGrid } from "@chakra-ui/react";
-import ListLayout from "./ListLayout";
+import { SimpleListLayout } from "./ListLayout";
+import { shuffleCards } from "@/utils/cards_helper";
 
 export default function Featured(props) {
   const [isLoading, setIsLoading] = useState(false);
+  const [shuffledCards, setShuffledCards] = useState([]);
 
   const backDropHandler = () => {
     setIsLoading(true);
     setTimeout(() => setIsLoading(false), 2000);
   };
+
+  useEffect(() => {
+    if (props.cards) setShuffledCards(shuffleCards(props.cards, 9));
+  }, []);
 
   return (
     <>
@@ -23,9 +29,10 @@ export default function Featured(props) {
 
         {isLoading && <Backdrop />}
 
-        <ListLayout>
+        <SimpleListLayout>
           {props.cards &&
-            props.cards.map((e) => (
+            shuffledCards &&
+            shuffledCards.map((e) => (
               <Link key={e.id} href={`/explore/${e.id}`}>
                 <div className="card" onClick={backDropHandler}>
                   <section className="img-container">
@@ -50,7 +57,7 @@ export default function Featured(props) {
                 </div>
               </Link>
             ))}
-        </ListLayout>
+        </SimpleListLayout>
       </div>
     </>
   );

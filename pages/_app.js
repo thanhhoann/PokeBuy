@@ -20,27 +20,37 @@ import {
   extendBaseTheme,
   theme as chakraTheme,
 } from "@chakra-ui/react";
+import { Providers } from "@/utils/providers";
 
-const { Button } = chakraTheme.components;
+const breakpoints = {
+  base: "0px",
+  mobile_M: "320px",
+  mobile_L: "375px",
+  mobile_L: "425px",
+  tablet: "768px",
+  laptop: "1024px",
+  laptop_L: "1440px",
+  "4k": "2560px",
+};
 
 const theme = extendBaseTheme({
-  components: {
-    Button,
-  },
+  breakpoints,
 });
 
 function MyApp({ Component, pageProps, router }) {
   return (
     <>
-      <ChakraBaseProvider theme={theme}>
-        <motion.div>
-          <AuthContextProvider>
-            <Provider store={store}>
-              <Component {...pageProps} />;
-            </Provider>
-          </AuthContextProvider>
-        </motion.div>
-      </ChakraBaseProvider>
+      <Providers>
+        <ChakraBaseProvider theme={theme}>
+          <motion.div>
+            <AuthContextProvider>
+              <Provider store={store}>
+                <Component {...pageProps} />;
+              </Provider>
+            </AuthContextProvider>
+          </motion.div>
+        </ChakraBaseProvider>
+      </Providers>
     </>
   );
 }
