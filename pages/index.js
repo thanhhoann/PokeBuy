@@ -6,8 +6,6 @@ import Header from "@/components/UI/Header";
 import Hero from "@/components/UI/Hero";
 import Layout from "@/components/UI/Layout";
 import { getStaticProps } from "@/utils/cards_helper";
-import { CardDemo } from "@/components/UI/CardDemo";
-import { Center } from "@chakra-ui/react";
 
 export { getStaticProps };
 export default function Home(props) {

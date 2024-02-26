@@ -1,5 +1,5 @@
 import React from "react";
-import Backdrop from '@mui/material/Backdrop';
+import Backdrop from "@material-ui/core/Backdrop";
 import { makeStyles } from "@material-ui/core/styles";
 
 import Image from "next/image";
