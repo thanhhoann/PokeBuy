@@ -1,0 +1,20 @@
+.modal-container {
+  background-color: #fff;
+  width: 60vw;
+  height: 70vh;
+
+  display: flex;
+  flex-direction: column;
+
+  .title {
+    border-bottom: 1px solid #000;
+  }
+
+  .cards {
+    border-bottom: 1px solid #000;
+  }
+
+  .total {
+    border-bottom: 1px solid #000;
+  }
+}

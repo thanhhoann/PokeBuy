@@ -1,0 +1,73 @@
+.explore-container {
+  display: flex;
+  flex-direction: column;
+
+  .featured-container {
+    text-align: center;
+
+    &:nth-child(2n),
+    &:nth-child(3n),
+    &:nth-child(4n),
+    &:nth-child(5n),
+    &:nth-child(6n),
+    &:nth-child(7n) {
+      margin-top: -10px;
+    }
+
+    display: grid;
+    place-items: center;
+
+    .title {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      width: 100vw;
+
+      p {
+        font-size: 2rem;
+      }
+
+      .btn {
+        padding: 20px;
+        background-color: black;
+        color: white;
+        font-size: 1.2rem;
+        text-align: center;
+      }
+    }
+
+    .title {
+      font-size: 4rem;
+      line-height: 1.5;
+      letter-spacing: 2px;
+    }
+
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      width: 80%;
+
+      .card {
+        cursor: pointer;
+        flex: 1 0 auto;
+        display: grid;
+        place-items: center;
+        transition: all 0.1 cubic-bezier(0.23, 1, 0.32, 1);
+
+        .img-container {
+          position: relative;
+          width: 250px;
+          height: 350px;
+
+          &:hover {
+            transform: scale(1.1);
+          }
+        }
+
+        section {
+          font-size: 0.8rem;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,33 @@
+.hero-container {
+  margin-top: 250px;
+  grid-row: 1 / 2;
+  width: 100vw;
+  height: 360px;
+  background-color: black;
+  color: white;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  .left {
+    display: flex;
+    flex-direction: column;
+    font-size: calc(0.5rem + 0.5vw);
+    padding: 20px;
+    letter-spacing: 3px;
+    width: 50vw;
+
+    * {
+      margin: 2px;
+    }
+  }
+
+  .tilt-container {
+    background-color: white;
+    width: calc(300px + 10vw);
+    height: 400px;
+    display: grid;
+    place-items: center;
+  }
+}

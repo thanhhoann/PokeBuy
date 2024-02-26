@@ -1,0 +1,114 @@
+.footer-container {
+  grid-row: 10 / 10;
+  width: 100vw;
+
+  display: grid;
+  place-items: center;
+  grid-auto-flow: column;
+  text-align: center;
+  align-items: stretch;
+
+  margin-bottom: 20px;
+  margin-top: 50px;
+  font-size: 1.4rem;
+  background-color: #fff;
+
+  * {
+    width: 25vw;
+    flex: 1;
+  }
+
+  a:hover {
+    font-weight: 700;
+  }
+
+  .title {
+    margin: 0 10px 10px 10px;
+    font-size: 1.6rem;
+    border-bottom: 1px solid black;
+    font-weight: 500;
+    letter-spacing: 3px;
+  }
+
+  .newsletter {
+    .form {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      form {
+        width: 60%;
+        border-radius: 10px;
+        input {
+          padding: 20px;
+        }
+      }
+
+      .button {
+        text-align: center;
+        font-size: 50%;
+        cursor: pointer;
+        font-family: "Roboto";
+        background-color: black;
+        color: white;
+        padding: 15px;
+        letter-spacing: 2px;
+        width: 30%;
+      }
+    }
+  }
+}
+
+.tablet-footer-container {
+  grid-row: 10 / 10;
+  width: 100vw;
+
+  display: grid;
+  grid-auto-flow: row;
+  text-align: center;
+  align-items: stretch;
+  justify-content: center;
+
+  margin-bottom: 20px;
+  margin-top: 20px;
+  font-size: 1.1rem;
+  background-color: #fff;
+
+  * {
+    width: 90vw;
+    flex: 1;
+  }
+
+  .title {
+    margin: 0 10px 10px 10px;
+    font-size: 1.4rem;
+    border-bottom: 1px solid black;
+  }
+
+  .newsletter {
+    .form {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      form {
+        width: 60%;
+        border-radius: 10px;
+        input {
+          padding: 20px;
+        }
+      }
+
+      .button {
+        font-size: 50%;
+        cursor: pointer;
+        font-family: "Roboto";
+        background-color: black;
+        color: white;
+        padding: 15px;
+        letter-spacing: 2px;
+        width: 30%;
+      }
+    }
+  }
+}

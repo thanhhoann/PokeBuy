@@ -1,0 +1,125 @@
+.id-container {
+  width: 100vw;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr 2fr 1fr;
+  align-items: start;
+  justify-items: space-around;
+
+  .card {
+    grid-column: 1 / 1;
+    grid-row: 2 / 2;
+
+    width: 90%;
+    display: grid;
+    place-items: center;
+    transition: all 1.4s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+
+    .img-container {
+      position: relative;
+      width: 400px;
+      height: 500px;
+    }
+  }
+
+  .info {
+    text-transform: uppercase;
+    grid-column: 2 / 2;
+    grid-row: 2 / 2;
+
+    display: grid;
+    justify-items: center;
+    justify-content: center;
+    width: 70%;
+
+    span {
+      margin: 5px;
+      padding: 9px;
+      color: white;
+      background-color: black;
+      border-radius: 11px;
+    }
+
+    .prices {
+      display: flex;
+
+      * {
+        margin: 10px;
+      }
+
+      section {
+        padding: 0.9vw;
+        cursor: pointer;
+        text-align: center;
+        background-color: transparent;
+        border: 1px solid black;
+        border-radius: 11px;
+        transition: all 0.2s cubic-bezier(0.23, 1, 0.32, 1);
+
+        &:hover {
+          transform: scale(1.1);
+          background-color: black;
+          color: white;
+        }
+      }
+    }
+
+    .title {
+      display: flex;
+      align-items: center;
+
+      section {
+        margin: 0 10px;
+      }
+
+      .name {
+        font-size: 2rem;
+      }
+    }
+
+    .type {
+      margin-bottom: 3vw;
+      display: flex;
+      align-items: center;
+
+      .hp {
+        text-align: center;
+        span {
+          display: none;
+        }
+      }
+    }
+
+    .addToCart {
+      border-radius: 10px;
+      width: 100%;
+      font-weight: 890;
+      margin-top: 30px;
+      border: 1px solid #000;
+      background-color: transparent;
+      padding: 20px;
+      text-align: center;
+      cursor: pointer;
+      transition: all 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+      &:hover {
+        background-color: black;
+        color: white;
+        transform: scale(0.9);
+      }
+    }
+    .successful {
+      display: grid;
+      place-items: center;
+
+      .successful-dialog {
+        width: 100%;
+        text-align: center;
+        background-color: black;
+        color: white;
+        border-radius: 10px;
+        padding: 20px;
+      }
+    }
+  }
+}

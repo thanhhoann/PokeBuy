@@ -1,0 +1,47 @@
+.featured-container {
+  grid-row: 2 / auto;
+
+  margin: auto;
+  width: 100vw;
+  margin: 200px 0 100px 0;
+  text-align: center;
+
+  display: grid;
+  place-items: center;
+
+  .title {
+    font-size: 4rem;
+    line-height: 1.5;
+    letter-spacing: 2px;
+  }
+
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+
+    .card {
+      margin: 110px;
+      cursor: pointer;
+      flex: 1 0 auto;
+      display: grid;
+      place-items: center;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+
+      margin-top: 30px;
+
+      .img-container {
+        position: relative;
+        width: 250px;
+        height: 350px;
+      }
+
+      section {
+        margin-top: 2vw;
+        font-size: 1.3rem;
+      }
+    }
+  }
+}

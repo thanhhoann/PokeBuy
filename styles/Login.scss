@@ -1,0 +1,137 @@
+.login-container {
+  grid-row: 5 / 8;
+  display: grid;
+  place-items: center;
+
+  .header-container {
+    width: 100vw;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0%;
+    z-index: 1000;
+  }
+
+  .form {
+    margin-top: 100px;
+    width: 100vw;
+    height: 78vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    p {
+      font-size: 1.2rem;
+      letter-spacing: 2px;
+    }
+
+    form {
+      width: 70%;
+      display: flex;
+      flex-direction: column;
+
+      input {
+        border-radius: 3px;
+        cursor: pointer;
+        font-family: "Josefin Sans", sans-serif;
+        font-size: 1.2rem;
+        width: 100%;
+        margin: 10px 0;
+        border: 2px solid black;
+        padding: 20px;
+      }
+
+      .btn {
+        margin-top: 10px;
+        border: 1px solid #000;
+        border-radius: 3px;
+        cursor: pointer;
+        padding: 18px;
+        font-size: 1.3rem;
+        font-family: "Josefin Sans", sans-serif;
+        background-color: black;
+        color: white;
+      }
+
+      .extend {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+        p {
+          cursor: pointer;
+          font-size: 1.1rem;
+          letter-spacing: 0px;
+          &:hover {
+            font-weight: 800;
+          }
+        }
+      }
+    }
+  }
+
+  .header-sub {
+    *:nth-child(2n) {
+      margin: 0 10px 0 10px;
+      line-height: 10px;
+    }
+  }
+
+  .header-main {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    .header-left {
+      font-weight: 300;
+      display: flex;
+      align-items: center;
+
+      .img-container {
+        width: 45px;
+        height: 45px;
+        position: relative;
+        margin-right: 20px;
+      }
+
+      .title-container {
+        font-size: 2rem;
+        letter-spacing: 4px;
+      }
+    }
+
+    .header-right {
+      font-size: 1.5rem;
+      display: flex;
+      *:nth-child(2n) {
+        margin: 0 60px 0 60px;
+      }
+      *:hover {
+        font-weight: 700;
+      }
+    }
+  }
+
+  .menu-button {
+    display: flex;
+    flex-direction: column;
+    transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+
+    * {
+      margin: -10px;
+    }
+  }
+
+  .modal {
+    padding: 20px 60px 0 60px;
+    font-size: 1.5rem;
+    transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+
+    section {
+      border-bottom: 1px solid black;
+    }
+  }
+}
