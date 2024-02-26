@@ -12,6 +12,7 @@ import Paginator from "@/components/UI/Pagination";
 import { Center } from "@chakra-ui/react";
 import { ComplexListLayout } from "@/components/UI/ListLayout";
 import { shimmer, toBase64, getDataFromAPI } from "@/utils/cards_helper";
+import Card from "@/components/UI/Card";
 
 export default function Explore() {
   const [isLoading, setIsLoading] = useState(false);
@@ -51,17 +52,13 @@ export default function Explore() {
                           className="img-container"
                           onClick={() => setIsLoading(!isLoading)}
                         >
-                          <Image
-                            src={card.images.small}
-                            width={200}
-                            height={300}
-                            priority="true"
-                            quality="100"
-                            placeholder="blur"
+                          <Card
+                            image={card.images.small}
+                            w={200}
+                            h={300}
                             blurDataURL={`data:image/svg+xml;base64,${toBase64(
                               shimmer(200, 200),
                             )}`}
-                            alt="Pokemon Card"
                           />
                         </section>
                         <section>
